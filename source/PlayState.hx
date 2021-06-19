@@ -1,6 +1,5 @@
 package;
 
-import webm.WebmPlayer;
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
@@ -3132,7 +3131,6 @@ class PlayState extends MusicBeatState
 			public var fuckingVolume:Float = 1;
 			public var useVideo = false;
 
-			public static var webmHandler:WebmHandler;
 
 			public var playingDathing = false;
 
