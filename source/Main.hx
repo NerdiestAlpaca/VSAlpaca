@@ -1,7 +1,5 @@
 package;
 
-
-import webm.WebmPlayer;
 import openfl.display.BlendMode;
 import openfl.text.TextFormat;
 import openfl.display.Application;
@@ -51,8 +49,6 @@ class Main extends Sprite
 		}
 	}
 
-	public static var webmHandler:WebmHandler;
-
 	private function init(?E:Event):Void
 	{
 		if (hasEventListener(Event.ADDED_TO_STAGE))
@@ -77,8 +73,10 @@ class Main extends Sprite
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
 
-		initialState = Caching;
-		
+		#if !debug
+		initialState = TitleState;
+		#end
+
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 
 		addChild(game);
