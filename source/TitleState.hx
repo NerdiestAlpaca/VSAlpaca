@@ -149,12 +149,12 @@ class TitleState extends MusicBeatState
 			// music.loadStream(Paths.music('freakyMenu'));
 			// FlxG.sound.list.add(music);
 			// music.play();
-			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+			FlxG.sound.playMusic(Paths.music('intro'), 0);
 
-			FlxG.sound.music.fadeIn(4, 0, 0.7);
+			FlxG.sound.music.fadeIn(4, 0, 0.2);
 		}
 
-		Conductor.changeBPM(95);
+		Conductor.changeBPM(190);
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
@@ -302,6 +302,7 @@ class TitleState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 			transitioning = true;
+			FlxG.sound.music.fadeOut(1,0);
 			// FlxG.sound.music.stop();
 
 			new FlxTimer().start(2, function(tmr:FlxTimer)

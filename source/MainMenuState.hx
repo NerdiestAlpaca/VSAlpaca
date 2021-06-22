@@ -51,7 +51,8 @@ class MainMenuState extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
-
+	
+		Conductor.changeBPM(95);
 		if (!FlxG.sound.music.playing)
 		{
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
