@@ -163,25 +163,14 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
-		if(Main.watermarks) {
-			logoBl = new FlxSprite(-150, -100);
-			logoBl.frames = Paths.getSparrowAtlas('KadeEngineLogoBumpin');
-			logoBl.antialiasing = true;
-			logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
-			logoBl.animation.play('bump');
-			logoBl.updateHitbox();
-			// logoBl.screenCenter();
-			// logoBl.color = FlxColor.BLACK;
-		} else {
-			logoBl = new FlxSprite(-150, -100);
-			logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
-			logoBl.antialiasing = true;
-			logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
-			logoBl.animation.play('bump');
-			logoBl.updateHitbox();
-			// logoBl.screenCenter();
-			// logoBl.color = FlxColor.BLACK;
-		}
+		logoBl = new FlxSprite(-150, -100);
+		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+		logoBl.antialiasing = true;
+		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
+		logoBl.animation.play('bump');
+		logoBl.updateHitbox();
+		// logoBl.screenCenter();
+		// logoBl.color = FlxColor.BLACK;
 
 		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
 		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
@@ -216,7 +205,7 @@ class TitleState extends MusicBeatState
 		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		credGroup.add(blackScreen);
 
-		credTextShit = new Alphabet(0, 0, "ninjamuffin99\nPhantomArcade\nkawaisprite\nevilsk8er", true);
+		credTextShit = new Alphabet(0, 0, "ninjamuffin99\nPhantomArcade\nkawaisprite\nevilsk8er\nNerdiestAlpaca", true);
 		credTextShit.screenCenter();
 
 		// credTextShit.alignment = CENTER;
@@ -315,13 +304,12 @@ class TitleState extends MusicBeatState
 			transitioning = true;
 			// FlxG.sound.music.stop();
 
-			MainMenuState.firstStart = true;
-
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
 				// Get current version of Kade Engine
-				
-				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
+
+				//var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
+				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/patchnotes/version.downloadMe");
 				var returnedData:Array<String> = [];
 				
 				http.onData = function (data:String)
@@ -406,7 +394,7 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er','NerdiestAlpaca']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');
@@ -421,7 +409,7 @@ class TitleState extends MusicBeatState
 				if (Main.watermarks)
 					createCoolText(['Kade Engine', 'by']);
 				else
-					createCoolText(['In Partnership', 'with']);
+					createCoolText(['With love', 'to']);
 			case 7:
 				if (Main.watermarks)
 					addMoreText('KadeDeveloper');
@@ -457,8 +445,9 @@ class TitleState extends MusicBeatState
 			// credTextShit.text += '\nNight';
 			case 15:
 				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
-
 			case 16:
+				addMoreText('Vs Alpaca'); // credTextShit.text += '\nVs Alpaca';
+			case 17:
 				skipIntro();
 		}
 	}
