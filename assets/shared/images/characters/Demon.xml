@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Demon.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Demon Down0000" x="0" y="0" width="638" height="811" pivotX="147.95" pivotY="31.05"/>
+	<SubTexture name="Demon Down0001" x="0" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0002" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0003" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0004" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0005" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0006" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0007" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0008" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0009" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0010" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0011" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0012" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Down0013" x="640" y="0" width="638" height="811"/>
+	<SubTexture name="Demon Idle Stance0000" x="1280" y="0" width="580" height="875" pivotX="150.8" pivotY="119.05"/>
+	<SubTexture name="Demon Idle Stance0001" x="1280" y="0" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0002" x="1862" y="0" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0003" x="2444" y="0" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0004" x="2444" y="0" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0005" x="3026" y="0" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0006" x="0" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0007" x="582" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0008" x="582" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0009" x="582" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0010" x="1164" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0011" x="1164" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0012" x="1746" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Idle Stance0013" x="1746" y="877" width="580" height="875"/>
+	<SubTexture name="Demon Left0000" x="2328" y="877" width="642" height="851" pivotX="152.35" pivotY="70.75"/>
+	<SubTexture name="Demon Left0001" x="2328" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0002" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0003" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0004" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0005" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0006" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0007" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0008" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0009" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0010" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0011" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0012" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Left0013" x="2972" y="877" width="642" height="851"/>
+	<SubTexture name="Demon Right0000" x="0" y="1754" width="685" height="830" pivotX="111.25" pivotY="67.45"/>
+	<SubTexture name="Demon Right0001" x="0" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0002" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0003" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0004" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0005" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0006" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0007" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0008" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0009" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0010" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0011" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0012" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Right0013" x="687" y="1754" width="685" height="830"/>
+	<SubTexture name="Demon Up0000" x="1374" y="1754" width="802" height="870" pivotX="612.7" pivotY="122.7"/>
+	<SubTexture name="Demon Up0001" x="1374" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0002" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0003" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0004" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0005" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0006" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0007" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0008" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0009" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0010" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0011" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0012" x="2178" y="1754" width="802" height="870"/>
+	<SubTexture name="Demon Up0013" x="2178" y="1754" width="802" height="870"/>
+</TextureAtlas>
