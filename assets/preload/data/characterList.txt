@@ -15,4 +15,8 @@ bf-pixel
 senpai
 senpai-angry
 spirit
+alpaca
+demon
+darkness
+final
 mario
