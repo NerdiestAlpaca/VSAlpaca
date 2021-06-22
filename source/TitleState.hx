@@ -151,7 +151,7 @@ class TitleState extends MusicBeatState
 			// music.play();
 			FlxG.sound.playMusic(Paths.music('intro'), 0);
 
-			FlxG.sound.music.fadeIn(4, 0, 0.2);
+			FlxG.sound.music.fadeIn(1, 1, 1);
 		}
 
 		Conductor.changeBPM(190);
@@ -302,8 +302,7 @@ class TitleState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 			transitioning = true;
-			FlxG.sound.music.fadeOut(1,0);
-			// FlxG.sound.music.stop();
+			FlxG.sound.music.stop();
 
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
