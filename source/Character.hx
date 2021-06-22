@@ -155,6 +155,79 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+
+				case 'alpaca':
+					tex = Paths.getSparrowAtlas('characters/Alpaca');
+					frames = tex;
+					animation.addByPrefix('idle', 'Paca Dance', 24, true);
+					animation.addByPrefix('singUP', 'Paca Up', 24, false);
+					animation.addByPrefix('singLEFT','Paca Left', 24, false);
+					animation.addByPrefix('singRIGHT', 'Paca Right', 24, false);
+					animation.addByPrefix('singDOWN', 'Paca Down', 24, false);
+					trace("finish anim");
+				
+					addOffset('idle', 0, -69);
+					addOffset('singUP', 42, -77);
+					addOffset('singRIGHT',-20, -73);
+					addOffset('singLEFT', 33, -69);
+					addOffset('singDOWN', 0, -127);
+				
+					playAnim('idle');
+				
+				case 'demon':
+					tex = Paths.getSparrowAtlas('characters/Demon');
+					frames = tex;
+					animation.addByPrefix('idle', 'Demon Idle Stance', 24, true);
+					animation.addByPrefix('singUP', 'Demon Up', 24, false);
+					animation.addByPrefix('singLEFT','Demon Left', 24, false);
+					animation.addByPrefix('singRIGHT', 'Demon Right', 24, false);
+					animation.addByPrefix('singDOWN', 'Demon Down', 24, false);
+					trace("finish anim");
+				
+					addOffset('idle', 131, 131);
+					addOffset('singUP', 250, 122);
+					addOffset('singRIGHT',110, 97);
+					addOffset('singLEFT', 185, 113);
+					addOffset('singDOWN', 150, 57);
+				
+					playAnim('idle');
+				
+				case 'darkness':
+					tex = Paths.getSparrowAtlas('characters/Darkness');
+					frames = tex;
+					animation.addByPrefix('idle', 'Dark Idle', 24, true);
+					animation.addByPrefix('singUP', 'Dark Up', 24, false);
+					animation.addByPrefix('singLEFT','Dark Left', 24, false);
+					animation.addByPrefix('singRIGHT', 'Dark Right', 24, false);
+					animation.addByPrefix('singDOWN', 'Dark Down', 24, false);
+					trace("finish anim");
+				
+					addOffset('idle', 631, 781);
+					addOffset('singUP', 750, 972);
+					addOffset('singRIGHT',610, 747);
+					addOffset('singLEFT', 685, 753);
+					addOffset('singDOWN', 650, 707);
+				
+					playAnim('idle');
+				
+				case 'final':
+					tex = Paths.getSparrowAtlas('characters/Final');
+					frames = tex;
+					   animation.addByPrefix('idle', 'Idle', 24);
+					animation.addByPrefix('singUP', 'Sing Up', 24);
+					animation.addByPrefix('singLEFT', 'Sing Left', 24);
+					animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+					animation.addByPrefix('singDOWN', 'Sing Down', 24);
+					trace("finish anim");
+				
+					addOffset("idle", 100,50);
+					addOffset("singUP", 100, 150);
+					addOffset("singRIGHT", -109, 21);
+					addOffset("singLEFT",227,70);
+					addOffset("singDOWN",0,-90);
+					
+					playAnim('idle');
+				
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
