@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fire.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="firewave0000" x="0" y="0" width="1958" height="715" pivotX="958.75" pivotY="412.6" frameX="0" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0001" x="0" y="0" width="1958" height="715" frameX="0" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0002" x="0" y="0" width="1958" height="715" frameX="0" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0003" x="1961" y="0" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0004" x="1961" y="0" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0005" x="1961" y="0" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0006" x="0" y="718" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0007" x="0" y="718" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0008" x="0" y="718" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0009" x="0" y="1431" width="2054" height="684" frameX="0" frameY="-31" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0010" x="0" y="1431" width="2054" height="684" frameX="0" frameY="-31" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0011" x="0" y="1431" width="2054" height="684" frameX="0" frameY="-31" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0012" x="0" y="2118" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0013" x="0" y="2118" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0014" x="0" y="2118" width="2050" height="694" frameX="-46" frameY="-16" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0015" x="0" y="2815" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0016" x="0" y="2815" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+	<SubTexture name="firewave0017" x="0" y="2815" width="2087" height="710" frameX="-26" frameY="0" frameWidth="2113" frameHeight="715"/>
+</TextureAtlas>

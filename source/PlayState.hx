@@ -710,6 +710,36 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+                case 'hell': 
+    {	
+        					curStage = 'hell';
+
+        					defaultCamZoom = 0.45;
+
+        					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('thirdphase/bg'));
+        					bg.antialiasing = true;
+        					bg.scrollFactor.set(0.2, 0.2);
+        					bg.active = false;
+							bg.setGraphicSize(Std.int(bg.width * 5));
+        					bg.updateHitbox();
+        					add(bg);
+
+        					var fire:FlxSprite = new FlxSprite(-240, 400);
+        					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
+        					fire.animation.addByPrefix('idle', "firewave", 24, true);
+							fire.animation.play("idle");
+        					fire.antialiasing = true;
+        					fire.scrollFactor.set(0.33, 0.33);
+       					 	fire.setGraphicSize(Std.int(fire.width * 2));
+        					fire.updateHitbox();
+           					add(fire);
+
+
+        					var fg:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('thirdphase/fg'));
+        					fg.active = false;
+        					fg.antialiasing = true;
+        					add(fg);      				
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
