@@ -19,6 +19,7 @@ class HealthIcon extends FlxSprite
 		animation.add('bf', [0, 1], 0, false, isPlayer);
 		animation.add('bf-car', [0, 1], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
+        animation.add('bf-finale', [0, 1], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 21], 0, false, isPlayer);
 		animation.add('spooky', [2, 3], 0, false, isPlayer);
 		animation.add('pico', [4, 5], 0, false, isPlayer);
@@ -37,11 +38,11 @@ class HealthIcon extends FlxSprite
 		animation.add('parents-christmas', [17, 18], 0, false, isPlayer);
 		animation.add('monster', [19, 20], 0, false, isPlayer);
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
-		animation.add('alpaca', [10, 11], 0, false, isPlayer);
-		animation.add('demon', [10, 11], 0, false, isPlayer);
-		animation.add('darkness', [10, 11], 0, false, isPlayer);
-		animation.add('final', [10, 11], 0, false, isPlayer);
-		animation.add('mario', [14, 15], 0, false, isPlayer);
+		animation.add('alpaca', [24, 25], 0, false, isPlayer);
+		animation.add('demon', [26, 27], 0, false, isPlayer);
+		animation.add('darkness', [28, 29], 0, false, isPlayer);
+		animation.add('final', [30, 31], 0, false, isPlayer);
+		animation.add('mario', [32, 33], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)

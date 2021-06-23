@@ -19,4 +19,5 @@ alpaca
 demon
 darkness
 final
+bf-finale
 mario
