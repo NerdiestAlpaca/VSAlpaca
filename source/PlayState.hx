@@ -720,11 +720,11 @@ class PlayState extends MusicBeatState
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0.2);
         					bg.active = false;
-							bg.setGraphicSize(Std.int(bg.width * 2));
+							bg.setGraphicSize(Std.int(bg.width * 4));
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-500, 400);
+        					var fire:FlxSprite = new FlxSprite(-400, 400);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
@@ -735,7 +735,7 @@ class PlayState extends MusicBeatState
            					add(fire);
 
 
-        					var fg:FlxSprite = new FlxSprite(-600, 0).loadGraphic(Paths.image('thirdphase/fg'));
+        					var fg:FlxSprite = new FlxSprite(-500, 0).loadGraphic(Paths.image('thirdphase/fg'));
         					fg.active = false;
         					fg.antialiasing = true;
 							bg.setGraphicSize(Std.int(fg.width * 1.5));
@@ -883,11 +883,9 @@ class PlayState extends MusicBeatState
 				gf.y += 300;
 
 			case 'hell':
-					boyfriend.x += 200;
-					boyfriend.y += 600;
-					gf.x += 200;
-					gf.y += 600;
-					dad.y += 600;
+					boyfriend.x += 400;
+					gf.x += 350;
+					dad.x += 50;
 
 		}
 
