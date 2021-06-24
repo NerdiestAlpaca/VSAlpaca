@@ -2170,6 +2170,8 @@ class PlayState extends MusicBeatState
                         camFollow.x = dad.getMidpoint().x - 450;
                     case 'final':
                         camFollow.y = dad.getMidpoint().y;
+                    case 'mario':
+						camFollow.y = dad.getMidpoint().y + 70;
                     
 				}
 
