@@ -894,7 +894,7 @@ class PlayState extends MusicBeatState
 					boyfriend.x += 700;
 					boyfriend.y += 20;
 					gf.x += 650;
-					gf.y += 35;
+					gf.y += 10;
 					dad.x += 350;
 					dad.y -= 30;
 					gf.setGraphicSize(Std.int(gf.width * 0.9));
