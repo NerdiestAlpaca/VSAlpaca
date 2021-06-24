@@ -884,8 +884,11 @@ class PlayState extends MusicBeatState
 
 			case 'hell':
 					boyfriend.x += 400;
+					boyfriend.y += 220;
 					gf.x += 350;
+					gf.y += 220;
 					dad.x += 50;
+					dad.y += 220;
 
 		}
 
