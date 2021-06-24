@@ -716,7 +716,7 @@ class PlayState extends MusicBeatState
 
         					defaultCamZoom = 0.4;
 
-        					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('thirdphase/bg'));
+        					var bg:FlxSprite = new FlxSprite(-1000, -300).loadGraphic(Paths.image('thirdphase/bg'));
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0.2);
         					bg.active = false;
@@ -724,7 +724,7 @@ class PlayState extends MusicBeatState
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-400, 150);
+        					var fire:FlxSprite = new FlxSprite(-200, 50);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
@@ -891,10 +891,11 @@ class PlayState extends MusicBeatState
 				gf.y += 300;
 
 				case 'hell':
-					boyfriend.x += 400;
+					boyfriend.x += 700;
 					boyfriend.y += 20;
-					gf.x += 350;
-					dad.x += 50;
+					gf.x += 650;
+					gf.y += 35;
+					dad.x += 350;
 					dad.y -= 30;
 					gf.setGraphicSize(Std.int(gf.width * 0.9));
 					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
