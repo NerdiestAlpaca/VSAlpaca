@@ -894,10 +894,9 @@ class PlayState extends MusicBeatState
 					boyfriend.x += 400;
 					boyfriend.y += 20;
 					gf.x += 350;
-					gf.y += 60;
 					dad.x += 50;
 					dad.y -= 30;
-					gf.setGraphicSize(Std.int(gf.width * 1.1));
+					gf.setGraphicSize(Std.int(gf.width * 0.9));
 					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
 
 		}
@@ -2166,7 +2165,7 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y - 250;
 						camFollow.x = dad.getMidpoint().x - 50;
                     case 'darkness':
-                        camFollow.y = dad.getMidpoint().y - 900;
+                        camFollow.y = dad.getMidpoint().y - 700;
                         camFollow.x = dad.getMidpoint().x - 450;
                     case 'final':
                         camFollow.y = dad.getMidpoint().y;
