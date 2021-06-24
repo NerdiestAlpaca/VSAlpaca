@@ -714,7 +714,7 @@ class PlayState extends MusicBeatState
     {	
         					curStage = 'hell';
 
-        					defaultCamZoom = 0.4;
+        					defaultCamZoom = 0.42;
 
         					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('thirdphase/bg'));
         					bg.antialiasing = true;
@@ -738,7 +738,7 @@ class PlayState extends MusicBeatState
         					var fg:FlxSprite = new FlxSprite(-500, 150).loadGraphic(Paths.image('thirdphase/fg'));
         					fg.active = false;
         					fg.antialiasing = true;
-							fg.setGraphicSize(Std.int(fg.width * 2));
+							fg.setGraphicSize(Std.int(fg.width * 1.67));
         					add(fg);  
 	}
 			default:
@@ -896,7 +896,7 @@ class PlayState extends MusicBeatState
 					gf.x += 650;
 					gf.y += 10;
 					dad.x += 350;
-					dad.y -= 30;
+					dad.y += 50;
 					gf.setGraphicSize(Std.int(gf.width * 0.9));
 					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
 
