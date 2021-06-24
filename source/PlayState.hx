@@ -621,8 +621,7 @@ class PlayState extends MusicBeatState
 							}
 						}
 
-					bgGirls.setGraphicSize(Std.int(bgGirls.width * da
-								       Zoom));
+					bgGirls.setGraphicSize(Std.int(bgGirls.width * daPixelZoom));
 					bgGirls.updateHitbox();
 					if(FlxG.save.data.distractions){
 						add(bgGirls);
@@ -740,8 +739,7 @@ class PlayState extends MusicBeatState
         					fg.active = false;
         					fg.antialiasing = true;
 							fg.setGraphicSize(Std.int(fg.width * 2));
-        					add(fg);      				
-			}
+        					add(fg);  
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -891,7 +889,7 @@ class PlayState extends MusicBeatState
 				gf.x += 180;
 				gf.y += 300;
 
-			case 'hell':
+				case 'hell':
 					boyfriend.x += 400;
 					boyfriend.y += 20;
 					gf.x += 350;
@@ -2167,7 +2165,7 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y - 250;
 						camFollow.x = dad.getMidpoint().x - 50;
                     case 'darkness':
-                        camFollow.y = dad.getMidpoint().y - 700;
+                        camFollow.y = dad.getMidpoint().y - 900;
                         camFollow.x = dad.getMidpoint().x - 450;
                     case 'final':
                         camFollow.y = dad.getMidpoint().y;
