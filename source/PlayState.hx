@@ -720,7 +720,7 @@ class PlayState extends MusicBeatState
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0.2);
         					bg.active = false;
-							bg.setGraphicSize(Std.int(bg.width * 2));
+							bg.setGraphicSize(Std.int(bg.width * 2.5));
         					bg.updateHitbox();
         					add(bg);
 
@@ -734,12 +734,13 @@ class PlayState extends MusicBeatState
         					fire.updateHitbox();
            					add(fire);
 
-
-        					var fg:FlxSprite = new FlxSprite(-500, 150).loadGraphic(Paths.image('thirdphase/fg'));
-        					fg.active = false;
-        					fg.antialiasing = true;
-							fg.setGraphicSize(Std.int(fg.width * 2));
-        					add(fg);      				
+						var fg:FlxSprite = new FlxSprite(-2000, -400).loadGraphic.loadGraphic(Paths.image('thirdphase/fg'));
+						fg.setGraphicSize(Std.int(fg.width * 2.6));
+						fg.antialiasing = true;
+						fg.scrollFactor.set(0.9, 0.9);
+						fg.active = false;
+						add(fg);
+			 				
 			}
 			default:
 			{
@@ -892,7 +893,7 @@ class PlayState extends MusicBeatState
 
 			case 'hell':
 					boyfriend.x += 400;
-					boyfriend.y -= 50;
+					boyfriend.y + 50;
 					gf.x += 350;
 					gf.y -= 50;
 					dad.x += 50;
