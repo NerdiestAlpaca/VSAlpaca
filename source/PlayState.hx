@@ -740,6 +740,7 @@ class PlayState extends MusicBeatState
         					fg.antialiasing = true;
 							fg.setGraphicSize(Std.int(fg.width * 2));
         					add(fg);  
+	}
 			default:
 			{
 					defaultCamZoom = 0.9;
