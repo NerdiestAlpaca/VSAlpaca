@@ -714,7 +714,7 @@ class PlayState extends MusicBeatState
     {	
         					curStage = 'hell';
 
-        					defaultCamZoom = 0.45;
+        					defaultCamZoom = 0.4;
 
         					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('thirdphase/bg'));
         					bg.antialiasing = true;
@@ -724,7 +724,7 @@ class PlayState extends MusicBeatState
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-600, 400);
+        					var fire:FlxSprite = new FlxSprite(-400, 250);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
@@ -735,10 +735,10 @@ class PlayState extends MusicBeatState
            					add(fire);
 
 
-        					var fg:FlxSprite = new FlxSprite(-500, 200).loadGraphic(Paths.image('thirdphase/fg'));
+        					var fg:FlxSprite = new FlxSprite(-500, 150).loadGraphic(Paths.image('thirdphase/fg'));
         					fg.active = false;
         					fg.antialiasing = true;
-							bg.setGraphicSize(Std.int(fg.width * 2));
+							fg.setGraphicSize(Std.int(fg.width * 2));
         					add(fg);      				
 			}
 			default:
