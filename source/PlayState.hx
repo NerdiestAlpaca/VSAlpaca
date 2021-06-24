@@ -720,25 +720,25 @@ class PlayState extends MusicBeatState
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0.2);
         					bg.active = false;
-							bg.setGraphicSize(Std.int(bg.width * 4));
+							bg.setGraphicSize(Std.int(bg.width * 2));
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-400, 400);
+        					var fire:FlxSprite = new FlxSprite(-600, 400);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
         					fire.antialiasing = true;
-        					fire.scrollFactor.set(0.33, 0.33);
-       					 	fire.setGraphicSize(Std.int(fire.width * 2));
+        					fire.scrollFactor.set(0, 0);
+       					 	fire.setGraphicSize(Std.int(fire.width * 3));
         					fire.updateHitbox();
            					add(fire);
 
 
-        					var fg:FlxSprite = new FlxSprite(-500, 0).loadGraphic(Paths.image('thirdphase/fg'));
+        					var fg:FlxSprite = new FlxSprite(-500, 200).loadGraphic(Paths.image('thirdphase/fg'));
         					fg.active = false;
         					fg.antialiasing = true;
-							bg.setGraphicSize(Std.int(fg.width * 1.5));
+							bg.setGraphicSize(Std.int(fg.width * 2));
         					add(fg);      				
 			}
 			default:
@@ -780,7 +780,13 @@ class PlayState extends MusicBeatState
 				case 5: gfCheck = 'gf-christmas';
 				case 6: gfCheck = 'gf-pixel';
 			}
-		} else {gfCheck = SONG.gfVersion;}
+			switch (curStage)
+			{
+				case 'hell':
+				gfCheck = 'gf-finale';
+			} 
+		}
+		else {gfCheck = SONG.gfVersion;}
 
 		var curGf:String = '';
 		switch (gfCheck)
@@ -791,6 +797,8 @@ class PlayState extends MusicBeatState
 				curGf = 'gf-christmas';
 			case 'gf-pixel':
 				curGf = 'gf-pixel';
+			case 'gf-finale':
+				curGf = 'gf-finale';
 			default:
 				curGf = 'gf';
 		}
@@ -884,11 +892,11 @@ class PlayState extends MusicBeatState
 
 			case 'hell':
 					boyfriend.x += 400;
-					boyfriend.y += 220;
+					boyfriend.y -= 50;
 					gf.x += 350;
-					gf.y += 220;
+					gf.y -= 50;
 					dad.x += 50;
-					dad.y += 220;
+					dad.y -= 50;
 
 		}
 

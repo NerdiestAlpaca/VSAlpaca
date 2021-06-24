@@ -122,6 +122,21 @@ class Character extends FlxSprite
 				updateHitbox();
 				antialiasing = false;
 
+            case 'gf-finale':
+				tex = Paths.getSparrowAtlas('characters/gfFinale');
+				frames = tex;
+				animation.addByIndices('singUP', 'GF Dancing Beat Phase Four', [0], "", 24, false);
+				animation.addByIndices('danceLeft', 'GF Dancing Beat Phase Four', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'GF Dancing Beat Phase Four', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24,
+					false);
+                animation.addByIndices('sad', 'gf shocked', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+
+				addOffset('danceLeft', 0);
+				addOffset('danceRight', 0);
+				addOffset('sad', 0);
+
+				playAnim('danceRight');
+
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST', 'shared');
