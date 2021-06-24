@@ -724,7 +724,7 @@ class PlayState extends MusicBeatState
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-200, 50);
+        					var fire:FlxSprite = new FlxSprite(-200, -100);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
