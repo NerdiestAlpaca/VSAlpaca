@@ -218,7 +218,7 @@ class Character extends FlxSprite
 					trace("finish anim");
 				
 					addOffset('idle', 631, 781);
-					addOffset('singUP', 750, 972);
+					addOffset('singUP', 750, 817);
 					addOffset('singRIGHT',610, 747);
 					addOffset('singLEFT', 685, 753);
 					addOffset('singDOWN', 650, 707);
