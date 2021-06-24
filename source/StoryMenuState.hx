@@ -76,7 +76,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Story Mode Menu", null);
+		DiscordClient.changePresence("Story Mode Lobby", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
@@ -104,7 +104,7 @@ class StoryMenuState extends MusicBeatState
 		rankText.screenCenter(X);
 
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
-		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
+		var yellowBG:FlxSprite = new FlxSprite(0, 56).loadGraphic('assets/images/titleBG.png');
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
 		add(grpWeekText);
