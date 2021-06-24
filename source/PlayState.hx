@@ -716,11 +716,11 @@ class PlayState extends MusicBeatState
 
         					defaultCamZoom = 0.4;
 
-        					var bg:FlxSprite = new FlxSprite(-1000, -300).loadGraphic(Paths.image('thirdphase/bg'));
+        					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('thirdphase/bg'));
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0.2);
         					bg.active = false;
-							bg.setGraphicSize(Std.int(bg.width * 2.5));
+							bg.setGraphicSize(Std.int(bg.width * 3));
         					bg.updateHitbox();
         					add(bg);
 
