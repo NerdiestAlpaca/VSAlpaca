@@ -621,7 +621,8 @@ class PlayState extends MusicBeatState
 							}
 						}
 
-					bgGirls.setGraphicSize(Std.int(bgGirls.width * daPixelZoom));
+					bgGirls.setGraphicSize(Std.int(bgGirls.width * da
+								       Zoom));
 					bgGirls.updateHitbox();
 					if(FlxG.save.data.distractions){
 						add(bgGirls);
@@ -892,11 +893,13 @@ class PlayState extends MusicBeatState
 
 			case 'hell':
 					boyfriend.x += 400;
-					boyfriend.y -= 0;
+					boyfriend.y += 20;
 					gf.x += 350;
-					gf.y -= 0;
+					gf.y += 60;
 					dad.x += 50;
 					dad.y -= 30;
+					gf.setGraphicSize(Std.int(gf.width * 1.1));
+					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
 
 		}
 
