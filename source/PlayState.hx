@@ -2167,7 +2167,7 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y - 250;
 						camFollow.x = dad.getMidpoint().x - 50;
                     case 'darkness':
-                        camFollow.y = dad.getMidpoint().y - 900;
+                        camFollow.y = dad.getMidpoint().y - 700;
                         camFollow.x = dad.getMidpoint().x - 450;
                     case 'final':
                         camFollow.y = dad.getMidpoint().y;
