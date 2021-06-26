@@ -747,13 +747,13 @@ class PlayState extends MusicBeatState
 	
 								defaultCamZoom = 0.7;
 	
-								var bg:FlxSprite = new FlxSprite(-800, 0).loadGraphic(Paths.image('finale/bg'));
+								var bg:FlxSprite = new FlxSprite(-800, 500).loadGraphic(Paths.image('finale/bg'));
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.2, 0);
 								bg.active = false;
-                                				bg.animation.addByPrefix('idle', "BG", 12, true);
+                                				bg.animation.addByPrefix('idle', "BG", 24, true);
 								bg.animation.play("idle");
-								bg.setGraphicSize(Std.int(bg.width * 7.5));
+								bg.setGraphicSize(Std.int(bg.width * 4));
 								bg.updateHitbox();
 								add(bg);  
 				}
