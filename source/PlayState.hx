@@ -751,8 +751,8 @@ class PlayState extends MusicBeatState
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.2, 0);
 								bg.active = false;
-                                fire.animation.addByPrefix('idle', "BG", 12, true);
-								fire.animation.play("idle");
+                                				bg.animation.addByPrefix('idle', "BG", 12, true);
+								bg.animation.play("idle");
 								bg.setGraphicSize(Std.int(bg.width * 7.5));
 								bg.updateHitbox();
 								add(bg);  
