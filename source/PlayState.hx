@@ -716,7 +716,7 @@ class PlayState extends MusicBeatState
 
         					defaultCamZoom = 0.42;
 
-        					var bg:FlxSprite = new FlxSprite(-1000, -300).loadGraphic(Paths.image('thirdphase/bg'));
+        					var bg:FlxSprite = new FlxSprite(-1000, 0).loadGraphic(Paths.image('thirdphase/bg'));
         					bg.antialiasing = true;
         					bg.scrollFactor.set(0.2, 0);
         					bg.active = false;
@@ -724,7 +724,7 @@ class PlayState extends MusicBeatState
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-200, 0);
+        					var fire:FlxSprite = new FlxSprite(-200, 100);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
@@ -741,6 +741,22 @@ class PlayState extends MusicBeatState
 							fg.setGraphicSize(Std.int(fg.width * 1.67));
         					add(fg);  
 	}
+	case 'realityHole': 
+		{	
+								curStage = 'realityHole';
+	
+								defaultCamZoom = 0.7;
+	
+								var bg:FlxSprite = new FlxSprite(-800, 0).loadGraphic(Paths.image('finale/bg'));
+								bg.antialiasing = true;
+								bg.scrollFactor.set(0.2, 0);
+								bg.active = false;
+                                fire.animation.addByPrefix('idle', "BG", 12, true);
+								fire.animation.play("idle");
+								bg.setGraphicSize(Std.int(bg.width * 7.5));
+								bg.updateHitbox();
+								add(bg);  
+				}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -784,6 +800,8 @@ class PlayState extends MusicBeatState
 			{
 				case 'hell':
 				gfCheck = 'gf-finale';
+				case 'realityHole':
+				gfCheck = 'gf-finale'
 			} 
 		}
 		else {gfCheck = SONG.gfVersion;}

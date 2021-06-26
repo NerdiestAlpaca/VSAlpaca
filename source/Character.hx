@@ -164,9 +164,9 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Mario Left', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -6, 50);
+				addOffset("singUP", 0, 50);
 				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
+				addOffset("singLEFT", 0, 10);
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
@@ -228,11 +228,12 @@ class Character extends FlxSprite
 				case 'final':
 					tex = Paths.getSparrowAtlas('characters/Final');
 					frames = tex;
-					   animation.addByPrefix('idle', 'Idle', 24);
+					animation.addByPrefix('idle', 'Idle', 24);
 					animation.addByPrefix('singUP', 'Sing Up', 24);
 					animation.addByPrefix('singLEFT', 'Sing Left', 24);
 					animation.addByPrefix('singRIGHT', 'Sing Right', 24);
 					animation.addByPrefix('singDOWN', 'Sing Down', 24);
+					animation.addByPrefix('singUP-alt', 'Freakout', 24, false);
 					trace("finish anim");
 				
 					addOffset("idle", 100,50);
@@ -240,6 +241,7 @@ class Character extends FlxSprite
 					addOffset("singRIGHT", -109, 21);
 					addOffset("singLEFT",227,70);
 					addOffset("singDOWN",0,-90);
+					addOffset("singUP-alt", 100, 150);
 					
 					playAnim('idle');
 				
@@ -532,12 +534,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 
-				animation.addByPrefix('firstDeath', "BF dies", 24, false);
-				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
-				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
 
-
-				addOffset('idle', -5);
+				addOffset('idle', -20);
 				addOffset("singUP", -29, 27);
 				addOffset("singRIGHT", -38, -7);
 				addOffset("singLEFT", 12, -6);
@@ -546,9 +544,6 @@ class Character extends FlxSprite
 				addOffset("singRIGHTmiss", -30, 21);
 				addOffset("singLEFTmiss", 12, 24);
 				addOffset("singDOWNmiss", -11, -19);
-				addOffset('firstDeath', 37, 11);
-				addOffset('deathLoop', 37, 5);
-				addOffset('deathConfirm', 37, 69);
 
 				playAnim('idle');
 

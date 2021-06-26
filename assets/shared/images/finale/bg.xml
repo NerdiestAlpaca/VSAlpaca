@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bg.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BG0000" x="0" y="0" width="1000" height="564" pivotX="0" pivotY="0"/>
+	<SubTexture name="BG0001" x="1003" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0002" x="2006" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0003" x="3009" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0004" x="4012" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0005" x="5015" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0006" x="6018" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0007" x="7021" y="0" width="1000" height="564"/>
+	<SubTexture name="BG0008" x="0" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0009" x="1003" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0010" x="2006" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0011" x="3009" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0012" x="4012" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0013" x="5015" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0014" x="6018" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0015" x="7021" y="567" width="1000" height="564"/>
+	<SubTexture name="BG0016" x="0" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0017" x="1003" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0018" x="2006" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0019" x="3009" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0020" x="4012" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0021" x="5015" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0022" x="6018" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0023" x="7021" y="1134" width="1000" height="564"/>
+	<SubTexture name="BG0024" x="0" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0025" x="1003" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0026" x="2006" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0027" x="3009" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0028" x="4012" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0029" x="5015" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0030" x="6018" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0031" x="7021" y="1701" width="1000" height="564"/>
+	<SubTexture name="BG0032" x="0" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0033" x="1003" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0034" x="2006" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0035" x="3009" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0036" x="4012" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0037" x="5015" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0038" x="6018" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0039" x="7021" y="2268" width="1000" height="564"/>
+	<SubTexture name="BG0040" x="0" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0041" x="1003" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0042" x="2006" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0043" x="3009" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0044" x="4012" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0045" x="5015" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0046" x="6018" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0047" x="7021" y="2835" width="1000" height="564"/>
+	<SubTexture name="BG0048" x="0" y="3402" width="1000" height="564"/>
+	<SubTexture name="BG0049" x="1003" y="3402" width="1000" height="564"/>
+</TextureAtlas>
