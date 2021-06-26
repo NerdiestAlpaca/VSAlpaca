@@ -801,7 +801,7 @@ class PlayState extends MusicBeatState
 				case 'hell':
 				gfCheck = 'gf-finale';
 				case 'realityHole':
-				gfCheck = 'gf-finale'
+				gfCheck = 'gf-finale';
 			} 
 		}
 		else {gfCheck = SONG.gfVersion;}
