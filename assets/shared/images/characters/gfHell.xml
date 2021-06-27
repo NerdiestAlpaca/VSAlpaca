@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfFinale.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Dancing Beat in Hell0000" x="0" y="0" width="810" height="656" pivotX="207.65" pivotY="310.15" frameX="-8" frameY="-13" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0001" x="813" y="0" width="826" height="648" frameX="0" frameY="-21" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0002" x="1642" y="0" width="826" height="642" frameX="0" frameY="-27" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0003" x="2471" y="0" width="810" height="656" frameX="-8" frameY="-13" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0004" x="3284" y="0" width="810" height="650" frameX="-8" frameY="-19" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0005" x="4097" y="0" width="810" height="644" frameX="-8" frameY="-25" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0006" x="4910" y="0" width="810" height="650" frameX="-8" frameY="-19" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0007" x="5723" y="0" width="810" height="659" frameX="-8" frameY="-10" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0008" x="6536" y="0" width="810" height="653" frameX="-8" frameY="-16" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0009" x="7349" y="0" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0010" x="0" y="670" width="810" height="655" frameX="-8" frameY="-14" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0011" x="813" y="670" width="810" height="669" frameX="-8" frameY="0" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0012" x="1626" y="670" width="810" height="661" frameX="-8" frameY="-8" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0013" x="2439" y="670" width="810" height="660" frameX="-8" frameY="-9" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0014" x="3252" y="670" width="810" height="654" frameX="-8" frameY="-15" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0015" x="4065" y="670" width="810" height="640" frameX="-8" frameY="-29" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0016" x="4878" y="670" width="826" height="654" frameX="0" frameY="-15" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0017" x="5707" y="670" width="826" height="637" frameX="0" frameY="-32" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0018" x="6536" y="670" width="810" height="651" frameX="-8" frameY="-18" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0019" x="7349" y="670" width="810" height="646" frameX="-8" frameY="-23" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0020" x="0" y="1342" width="810" height="640" frameX="-8" frameY="-29" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0021" x="813" y="1342" width="810" height="645" frameX="-8" frameY="-24" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0022" x="1626" y="1342" width="810" height="652" frameX="-8" frameY="-17" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0023" x="2439" y="1342" width="810" height="666" frameX="-8" frameY="-3" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0024" x="3252" y="1342" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0025" x="4065" y="1342" width="810" height="659" frameX="-8" frameY="-10" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0026" x="4878" y="1342" width="810" height="653" frameX="-8" frameY="-16" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0027" x="5691" y="1342" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0028" x="6504" y="1342" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="GF Dancing Beat in Hell0029" x="7317" y="1342" width="810" height="652" frameX="-8" frameY="-17" frameWidth="826" frameHeight="669"/>
+	<SubTexture name="gf shocked0000" x="0" y="2012" width="810" height="657" pivotX="250.4" pivotY="-13.7" frameX="0" frameY="-4" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0001" x="813" y="2012" width="810" height="647" frameX="0" frameY="-14" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0002" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0003" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0004" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0005" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0006" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0007" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0008" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0009" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0010" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0011" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0012" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0013" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0014" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0015" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0016" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0017" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0018" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0019" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0020" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0021" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0022" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0023" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0024" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0025" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0026" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0027" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0028" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0029" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0030" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0031" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0032" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0033" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0034" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0035" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0036" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0037" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0038" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0039" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0040" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0041" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0042" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0043" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0044" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0045" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0046" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0047" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0048" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0049" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0050" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0051" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0052" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0053" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0054" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0055" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0056" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0057" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0058" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0059" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0060" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0061" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0062" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0063" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0064" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0065" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0066" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0067" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0068" x="6504" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0069" x="7317" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0070" x="0" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0071" x="813" y="2676" width="810" height="661"/>
+	<SubTexture name="gf shocked0072" x="1626" y="2676" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0073" x="2439" y="2676" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0074" x="1626" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0075" x="2439" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0076" x="3252" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0077" x="4065" y="2012" width="810" height="661"/>
+	<SubTexture name="gf shocked0078" x="4878" y="2012" width="810" height="651" frameX="0" frameY="-10" frameWidth="810" frameHeight="661"/>
+	<SubTexture name="gf shocked0079" x="5691" y="2012" width="810" height="650" frameX="0" frameY="-11" frameWidth="810" frameHeight="661"/>
+</TextureAtlas>

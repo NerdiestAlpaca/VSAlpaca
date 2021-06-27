@@ -743,8 +743,6 @@ class PlayState extends MusicBeatState
 	}
 	case 'realityHole': 
 		{	
-					var waveEffectBG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 3, 2);
-					var waveEffectFG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 5, 2);
 								curStage = 'realityHole';
 	
 								defaultCamZoom = 0.8;
@@ -753,7 +751,6 @@ class PlayState extends MusicBeatState
 		        					bg.frames = Paths.getSparrowAtlas('finale/bg');
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.2, 0);
-								bg.active = false;
                                 				bg.animation.addByPrefix('idle', "BG", 24, true);
 								bg.animation.play("idle");
 								bg.setGraphicSize(Std.int(bg.width * 4));
@@ -802,7 +799,7 @@ class PlayState extends MusicBeatState
 			switch (curStage)
 			{
 				case 'hell':
-				gfCheck = 'gf-finale';
+				gfCheck = 'gf-hell';
 				case 'realityHole':
 				gfCheck = 'gf-finale';
 			} 
@@ -818,6 +815,8 @@ class PlayState extends MusicBeatState
 				curGf = 'gf-christmas';
 			case 'gf-pixel':
 				curGf = 'gf-pixel';
+			case 'gf-hell':
+				curGf = 'gf-hell';
 			case 'gf-finale':
 				curGf = 'gf-finale';
 			default:
@@ -920,6 +919,13 @@ class PlayState extends MusicBeatState
 					dad.y += 50;
 					gf.setGraphicSize(Std.int(gf.width * 0.9));
 					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
+			
+				case 'realityhole':
+					boyfriend.x += 700;
+					boyfriend.y += 20;
+					gf.x += 1000;
+					gf.y += 10;
+					gf.setGraphicSize(Std.int(gf.width * 0.6));
 
 		}
 
