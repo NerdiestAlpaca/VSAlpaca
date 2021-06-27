@@ -923,9 +923,9 @@ class PlayState extends MusicBeatState
 				case 'realityhole':
 					boyfriend.x += 700;
 					boyfriend.y += 20;
-					gf.x += 1000;
+					gf.x += 2000;
 					gf.y += 10;
-					gf.setGraphicSize(Std.int(gf.width * 0.6));
+					gf.setGraphicSize(Std.int(gf.width * 0.2));
 
 		}
 
