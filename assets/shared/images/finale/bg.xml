@@ -2,9 +2,19 @@
 <TextureAtlas imagePath="bg.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="BG0000" x="0" y="0" width="724" height="409" pivotX="0" pivotY="0"/>
-	<SubTexture name="BG0001" x="727" y="0" width="724" height="409"/>
-	<SubTexture name="BG0002" x="0" y="412" width="724" height="409"/>
-	<SubTexture name="BG0003" x="727" y="412" width="724" height="409"/>
-	<SubTexture name="BG0004" x="0" y="824" width="724" height="409"/>
+	<SubTexture name="BG0000" x="0" y="0" width="758" height="443" pivotX="17" pivotY="17"/>
+	<SubTexture name="BG0001" x="0" y="0" width="758" height="443"/>
+	<SubTexture name="BG0002" x="0" y="0" width="758" height="443"/>
+	<SubTexture name="BG0003" x="761" y="0" width="758" height="443"/>
+	<SubTexture name="BG0004" x="761" y="0" width="758" height="443"/>
+	<SubTexture name="BG0005" x="761" y="0" width="758" height="443"/>
+	<SubTexture name="BG0006" x="0" y="446" width="758" height="443"/>
+	<SubTexture name="BG0007" x="0" y="446" width="758" height="443"/>
+	<SubTexture name="BG0008" x="0" y="446" width="758" height="443"/>
+	<SubTexture name="BG0009" x="761" y="446" width="758" height="443"/>
+	<SubTexture name="BG0010" x="761" y="446" width="758" height="443"/>
+	<SubTexture name="BG0011" x="761" y="446" width="758" height="443"/>
+	<SubTexture name="BG0012" x="0" y="892" width="758" height="443"/>
+	<SubTexture name="BG0013" x="0" y="892" width="758" height="443"/>
+	<SubTexture name="BG0014" x="0" y="892" width="758" height="443"/>
 </TextureAtlas>

@@ -2,46 +2,46 @@
 <TextureAtlas imagePath="gfFinale.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="GF Dancing Beat Nothing0000" x="0" y="0" width="810" height="656" pivotX="207.65" pivotY="310.15" frameX="-8" frameY="-13" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0001" x="0" y="0" width="810" height="656" frameX="0" frameY="-13" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0002" x="813" y="0" width="826" height="656" frameX="0" frameY="-13" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0003" x="1642" y="0" width="810" height="648" frameX="-8" frameY="-21" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0004" x="2455" y="0" width="810" height="650" frameX="-8" frameY="-19" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0005" x="3268" y="0" width="810" height="650" frameX="-8" frameY="-19" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0006" x="0" y="659" width="810" height="644" frameX="-8" frameY="-25" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0007" x="813" y="659" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0008" x="813" y="659" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0009" x="1626" y="659" width="810" height="659" frameX="-8" frameY="-10" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0010" x="2439" y="659" width="810" height="669" frameX="-8" frameY="0" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0011" x="3252" y="659" width="810" height="661" frameX="-8" frameY="-8" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0012" x="3252" y="659" width="810" height="661" frameX="-8" frameY="-8" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0013" x="0" y="1331" width="810" height="668" frameX="-8" frameY="-1" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0014" x="0" y="1331" width="810" height="668" frameX="-8" frameY="-1" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0015" x="813" y="1331" width="810" height="654" frameX="-8" frameY="-15" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0016" x="1626" y="1331" width="826" height="646" frameX="0" frameY="-23" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0017" x="2455" y="1331" width="826" height="651" frameX="0" frameY="-18" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0018" x="3284" y="1331" width="810" height="643" frameX="-8" frameY="-26" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0019" x="0" y="2002" width="810" height="654" frameX="-8" frameY="-15" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0020" x="813" y="2002" width="810" height="654" frameX="-8" frameY="-15" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0021" x="1626" y="2002" width="810" height="646" frameX="-8" frameY="-23" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0022" x="2439" y="2002" width="810" height="666" frameX="-8" frameY="-3" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0023" x="3252" y="2002" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0024" x="3252" y="2002" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0025" x="0" y="2671" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0026" x="0" y="2671" width="810" height="667" frameX="-8" frameY="-2" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0027" x="813" y="2671" width="810" height="659" frameX="-8" frameY="-10" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0028" x="1626" y="2671" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Dancing Beat Nothing0029" x="1626" y="2671" width="810" height="658" frameX="-8" frameY="-11" frameWidth="826" frameHeight="669"/>
-	<SubTexture name="GF Uh Oh0000" x="2439" y="2671" width="810" height="660" pivotX="199.4" pivotY="305.15" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0001" x="3252" y="2671" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0002" x="0" y="3341" width="810" height="664"/>
-	<SubTexture name="GF Uh Oh0003" x="813" y="3341" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0004" x="2439" y="2671" width="810" height="660" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0005" x="3252" y="2671" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0006" x="0" y="3341" width="810" height="664"/>
-	<SubTexture name="GF Uh Oh0007" x="813" y="3341" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0008" x="2439" y="2671" width="810" height="660" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0009" x="3252" y="2671" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
-	<SubTexture name="GF Uh Oh0010" x="0" y="3341" width="810" height="664"/>
-	<SubTexture name="GF Uh Oh0011" x="813" y="3341" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Dancing Beat Nothing0000" x="0" y="0" width="826" height="654" pivotX="207.65" pivotY="309.7" frameX="0" frameY="-14" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0001" x="0" y="0" width="826" height="654" frameX="0" frameY="-14" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0002" x="829" y="0" width="826" height="652" frameX="0" frameY="-16" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0003" x="1658" y="0" width="826" height="652" frameX="0" frameY="-16" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0004" x="2487" y="0" width="826" height="655" frameX="0" frameY="-13" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0005" x="0" y="658" width="826" height="655" frameX="0" frameY="-13" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0006" x="829" y="658" width="826" height="657" frameX="0" frameY="-11" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0007" x="1658" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0008" x="1658" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0009" x="1658" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0010" x="2487" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0011" x="2487" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0012" x="2487" y="658" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0013" x="0" y="1329" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0014" x="0" y="1329" width="826" height="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0015" x="829" y="1329" width="826" height="656" frameX="0" frameY="-12" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0016" x="829" y="1329" width="826" height="656" frameX="0" frameY="-12" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0017" x="1658" y="1329" width="826" height="656" frameX="0" frameY="-12" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0018" x="2487" y="1329" width="826" height="656" frameX="0" frameY="-12" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0019" x="0" y="2000" width="826" height="657" frameX="0" frameY="-11" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0020" x="829" y="2000" width="826" height="657" frameX="0" frameY="-11" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0021" x="1658" y="2000" width="826" height="658" frameX="0" frameY="-10" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0022" x="2487" y="2000" width="826" height="663" frameX="0" frameY="-5" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0023" x="2487" y="2000" width="826" height="663" frameX="0" frameY="-5" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0024" x="2487" y="2000" width="826" height="663" frameX="0" frameY="-5" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0025" x="0" y="2666" width="826" height="662" frameX="0" frameY="-6" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0026" x="0" y="2666" width="826" height="662" frameX="0" frameY="-6" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0027" x="0" y="2666" width="826" height="662" frameX="0" frameY="-6" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0028" x="829" y="2666" width="826" height="662" frameX="0" frameY="-6" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Dancing Beat Nothing0029" x="829" y="2666" width="826" height="662" frameX="0" frameY="-6" frameWidth="826" frameHeight="668"/>
+	<SubTexture name="GF Uh Oh0000" x="1658" y="2666" width="810" height="660" pivotX="199.4" pivotY="305.15" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0001" x="2471" y="2666" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0002" x="3284" y="2666" width="810" height="664"/>
+	<SubTexture name="GF Uh Oh0003" x="0" y="3333" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0004" x="1658" y="2666" width="810" height="660" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0005" x="2471" y="2666" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0006" x="3284" y="2666" width="810" height="664"/>
+	<SubTexture name="GF Uh Oh0007" x="0" y="3333" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0008" x="1658" y="2666" width="810" height="660" frameX="0" frameY="-4" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0009" x="2471" y="2666" width="810" height="622" frameX="0" frameY="-42" frameWidth="810" frameHeight="664"/>
+	<SubTexture name="GF Uh Oh0010" x="3284" y="2666" width="810" height="664"/>
+	<SubTexture name="GF Uh Oh0011" x="0" y="3333" width="810" height="619" frameX="0" frameY="-45" frameWidth="810" frameHeight="664"/>
 </TextureAtlas>
