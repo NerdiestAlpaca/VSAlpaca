@@ -749,7 +749,7 @@ class PlayState extends MusicBeatState
 	
 								defaultCamZoom = 0.8;
 	
-								var bg:FlxSprite = new FlxSprite(-800, -700)
+								var bg:FlxSprite = new FlxSprite(-800, -700);
 		        					bg.frames = Paths.getSparrowAtlas('finale/bg');
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.2, 0);
