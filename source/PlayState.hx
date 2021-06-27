@@ -743,11 +743,14 @@ class PlayState extends MusicBeatState
 	}
 	case 'realityHole': 
 		{	
+					var waveEffectBG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 3, 2);
+					var waveEffectFG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 5, 2);
 								curStage = 'realityHole';
 	
 								defaultCamZoom = 0.8;
 	
-								var bg:FlxSprite = new FlxSprite(-800, 0).loadGraphic(Paths.image('finale/bg'));
+								var bg:FlxSprite = new FlxSprite(-800, -700)
+		        					bg.frames = Paths.getSparrowAtlas('finale/bg');
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.2, 0);
 								bg.active = false;
