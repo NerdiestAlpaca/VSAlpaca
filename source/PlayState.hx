@@ -750,7 +750,7 @@ class PlayState extends MusicBeatState
 								var bg:FlxSprite = new FlxSprite(-800, -700);
 		        					bg.frames = Paths.getSparrowAtlas('finale/bg');
 								bg.antialiasing = true;
-								bg.scrollFactor.set(0.2, 0);
+								bg.scrollFactor.set(0.7, 0.1);
                                 				bg.animation.addByPrefix('idle', "BG", 24, true);
 								bg.animation.play("idle");
 								bg.setGraphicSize(Std.int(bg.width * 4));
