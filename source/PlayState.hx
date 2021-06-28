@@ -714,7 +714,7 @@ class PlayState extends MusicBeatState
     {
             defaultCamZoom = 0.9;
             curStage = 'highlands';
-            var bg:FlxSprite = new FlxSprite(-600, -200);
+            var bg:FlxSprite = new FlxSprite(0,0);
             bg.frames = Paths.getSparrowAtlas('alpaca/bg');
             bg.antialiasing = true;
             bg.scrollFactor.set(0.9, 0.9);
@@ -722,7 +722,7 @@ class PlayState extends MusicBeatState
             bg.animation.play("idle");
             add(bg);
 
-            var fg:FlxSprite = new FlxSprite(-600, -200);
+            var fg:FlxSprite = new FlxSprite(0, 300);
             fg.frames = Paths.getSparrowAtlas('alpaca/fg');
             fg.setGraphicSize(Std.int(fg.width * 1.1));
             fg.updateHitbox();
