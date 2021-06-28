@@ -710,6 +710,29 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+	case 'highlands':
+    {
+            defaultCamZoom = 0.9;
+            curStage = 'highlands';
+            var bg:FlxSprite = new FlxSprite(-600, -200)
+            bg.frames = Paths.getSparrowAtlas('alpaca/bg');
+            bg.antialiasing = true;
+            bg.scrollFactor.set(0.9, 0.9);
+            bg.animation.addByPrefix('idle', "BG Phase 1", 24, true);
+            bg.animation.play("idle");
+            add(bg);
+
+            var fg:FlxSprite = new FlxSprite(-600, -200)
+            fg.frames = Paths.getSparrowAtlas('alpaca/fg');
+            fg.setGraphicSize(Std.int(fg.width * 1.1));
+            fg.updateHitbox();
+            fg.antialiasing = true;
+            fg.scrollFactor.set(0.9, 0.9);
+            fg.animation.addByPrefix('idle', "Ground", 24, true);
+            fg.animation.play("idle");
+            add(fg);
+
+    }
                 case 'hell': 
     {	
         					curStage = 'hell';
@@ -748,7 +771,7 @@ class PlayState extends MusicBeatState
 								defaultCamZoom = 0.8;
 	
 								var bg:FlxSprite = new FlxSprite(-800, -700);
-		        					bg.frames = Paths.getSparrowAtlas('finale/bg');
+		        				bg.frames = Paths.getSparrowAtlas('finale/bg');
 								bg.antialiasing = true;
 								bg.scrollFactor.set(0.45, 0.15);
                                 bg.animation.addByPrefix('idle', "BG", 24, true);

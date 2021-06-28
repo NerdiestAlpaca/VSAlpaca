@@ -6,5 +6,6 @@ mall
 mallEvil
 school
 schoolEvil
+highlands
 hell
 realityHole
