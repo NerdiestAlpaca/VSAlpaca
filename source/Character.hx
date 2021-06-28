@@ -576,6 +576,7 @@ class Character extends FlxSprite
                     addOffset('deathLoop', 37, 5);
                     addOffset('deathConfirm', 37, 69);
                     playAnim('firstDeath');
+                    setGraphicSize(Std.int(width * 0.75));
                     updateHitbox();
                     antialiasing = false;
                     flipX = true;
