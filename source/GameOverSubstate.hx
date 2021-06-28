@@ -25,6 +25,8 @@ class GameOverSubstate extends MusicBeatSubstate
 				daBf = 'bf-pixel-dead';
 			default:
 				daBf = 'bf';
+            case 'bf-finale':
+                stageSuffix = '-finale';
 		}
 
 		super();

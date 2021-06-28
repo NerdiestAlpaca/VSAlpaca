@@ -69,14 +69,19 @@ function update (elapsed)
             setActorAngle(0, i)
             camHudAngle = 0
             setHudPosition(0, 0)
+            cameraAngle = 0
         end
     end
-    if beating then
+    if cameraswing then
         for i=0,7 do
 			setHudPosition(8 * math.sin((currentBeat * 4) * math.pi), 8 * math.cos((currentBeat * 4) * math.pi))
 		end
-        camHudAngle = 15 * math.cos((currentBeat))
+        camHudAngle = 6 * math.cos((currentBeat))
     end
+    if finale then
+        local currentBeat = (songPos / 500)*(bpm/30)
+        cameraAngle = 3 * math.sin((currentBeat))
+end
 end
 
 function beatHit (beat)
@@ -245,11 +250,11 @@ setActorAlpha(1, 'girlfriend')
 setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
+tweenPosYAngle('dad', getActorY('dad') - 100 ,getActorAngle('dad') + 0, 3)
 end
 if step == 316 then
     setActorScale(0.3,'girlfriend')
     setActorX(-300, 'dad')
-    setActorY(-100, 'dad')
     setActorY (400, 'boyfriend')
     setActorX (850, 'boyfriend')
     setActorY (150, 'girlfriend')
@@ -267,8 +272,33 @@ setActorAlpha(0,'redeyes')
 setActorAlpha(1, 'girlfriend')
 setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
+tweenPosXAngle('dad', getActorX('dad') + 500 ,getActorAngle('dad') + 0, 12)
 shakenote = false
 sway = true
+end
+if step == 544 then
+    setActorX(-100, 'dad')
+end
+if step == 548 then
+    setActorX(300, 'dad')
+end
+if step == 550 then
+    setActorX(-200, 'dad')
+end
+if step == 552 then
+    setActorX(300, 'dad')
+end
+if step == 553 then
+    setActorX(800, 'dad')
+end
+if step == 554 then
+    setActorX(-300, 'dad')
+end
+if step == 555 then
+    setActorX(300, 'dad')
+end
+if step == 556 then
+    setActorX(-300, 'dad')
 end
 if step == 574 then
     tweenFadeOut('dad',0,0.5)
@@ -402,19 +432,101 @@ if step == 600 then
 if step == 608 then
     tweenFadeOut(RedBG,0,0.1)
     setActorAlpha(1,'overlay')
-    beating = true
+    cameraswing = true
     showOnlyStrums = true
+        setActorX(-100, 'boyfriend')
+        setActorY(0, 'dad')
+        setActorAlpha(0, 'dad')
+        setActorX(-300, 'girlfriend')
+        setActorAlpha(0, 'boyfriend')
+        setActorAlpha(0, 'girlfriend')
+        setActorScale(0.2,'girlfriend')
+        setActorAlpha(1,'redeyes')
+        setActorX(200, 'dad')
+        setActorFlipX(true, 'boyfriend')
+        setActorFlipX(true, 'dad')
+        shakenote = true
+end
+if step == 610 then
+    setActorAlpha(0,'redeyes')
+    setActorAlpha(1, 'girlfriend')
+    setActorAlpha(1, 'dad')
+    setActorAlpha(1, 'boyfriend')
+    shakenote = false
+    flip = true
+end
+if step == 734 then
+    setActorX(1000, 'boyfriend')
+    setActorY(0, 'dad')
+    setActorAlpha(0, 'dad')
+    setActorX(500, 'girlfriend')
+    setActorAlpha(0, 'boyfriend')
+    setActorAlpha(0, 'girlfriend')
+    setActorScale(0.5,'girlfriend')
+    setActorScale(1.2,'dad')
+    setActorScale(1.05,'boyfriend')
+    setActorAlpha(1,'redeyes')
+    setActorX(-200, 'dad')
+    setActorFlipX(false, 'boyfriend')
+    setActorFlipX(false, 'dad')
+    shakenote = true
+end
+if step == 736 then
+setActorAlpha(0,'redeyes')
+setActorAlpha(1, 'girlfriend')
+setActorAlpha(1, 'dad')
+setActorAlpha(1, 'boyfriend')
+shakenote = false
+resetnotes = true
+flip = false
+end
+if step == 737 then
+    resetnotes = false
 end
 if step == 863 then
-    beating = false
+    setActorScale(0.3,'girlfriend')
+    setActorX(-300, 'dad')
+    setActorY (400, 'boyfriend')
+    setActorX (850, 'boyfriend')
+    setActorY (150, 'girlfriend')
+    setActorX (550, 'girlfriend')
+    setActorScale(0.75,'boyfriend')
+    setActorScale(0.75,'dad')
+    setActorAlpha(0, 'dad')
+    setActorAlpha(0, 'boyfriend')
+    setActorAlpha(0, 'girlfriend')
+    cameraswing = false
     showOnlyStrums = false
     resetnotes = true
 end
 if step == 864 then
-    tweenFadeOut(Overlay,0,1)
+tweenFadeOut(Overlay,0,1)
+setActorAlpha(0,'redeyes')
+setActorAlpha(1, 'girlfriend')
+setActorAlpha(1, 'dad')
+setActorAlpha(1, 'boyfriend')
+tweenPosXAngle('dad', getActorX('dad') + 300 ,getActorAngle('dad') + 0, 16)
+tweenPosXAngle('boyfriend', getActorX('boyfriend') -400 ,getActorAngle('boyfriend') + 0, 16)
+tweenPosXAngle('girlfriend', getActorX('girlfriend') -200 ,getActorAngle('girlfriend') + 360, 16)
 resetnotes = false
 shakenote = true
 sway = true
+end
+if step == 1116 then
+    setActorAlpha(0, 'dad')
+    setActorAlpha(0, 'boyfriend')
+    setActorAlpha(0, 'girlfriend')
+    setActorAlpha(1, 'redeyes')
+end
+if step == 1120 then
+setActorAlpha(0,'redeyes')
+setActorAlpha(1, 'girlfriend')
+setActorAlpha(1, 'dad')
+setActorAlpha(1, 'boyfriend')
+setActorX(-300, 'dad')
+setActorX (850, 'boyfriend')
+setActorX (550, 'girlfriend')
+shakenote = false
 end
 if step == 1600 then
     resetnotes = true
@@ -512,12 +624,37 @@ end
 if step == 2144 then
     tweenFadeOut(WhiteBG,0,0.1)
     setActorAlpha(1,'overlay')
-    beating = true
+    cameraswing = true
     sway = true
     shakenote = true
     showOnlyStrums = true
+    finale = true
 end
+if step == 2655 then 
+resetnotes = true
+    end
+if step == 2656 then 
+shakenote = false
+finale = false
+resetnotes = false
+camHudAngle = 0
+setHudPosition(0, 0)
+cameraAngle = 0
+tweenFadeIn(WhiteBG,1,16)
+tweenFadeOut(Overlay,0,8)
 end
+if step == 2912 then
+    sway = false
+    cameraswing = false
+    showOnlyStrums = false
+    resetnotes = true
+    tweenFadeOut('girlfriend',0,0.1)
+    tweenFadeOut('boyfriend',0,1)
+    tweenFadeOut('dad',0,0.01)
+end
+
+end
+
 function keyPressed (key)
 
 end
