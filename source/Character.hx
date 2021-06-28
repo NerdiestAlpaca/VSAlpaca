@@ -564,6 +564,21 @@ class Character extends FlxSprite
 
 				flipX = true;
 
+                case 'bf-final-dead':
+                    frames = Paths.getSparrowAtlas('characters/bfFinalDEAD');
+                    animation.addByPrefix('singUP', "BF dies finale", 24, false);
+                    animation.addByPrefix('firstDeath', "BF dies finale", 24, false);
+                    animation.addByPrefix('deathLoop', "BF Dead Loop finale", 24, true);
+                    animation.addByPrefix('deathConfirm', "BF Dead confirm finale", 24, false);
+                    animation.play('firstDeath');
+    
+                    addOffset('firstDeath', 37, 11);
+                    addOffset('deathLoop', 37, 5);
+                    addOffset('deathConfirm', 37, 69);
+                    playAnim('firstDeath');
+                    updateHitbox();
+                    antialiasing = false;
+                    flipX = true;
 			case 'senpai':
 				frames = Paths.getSparrowAtlas('characters/senpai');
 				animation.addByPrefix('idle', 'Senpai Idle', 24, false);
