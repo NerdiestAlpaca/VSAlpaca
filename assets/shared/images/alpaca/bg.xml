@@ -2,32 +2,32 @@
 <TextureAtlas imagePath="bg.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="BG Phase 10000" x="0" y="0" width="1288" height="727" pivotX="645.4" pivotY="362.75" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10001" x="0" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10002" x="0" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10003" x="1291" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10004" x="1291" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10005" x="1291" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10006" x="1291" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10007" x="2582" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10008" x="2582" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10009" x="2582" y="0" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10010" x="0" y="730" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10011" x="0" y="730" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10012" x="0" y="730" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10013" x="1291" y="730" width="1306" height="727"/>
-	<SubTexture name="BG Phase 10014" x="1291" y="730" width="1306" height="727"/>
-	<SubTexture name="BG Phase 10015" x="1291" y="730" width="1306" height="727"/>
-	<SubTexture name="BG Phase 10016" x="2600" y="730" width="1291" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10017" x="0" y="1460" width="1291" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10018" x="0" y="1460" width="1291" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10019" x="0" y="1460" width="1291" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10020" x="1294" y="1460" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10021" x="2585" y="1460" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10022" x="2585" y="1460" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10023" x="0" y="2190" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10024" x="0" y="2190" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10025" x="1291" y="2190" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10026" x="1291" y="2190" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
-	<SubTexture name="BG Phase 10027" x="2582" y="2190" width="1288" height="727" frameX="0" frameY="0" frameWidth="1306" frameHeight="727"/>
+	<SubTexture name="BG Phase 10000" x="0" y="0" width="1288" height="736" pivotX="645.4" pivotY="362.75" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10001" x="0" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10002" x="0" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10003" x="1291" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10004" x="1291" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10005" x="1291" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10006" x="1291" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10007" x="2582" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10008" x="2582" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10009" x="2582" y="0" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10010" x="0" y="739" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10011" x="0" y="739" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10012" x="0" y="739" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10013" x="1291" y="739" width="1306" height="736"/>
+	<SubTexture name="BG Phase 10014" x="1291" y="739" width="1306" height="736"/>
+	<SubTexture name="BG Phase 10015" x="1291" y="739" width="1306" height="736"/>
+	<SubTexture name="BG Phase 10016" x="2600" y="739" width="1291" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10017" x="0" y="1478" width="1291" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10018" x="0" y="1478" width="1291" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10019" x="0" y="1478" width="1291" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10020" x="1294" y="1478" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10021" x="2585" y="1478" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10022" x="2585" y="1478" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10023" x="0" y="2217" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10024" x="0" y="2217" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10025" x="1291" y="2217" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10026" x="1291" y="2217" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
+	<SubTexture name="BG Phase 10027" x="2582" y="2217" width="1288" height="736" frameX="0" frameY="0" frameWidth="1306" frameHeight="736"/>
 </TextureAtlas>
