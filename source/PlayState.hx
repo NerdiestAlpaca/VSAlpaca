@@ -712,24 +712,26 @@ class PlayState extends MusicBeatState
 				}
 	case 'highlands':
     {
-            defaultCamZoom = 0.9;
+            defaultCamZoom = 0.85;
             curStage = 'highlands';
-            var bg:FlxSprite = new FlxSprite(-600, -200)
-            bg.frames = Paths.getSparrowAtlas('alpaca/bg');
-            bg.antialiasing = true;
-            bg.scrollFactor.set(0.9, 0.9);
-            bg.animation.addByPrefix('idle', "BG Phase 1", 24, true);
-            bg.animation.play("idle");
+			var bg = new FlxSprite(-100, -350);
+			bg.frames = Paths.getSparrowAtlas('alpaca/bg');
+			bg.animation.addByPrefix("idle", "BG Phase 1", 24, true);
+			bg.animation.play("idle");
+			bg.setGraphicSize(Std.int(bg.width * 1.5));
+			bg.scrollFactor.set(0.3, 0.25);
+			bg.antialiasing = true;
+			bg.updateHitbox();
             add(bg);
 
-            var fg:FlxSprite = new FlxSprite(-600, -200)
+            var fg:FlxSprite = new FlxSprite(-100, 450);
             fg.frames = Paths.getSparrowAtlas('alpaca/fg');
-            fg.setGraphicSize(Std.int(fg.width * 1.1));
-            fg.updateHitbox();
-            fg.antialiasing = true;
-            fg.scrollFactor.set(0.9, 0.9);
-            fg.animation.addByPrefix('idle', "Ground", 24, true);
-            fg.animation.play("idle");
+			fg.animation.addByPrefix("idle", "Ground", 24, true);
+			fg.animation.play("idle");
+			fg.setGraphicSize(Std.int(fg.width * 1.5));
+			fg.scrollFactor.set(0.3, 0.25);
+			fg.antialiasing = true;
+			fg.updateHitbox();
             add(fg);
 
     }
@@ -932,7 +934,13 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
-
+				case 'highlands'
+				    boyfriend.x += 1050;
+    gf.x += 750;
+    dad.x += 750;
+    boyfriend.y -= 400;
+    gf.y -= 370;
+    dad.y -= 540;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;
