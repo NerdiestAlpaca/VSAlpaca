@@ -965,6 +965,8 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
+        if (curStage == 'highlands')
+			add(fg);
 
 		add(dad);
 		add(boyfriend);
