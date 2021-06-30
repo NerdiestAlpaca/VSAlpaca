@@ -163,6 +163,7 @@ class PlayState extends MusicBeatState
 	var trainSound:FlxSound;
 
 	var limo:FlxSprite;
+	var fg:FlxSprite;
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:FlxSprite;
 	var songName:FlxText;
@@ -724,15 +725,17 @@ class PlayState extends MusicBeatState
 			bg.updateHitbox();
             add(bg);
 
-            var fg:FlxSprite = new FlxSprite(-100, 450);
-            fg.frames = Paths.getSparrowAtlas('alpaca/fg');
-			fg.animation.addByPrefix("idle", "Ground", 24, true);
-			fg.animation.play("idle");
+			var fgTex = Paths.getSparrowAtlas('alpaca/fg');
+
+			fg = new FlxSprite(-120, 550);
+			fg.frames = fgTex;
+			fg.animation.addByPrefix('drive', "Ground", 24);
+			fg.animation.play('drive');
+			fg.antialiasing = true;
 			fg.setGraphicSize(Std.int(fg.width * 1.5));
 			fg.scrollFactor.set(0.3, 0.25);
-			fg.antialiasing = true;
 			fg.updateHitbox();
-            add(fg);
+            // add(fg);
 
     }
                 case 'hell': 
