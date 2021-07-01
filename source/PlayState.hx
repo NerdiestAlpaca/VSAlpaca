@@ -727,12 +727,12 @@ class PlayState extends MusicBeatState
 
 			var fgTex = Paths.getSparrowAtlas('alpaca/fg');
 
-			fg = new FlxSprite(-120, 550);
+			fg = new FlxSprite(-120, 450);
 			fg.frames = fgTex;
 			fg.animation.addByPrefix('drive', "Ground", 24);
 			fg.animation.play('drive');
 			fg.antialiasing = true;
-			fg.setGraphicSize(Std.int(fg.width * 1.5));
+			fg.setGraphicSize(Std.int(fg.width * 1.7));
 			fg.scrollFactor.set(0.3, 0.25);
 			fg.updateHitbox();
             // add(fg);
