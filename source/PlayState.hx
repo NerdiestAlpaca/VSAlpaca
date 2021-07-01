@@ -733,7 +733,7 @@ class PlayState extends MusicBeatState
 			fg.animation.play('drive');
 			fg.antialiasing = true;
 			fg.setGraphicSize(Std.int(fg.width * 1.7));
-			fg.scrollFactor.set(0.3, 0.25);
+			fg.scrollFactor.set(0.3, 0.35);
 			fg.updateHitbox();
             // add(fg);
 
@@ -943,7 +943,7 @@ class PlayState extends MusicBeatState
     dad.x += 750;
     boyfriend.y -= 400;
     gf.y -= 370;
-    dad.y -= 540;
+    dad.y -= 480;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;
