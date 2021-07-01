@@ -711,6 +711,33 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+	case 'shroom':
+    {
+            defaultCamZoom = 0.9;
+            curStage = 'shroom';
+            var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('shroomback'));
+            bg.antialiasing = true;
+            bg.scrollFactor.set(0.9, 0.9);
+            bg.active = false;
+            add(bg);
+
+            var shroomFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('shroomfront'));
+            shroomFront.setGraphicSize(Std.int(shroomFront.width * 1.1));
+            shroomFront.updateHitbox();
+            shroomFront.antialiasing = true;
+            shroomFront.scrollFactor.set(0.9, 0.9);
+            shroomFront.active = false;
+            add(shroomFront);
+
+            var shroomCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('shroomcurtains'));
+            shroomCurtains.setGraphicSize(Std.int(shroomCurtains.width * 0.9));
+            shroomCurtains.updateHitbox();
+            shroomCurtains.antialiasing = true;
+            shroomCurtains.scrollFactor.set(1.3, 1.3);
+            shroomCurtains.active = false;
+
+            add(shroomCurtains);
+    }
 	case 'highlands':
     {
             defaultCamZoom = 0.85;
