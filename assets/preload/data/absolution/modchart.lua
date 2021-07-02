@@ -426,6 +426,72 @@ if step == 1696 then
     cameraswing = true
     showOnlyStrums = true
 end
+if step == 1951 then
+    resetnotes = true
+    cameraswing = false
+    showOnlyStrums = false
+end
+if step == 1952 or step == 2016 then
+    shakenote = true
+    resetnotes = false
+end
+if step == 1984 or step == 2048 then 
+    shakenote = false
+    resetnotes = true
+end
+if step == 1985 or step == 2049 then 
+    resetnotes = false
+end
+if step == 2076 then
+setActorX(750, 'boyfriend')
+setActorY(0, 'dad')
+setActorAlpha(0, 'dad')
+setActorX(250, 'girlfriend')
+setActorAlpha(0, 'boyfriend')
+setActorAlpha(0, 'girlfriend')
+setActorScale(0.3,'girlfriend')
+setActorAlpha(1,'redeyes')
+setActorX(0, 'dad')
+shakenote = true
+end
+if step == 2080 then
+    setActorAlpha(0,'redeyes')
+setActorAlpha(1, 'girlfriend')
+setActorAlpha(1, 'dad')
+setActorAlpha(1, 'boyfriend')
+shakenote = false
+sway = true
+end
+if step == 2336 then
+    sway = false
+    resetnotes = true
+end
+if step == 2337 then
+    resetnotes = false
+end
+if step == 2460 then
+        setActorScale(0.3,'girlfriend')
+        setActorX(-350, 'dad')
+        setActorY(-50, 'dad')
+        setActorY (400, 'boyfriend')
+        setActorX (1250, 'boyfriend')
+        setActorY (150, 'girlfriend')
+        setActorX (850, 'girlfriend')
+        setActorScale(0.75,'boyfriend')
+        setActorScale(0.75,'dad')
+    setActorAlpha(0, 'dad')
+    setActorAlpha(0, 'boyfriend')
+    setActorAlpha(0, 'girlfriend')
+    setActorAlpha(1,'redeyes')
+    shakenote = true
+end
+if step == 2464 then
+    setActorAlpha(0,'redeyes')
+setActorAlpha(1, 'girlfriend')
+setActorAlpha(1, 'dad')
+setActorAlpha(1, 'boyfriend')
+shakenote = false
+end
 end
 function keyPressed (key)
 
