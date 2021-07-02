@@ -978,8 +978,8 @@ class PlayState extends MusicBeatState
 					gf.y += 10;
 					dad.x += 250;
 					dad.y += 50;
-					gf.setGraphicSize(Std.int(gf.width * 0.9));
-					boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.1));
+					gf.setGraphicSize(Std.int(gf.width * 0.6));
+					boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.7));
 			
 				case 'realityhole':
 					boyfriend.x += 700;
