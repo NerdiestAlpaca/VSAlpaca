@@ -258,11 +258,11 @@ class PlayState extends MusicBeatState
 		switch (storyDifficulty)
 		{
 			case 0:
-				storyDifficultyText = "Easy";
+				storyDifficultyText = "Sleeptrot";
 			case 1:
-				storyDifficultyText = "Normal";
+				storyDifficultyText = "Contender";
 			case 2:
-				storyDifficultyText = "Hard";
+				storyDifficultyText = "Champion";
 		}
 
 		iconRPC = SONG.player2;
