@@ -76,7 +76,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("Story Mode Lobby", null);
+		DiscordClient.changePresence("In the Lobbies", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
