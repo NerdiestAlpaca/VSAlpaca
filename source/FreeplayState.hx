@@ -253,11 +253,6 @@ class FreeplayState extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			grpSongs.forEach(function(e:Alphabet){
-				FlxTween.tween(e,{x: -1000}, 0.1);
-			});
-			FlxTween.color(bg, 0.1, bg.color, MainMenuState.bgcol, {
-				onComplete:function(e:FlxTween){
 					FlxG.switchState(new MainMenuState());
 				}
 				
@@ -332,8 +327,15 @@ class FreeplayState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		#end
-		//diffCalcText.text = 'RATING: ${DiffCalc.CalculateDiff(songData.get(songs[curSelected].songName)[curDifficulty])}';
-		diffText.text = CoolUtil.difficultyFromInt(curDifficulty).toUpperCase();
+		switch (curDifficulty)
+		{
+			case 0:
+				diffText.text = "EASY";
+			case 1:
+				diffText.text = 'NORMAL';
+			case 2:
+				diffText.text = "HARD";
+		}
 	}
 
 	function changeSelection(change:Int = 0)
