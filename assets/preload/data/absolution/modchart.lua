@@ -15,6 +15,7 @@ function start (song)
     RedBG = makeSprite('RedBG','redbg', true)
     Overlay = makeSprite('Overlay','overlay', false)
 	WhiteBG = makeSprite('WhiteBG','whitebg', true)
+    Light = makeSprite('Light','light', true)
     Void = makeSprite('Void','void', true)
     setActorX(0,'redeyes')
     setActorY(350,'redeyes')
@@ -36,6 +37,10 @@ function start (song)
     setActorY(500,'void')
     setActorAlpha(1,'void')
     setActorScale(3,'void')
+    setActorX(200,'light')
+    setActorY(500,'light')
+    setActorAlpha(0,'light')
+    setActorScale(3,'light')
     showOnlyStrums = true
 end
 
@@ -110,6 +115,21 @@ function update (elapsed)
         local currentBeat = (songPos / 500)*(bpm/30)
         cameraAngle = 3 * math.sin((currentBeat))
 end
+if beatdrop then 
+    if curStep % 4 == 0 then
+        setHudZoom(1.1)
+    end
+end
+if beatdropsmall then 
+    if curStep % 8 == 0 then
+        setHudZoom(1.05)
+    end
+end
+if beatdropextra then 
+    if curStep % 4 == 0 then
+        setHudZoom(1.2)
+    end
+end
 end
 
 function beatHit (beat)
@@ -134,17 +154,23 @@ if step == 1 then
 end
 if step == 2 then
     setHudPosition(0,0)
+        for i=0,7 do
+        tweenFadeIn(i,0,1)
+        end
 end
 if step == 128 then
     setHudPosition(0,0)
     strumLine1Visible = true
     strumLine2Visible = true
+    for i=0,7 do
+        tweenFadeIn(i,1,1)
+        end
     shakenote = true
     setActorAlpha(1, 'boyfriend')
     setActorAlpha(1, 'girlfriend')
 end
 if step == 192 then
-    tweenFadeOut(Void,0,8)
+    tweenFadeOut(Void,0,6)
 end
 if step == 224 then
     shakecam = true
@@ -158,6 +184,7 @@ end
 if step == 257 then
     resetnotes = false
 end
+if difficulty == 2 then
 if step == 316 then
     setActorX(-100, 'boyfriend')
     setActorY(0, 'dad')
@@ -227,13 +254,14 @@ setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
 tweenPosYAngle('dad', getActorY('dad') - 100 ,getActorAngle('dad') + 0, 3)
+tweenPosXAngle('boyfriend', getActorX('boyfriend') + 1000 ,getActorAngle('boyfriend') + 0, 4)
+tweenPosXAngle('girlfriend', getActorX('girlfriend') + 850 ,getActorAngle('girlfriend') + 720, 3)
 end
 if step == 508 then
     setActorScale(0.3,'girlfriend')
     setActorX(-350, 'dad')
     setActorY(-50, 'dad')
     setActorY (400, 'boyfriend')
-    setActorX (1250, 'boyfriend')
     setActorY (150, 'girlfriend')
     setActorX (850, 'girlfriend')
     setActorScale(0.75,'boyfriend')
@@ -252,6 +280,10 @@ setActorAlpha(1, 'boyfriend')
 end
 if step == 528 then
 shakecam = true
+end
+if step == 532 then
+    setCamZoom(2)
+    setActorX (1250, 'boyfriend')
 end
 if step == 544 then
     shakenote = false
@@ -275,82 +307,82 @@ end
 if step == 1424 then
     tweenFadeIn(WhiteBG,1,0.01)
     tweenFadeIn(RedBG,0,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1425 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1426 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1427 then
     tweenFadeIn(WhiteBG,1,0.01)
     tweenFadeIn(RedBG,0,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1428 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1429 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1430 then
     tweenFadeIn(WhiteBG,1,0.01)
     tweenFadeIn(RedBG,0,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1431 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1432 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1433 then
     tweenFadeIn(WhiteBG,1,0.01)
     tweenFadeIn(RedBG,0,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1434 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1435 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1436 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1437 then
     tweenFadeIn(WhiteBG,1,0.01)
     tweenFadeIn(RedBG,0,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1438 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1439 then
     tweenFadeIn(WhiteBG,0,0.01)
     tweenFadeIn(RedBG,1,0.01)
-    setCamZoom(2)
+    setCamZoom(1.2)
 end
 if step == 1440 then
     tweenFadeIn(RedBG,0,0.01)
@@ -453,18 +485,24 @@ setActorScale(0.3,'girlfriend')
 setActorAlpha(1,'redeyes')
 setActorX(0, 'dad')
 shakenote = true
+tweenFadeIn(Light,1,1)
 end
 if step == 2080 then
     setActorAlpha(0,'redeyes')
-setActorAlpha(1, 'girlfriend')
 setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
 sway = true
 end
+if step == 2192 then
+    setActorAlpha(1, 'girlfriend')
+    tweenFadeIn(Light,0,1)
+    tweenFadeIn(Overlay,1,1)
+end
 if step == 2336 then
     sway = false
     resetnotes = true
+    tweenFadeIn(Overlay,0,1)
 end
 if step == 2337 then
     resetnotes = false
@@ -491,6 +529,68 @@ setActorAlpha(1, 'girlfriend')
 setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
+beatdrop = true
+end
+if step == 2592 then
+    beatdrop = false
+    setHudZoom(1)
+end
+if step == 2848 then
+slowsway = true
+slowsway2 = true
+end
+if step == 2976 then
+    slowsway = false
+slowsway2 = false
+sway = true
+end
+if step == 3360 then
+    sway = false
+    resetnotes = true
+end
+if step == 3552 then
+    beatdropsmall = true
+end
+if step == 4192 then
+    beatdropsmall = false
+    shakecam = true
+end
+if step == 4288 then
+    shakecam = false
+    tweenPosXAngle('dad', getActorX('dad') + 500 ,getActorAngle('dad') + 0, 4)
+    tweenPosXAngle('boyfriend', getActorX('boyfriend') - 300 ,getActorAngle('boyfriend') + 0, 2)
+    tweenPosXAngle('girlfriend', getActorX('girlfriend') - 300 ,getActorAngle('girlfriend') + 0, 3)
+    for i=0,3 do
+        tweenFadeIn(i,0,4)
+        end
+    end
+if step == 4352 then
+    slowsway = true
+slowsway2 = true
+    finale = true
+    beatdropextra = true
+showOnlyStrums = true
+tweenFadeIn(Light,1,16)
+end
+if step == 4480 then
+    finale = false
+    beatdropextra = false
+    beatdropsmall = true
+    tweenFadeIn('dad',0,4)
+end
+if step == 4608 then
+    tweenFadeIn('boyfriend',0,2)
+    tweenFadeIn('girlfriend',0,2)
+    slowsway = false
+slowsway2 = false
+beatdropsmall = false
+resetnotes = true
+showOnlyStrums = false
+setHudZoom(1)
+for i=4,7 do
+    tweenFadeIn(i,0,4)
+    end
+end
 end
 end
 function keyPressed (key)
