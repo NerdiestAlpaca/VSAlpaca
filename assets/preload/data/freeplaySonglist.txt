@@ -18,5 +18,5 @@ Senpai:senpai:6
 Roses:senpai:6
 Thorns:spirit:6
 Absolution:final:7
-Stress:Tankpaca:8
+Stress:tankpaca:8
 Jump:mario:8
