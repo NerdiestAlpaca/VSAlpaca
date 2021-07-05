@@ -742,7 +742,7 @@ class PlayState extends MusicBeatState
     {
             defaultCamZoom = 0.85;
             curStage = 'highlands';
-			var bg = new FlxSprite(-100, -350);
+			var bg = new FlxSprite(-1150, 50);
 			bg.frames = Paths.getSparrowAtlas('alpaca/bg');
 			bg.animation.addByPrefix("idle", "BG Phase 1", 24, true);
 			bg.animation.play("idle");
@@ -754,7 +754,7 @@ class PlayState extends MusicBeatState
 
 			var fgTex = Paths.getSparrowAtlas('alpaca/fg');
 
-			fg = new FlxSprite(-120, 450);
+			fg = new FlxSprite(-1170, 850);
 			fg.frames = fgTex;
 			fg.animation.addByPrefix('drive', "Ground", 24);
 			fg.animation.play('drive');
@@ -874,6 +874,8 @@ class PlayState extends MusicBeatState
 				curGf = 'gf-hell';
 			case 'gf-finale':
 				curGf = 'gf-finale';
+            case 'paca-speakers':
+                curGf = 'paca-speakers';
 			default:
 				curGf = 'gf';
 		}
@@ -965,12 +967,10 @@ class PlayState extends MusicBeatState
 				gf.x += 180;
 				gf.y += 300;
 				case 'highlands':
-				    boyfriend.x += 1050;
-    gf.x += 750;
-    dad.x += 750;
-    boyfriend.y -= 400;
-    gf.y -= 370;
-    dad.y -= 480;
+    gf.x -= 300;
+    dad.x -= 300;
+    gf.y += 30;
+    dad.y -= 80;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;

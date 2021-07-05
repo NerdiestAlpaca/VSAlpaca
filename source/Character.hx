@@ -285,11 +285,11 @@ class Character extends FlxSprite
 						animation.addByPrefix('singDOWN', 'Tankpaca Down', 24, false);
 						trace("finish anim");
 					
-						addOffset('idle', 0, -69);
-						addOffset('singUP', 42, -30);
-						addOffset('singRIGHT',0, -59);
-						addOffset('singLEFT', 33, -50);
-						addOffset('singDOWN', 0, -95);
+						addOffset('idle', -42, -49);
+						addOffset('singUP', 0, -10);
+						addOffset('singRIGHT',-42, -39);
+						addOffset('singLEFT', -9, -30);
+						addOffset('singDOWN', -42, -75);
 					
 						playAnim('idle');
 				
