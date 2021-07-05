@@ -184,6 +184,27 @@ end
 if step == 257 then
     resetnotes = false
 end
+if step == 4288 then
+    tweenPosXAngle('dad', getActorX('dad') + 500 ,getActorAngle('dad') + 0, 4)
+    tweenPosXAngle('boyfriend', getActorX('boyfriend') - 300 ,getActorAngle('boyfriend') + 0, 2)
+    tweenPosXAngle('girlfriend', getActorX('girlfriend') - 300 ,getActorAngle('girlfriend') + 0, 3)
+    for i=0,3 do
+        tweenFadeIn(i,0,4)
+        end
+    end
+if step == 4352 then
+    tweenFadeIn(Light,1,16)
+end
+if step == 4480 then
+    tweenFadeIn('dad',0,4)
+end
+if step == 4608 then
+    tweenFadeIn('boyfriend',0,2)
+    tweenFadeIn('girlfriend',0,2)
+for i=4,7 do
+    tweenFadeIn(i,0,4)
+    end
+end
 if difficulty == 2 then
 if step == 316 then
     setActorX(-100, 'boyfriend')
