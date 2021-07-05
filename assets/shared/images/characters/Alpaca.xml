@@ -2,74 +2,74 @@
 <TextureAtlas imagePath="Alpaca.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Paca Dance0000" x="0" y="0" width="423" height="684" pivotX="107.45" pivotY="427.1" frameX="-8" frameY="-11" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0001" x="0" y="0" width="423" height="684" frameX="-8" frameY="-11" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0002" x="426" y="0" width="406" height="695" frameX="-4" frameY="-1" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0003" x="835" y="0" width="406" height="699" frameX="-4" frameY="-1" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0004" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0005" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0006" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0007" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0008" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0009" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0010" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0011" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0012" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Dance0013" x="1244" y="0" width="400" height="700" frameX="0" frameY="0" frameWidth="431" frameHeight="700"/>
-	<SubTexture name="Paca Down0000" x="1647" y="0" width="376" height="627" pivotX="106.8" pivotY="369.15" frameX="0" frameY="-17" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0001" x="1647" y="0" width="376" height="627" frameX="0" frameY="-17" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0002" x="2026" y="0" width="376" height="636" frameX="0" frameY="-8" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0003" x="2026" y="0" width="376" height="636" frameX="0" frameY="-8" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0004" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0005" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0006" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0007" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0008" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0009" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0010" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0011" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0012" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Down0013" x="2405" y="0" width="371" height="642" frameX="-4" frameY="0" frameWidth="376" frameHeight="644"/>
-	<SubTexture name="Paca Left0000" x="2779" y="0" width="320" height="704" pivotX="9.35" pivotY="438.1" frameX="-9" frameY="-7" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0001" x="2779" y="0" width="320" height="704" frameX="-9" frameY="-7" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0002" x="3102" y="0" width="322" height="711" frameX="-7" frameY="0" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0003" x="3102" y="0" width="322" height="711" frameX="-7" frameY="0" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0004" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0005" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0006" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0007" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0008" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0009" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0010" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0011" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0012" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Left0013" x="3427" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
-	<SubTexture name="Paca Right0000" x="0" y="714" width="348" height="686" pivotX="161.7" pivotY="424.75" frameX="-12" frameY="-7" frameWidth="369" frameHeight="693"/>
-	<SubTexture name="Paca Right0001" x="0" y="714" width="348" height="686" frameX="-12" frameY="-7" frameWidth="369" frameHeight="693"/>
-	<SubTexture name="Paca Right0002" x="351" y="714" width="359" height="687" frameX="-4" frameY="-6" frameWidth="369" frameHeight="693"/>
-	<SubTexture name="Paca Right0003" x="351" y="714" width="359" height="687" frameX="-4" frameY="-6" frameWidth="369" frameHeight="693"/>
-	<SubTexture name="Paca Right0004" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0005" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0006" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0007" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0008" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0009" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0010" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0011" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0012" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Right0013" x="713" y="714" width="369" height="693"/>
-	<SubTexture name="Paca Up0000" x="1085" y="714" width="417" height="696" pivotX="102.45" pivotY="428.35"/>
-	<SubTexture name="Paca Up0001" x="1085" y="714" width="417" height="696"/>
-	<SubTexture name="Paca Up0002" x="1505" y="714" width="414" height="695" frameX="0" frameY="0" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0003" x="1505" y="714" width="414" height="695" frameX="0" frameY="0" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0004" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0005" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0006" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0007" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0008" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0009" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0010" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0011" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0012" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
-	<SubTexture name="Paca Up0013" x="1922" y="714" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Dance0000" x="0" y="0" width="324" height="684" pivotX="107.45" pivotY="427.1" frameX="-8" frameY="-11" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0001" x="0" y="0" width="324" height="684" frameX="-8" frameY="-11" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0002" x="324" y="0" width="328" height="695" frameX="-4" frameY="-1" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0003" x="652" y="0" width="314" height="699" frameX="-4" frameY="-1" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0004" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0005" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0006" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0007" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0008" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0009" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0010" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0011" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0012" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Dance0013" x="966" y="0" width="318" height="700" frameX="0" frameY="0" frameWidth="332" frameHeight="700"/>
+	<SubTexture name="Paca Down0000" x="1284" y="0" width="365" height="627" pivotX="106.8" pivotY="369.15" frameX="0" frameY="-17" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0001" x="1284" y="0" width="365" height="627" frameX="0" frameY="-17" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0002" x="1649" y="0" width="362" height="636" frameX="0" frameY="-8" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0003" x="2011" y="0" width="362" height="636" frameX="0" frameY="-8" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0004" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0005" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0006" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0007" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0008" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0009" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0010" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0011" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0012" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Down0013" x="2373" y="0" width="356" height="642" frameX="-4" frameY="0" frameWidth="365" frameHeight="644"/>
+	<SubTexture name="Paca Left0000" x="2729" y="0" width="320" height="704" pivotX="9.35" pivotY="438.1" frameX="-9" frameY="-7" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0001" x="2729" y="0" width="320" height="704" frameX="-9" frameY="-7" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0002" x="3049" y="0" width="322" height="711" frameX="-7" frameY="0" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0003" x="3371" y="0" width="322" height="711" frameX="-7" frameY="0" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0004" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0005" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0006" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0007" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0008" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0009" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0010" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0011" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0012" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Left0013" x="3693" y="0" width="329" height="698" frameX="0" frameY="-13" frameWidth="329" frameHeight="711"/>
+	<SubTexture name="Paca Right0000" x="0" y="711" width="380" height="686" pivotX="175.05" pivotY="424.75" frameX="-13" frameY="-7" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0001" x="0" y="711" width="380" height="686" frameX="-13" frameY="-7" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0002" x="380" y="711" width="390" height="687" frameX="-3" frameY="-6" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0003" x="770" y="711" width="390" height="687" frameX="-3" frameY="-6" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0004" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0005" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0006" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0007" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0008" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0009" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0010" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0011" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0012" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Right0013" x="1160" y="711" width="389" height="693" frameX="0" frameY="0" frameWidth="393" frameHeight="693"/>
+	<SubTexture name="Paca Up0000" x="1549" y="711" width="417" height="696" pivotX="102.45" pivotY="428.35"/>
+	<SubTexture name="Paca Up0001" x="1549" y="711" width="417" height="696"/>
+	<SubTexture name="Paca Up0002" x="1966" y="711" width="414" height="695" frameX="0" frameY="0" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0003" x="2380" y="711" width="414" height="695" frameX="0" frameY="0" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0004" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0005" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0006" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0007" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0008" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0009" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0010" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0011" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0012" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
+	<SubTexture name="Paca Up0013" x="2794" y="711" width="411" height="690" frameX="-6" frameY="-1" frameWidth="417" frameHeight="696"/>
 </TextureAtlas>

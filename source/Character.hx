@@ -152,6 +152,21 @@ class Character extends FlxSprite
 				
 					playAnim('danceRight');
 
+					case 'paca-speakers':
+						tex = Paths.getSparrowAtlas('characters/Paca_Speakers');
+						frames = tex;
+						animation.addByIndices('singUP', 'Paca and GF Dancing Beat', [0], "", 24, false);
+						animation.addByIndices('danceLeft', 'Paca and GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+						animation.addByIndices('danceRight', 'Paca and GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24,
+							false);
+						animation.addByIndices('sad', 'Paca and GF Sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+					
+						addOffset('danceLeft', 0);
+						addOffset('danceRight', 0);
+						addOffset('sad', 0);
+					
+						playAnim('danceRight');
+
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST', 'shared');
@@ -259,6 +274,24 @@ class Character extends FlxSprite
 					addOffset("singUP-alt", 0, 150);
 					
 					playAnim('idle');
+
+					case 'tankpaca':
+						tex = Paths.getSparrowAtlas('characters/Tankpaca');
+						frames = tex;
+						animation.addByPrefix('idle', 'Tankpaca Idle', 24, true);
+						animation.addByPrefix('singUP', 'Tankpaca Up', 24, false);
+						animation.addByPrefix('singLEFT','Tankpaca Left', 24, false);
+						animation.addByPrefix('singRIGHT', 'Tankpaca Right', 24, false);
+						animation.addByPrefix('singDOWN', 'Tankpaca Down', 24, false);
+						trace("finish anim");
+					
+						addOffset('idle', 0, -69);
+						addOffset('singUP', 42, -30);
+						addOffset('singRIGHT',0, -59);
+						addOffset('singLEFT', 33, -50);
+						addOffset('singDOWN', 0, -95);
+					
+						playAnim('idle');
 				
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
@@ -797,6 +830,16 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft');
 					}
+				case 'paca-speakers':
+						if (!animation.curAnim.name.startsWith('hair'))
+						{
+							danced = !danced;
+	
+							if (danced)
+								playAnim('danceRight');
+							else
+								playAnim('danceLeft');
+						}
 				case 'spooky':
 					danced = !danced;
 

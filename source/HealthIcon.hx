@@ -19,7 +19,7 @@ class HealthIcon extends FlxSprite
 		animation.add('bf', [0, 1], 0, false, isPlayer);
 		animation.add('bf-car', [0, 1], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
-        animation.add('bf-finale', [0, 1], 0, false, isPlayer);
+        animation.add('bf-finale', [34, 35], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 21], 0, false, isPlayer);
 		animation.add('spooky', [2, 3], 0, false, isPlayer);
 		animation.add('pico', [4, 5], 0, false, isPlayer);
@@ -43,6 +43,7 @@ class HealthIcon extends FlxSprite
 		animation.add('darkness', [28, 29], 0, false, isPlayer);
 		animation.add('final', [30, 31], 0, false, isPlayer);
 		animation.add('mario', [32, 33], 0, false, isPlayer);
+		animation.add('tankpaca', [36, 37], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)
