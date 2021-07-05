@@ -749,7 +749,7 @@ class PlayState extends MusicBeatState
 			bg.setGraphicSize(Std.int(bg.width * 1.7));
 			bg.scrollFactor.set(0.3, 0.25);
 			bg.antialiasing = true;
-			bg.updateHitbox()
+			bg.updateHitbox();
             add(bg);
 
 			var fgTex = Paths.getSparrowAtlas('alpaca/fg');
