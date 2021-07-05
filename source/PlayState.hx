@@ -742,27 +742,26 @@ class PlayState extends MusicBeatState
     {
             defaultCamZoom = 0.85;
             curStage = 'highlands';
-			var bg = new FlxSprite(-1150, 50);
+			var bg = new FlxSprite(-550, -100);
 			bg.frames = Paths.getSparrowAtlas('alpaca/bg');
-			bg.animation.addByPrefix("idle", "BG Phase 1", 24, true);
+			bg.animation.addByPrefix("idle", "BG Phase 1", 24);
 			bg.animation.play("idle");
-			bg.setGraphicSize(Std.int(bg.width * 1.5));
+			bg.setGraphicSize(Std.int(bg.width * 1.7));
 			bg.scrollFactor.set(0.3, 0.25);
 			bg.antialiasing = true;
-			bg.updateHitbox();
+			bg.updateHitbox()
             add(bg);
 
 			var fgTex = Paths.getSparrowAtlas('alpaca/fg');
-
-			fg = new FlxSprite(-1170, 850);
+			fg = new FlxSprite(-670, 550);
 			fg.frames = fgTex;
-			fg.animation.addByPrefix('drive', "Ground", 24);
-			fg.animation.play('drive');
-			fg.antialiasing = true;
+			fg.animation.addByPrefix("idle", "Ground", 24);
+			fg.animation.play("idle");
 			fg.setGraphicSize(Std.int(fg.width * 1.7));
-			fg.scrollFactor.set(0.3, 0.35);
+			fg.scrollFactor.set(0.3, 0.6);
+			fg.antialiasing = true;
 			fg.updateHitbox();
-            // add(fg);
+            add(fg);
 
     }
                 case 'hell': 
@@ -967,10 +966,11 @@ class PlayState extends MusicBeatState
 				gf.x += 180;
 				gf.y += 300;
 				case 'highlands':
-    gf.x -= 300;
-    dad.x -= 300;
-    gf.y += 30;
-    dad.y -= 80;
+					gf.x -= 300;
+					dad.x -= 250;
+					gf.y -=40;
+					bf.y += 50;
+					bf.x += 100;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;
@@ -995,8 +995,6 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
-        if (curStage == 'highlands')
-			add(fg);
 
 		add(dad);
 		add(boyfriend);
