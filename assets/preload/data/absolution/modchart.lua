@@ -117,7 +117,7 @@ function update (elapsed)
 end
 if beatdrop then 
     if curStep % 4 == 0 then
-        setHudZoom(1.1)
+        setHudZoom(1.07)
     end
 end
 if beatdropsmall then 
@@ -127,7 +127,7 @@ if beatdropsmall then
 end
 if beatdropextra then 
     if curStep % 4 == 0 then
-        setHudZoom(1.2)
+        setHudZoom(1.1)
     end
 end
 end
