@@ -811,6 +811,32 @@ class PlayState extends MusicBeatState
 								bg.updateHitbox();
 								add(bg);  
 				}
+	case 'tanklands':
+    {
+            defaultCamZoom = 0.85;
+            curStage = 'tanklands';
+			var bg = new FlxSprite(-550, -100);
+			bg.frames = Paths.getSparrowAtlas('bonus/bgtank');
+			bg.animation.addByPrefix("idle", "BG Tank", 24);
+			bg.animation.play("idle");
+			bg.setGraphicSize(Std.int(bg.width * 1.7));
+			bg.scrollFactor.set(0.3, 0.25);
+			bg.antialiasing = true;
+			bg.updateHitbox();
+            add(bg);
+
+			var fgTex = Paths.getSparrowAtlas('bonus/fgtank');
+			fg = new FlxSprite(-670, 550);
+			fg.frames = fgTex;
+			fg.animation.addByPrefix("idle", "Ground", 24);
+			fg.animation.play("idle");
+			fg.setGraphicSize(Std.int(fg.width * 1.7));
+			fg.scrollFactor.set(0.3, 0.6);
+			fg.antialiasing = true;
+			fg.updateHitbox();
+            add(fg);
+
+    }
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -987,6 +1013,13 @@ class PlayState extends MusicBeatState
 					gf.x += 2000;
 					gf.y += 10;
 					gf.setGraphicSize(Std.int(gf.width * 0.2));
+
+					case 'tanklands':
+						gf.x -= 300;
+						dad.x -= 250;
+						gf.y -=40;
+						boyfriend.y += 50;
+						boyfriend.x += 100;
 
 		}
 
