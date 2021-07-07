@@ -253,12 +253,6 @@ class Alphabet extends FlxSpriteGroup
 					letter.x += 90;
 				}
 
-				if (FlxG.random.bool(40))
-				{
-					var daSound:String = "GF_";
-					FlxG.sound.play('assets/sounds/' + daSound + FlxG.random.int(1, 4) + TitleState.soundExt, 0.4);
-				}
-
 				add(letter);
 
 				lastSprite = letter;
@@ -275,46 +269,6 @@ class Alphabet extends FlxSpriteGroup
 		if (isMenuItem)
 		{
 			var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
-
-			switch (itemType) {
-				case "Classic":
-					x = FlxMath.lerp(x, (targetY * 20) + groupX, 0.16 / (CoolUtil.fps / 60));
-					y = FlxMath.lerp(y, (scaledY * 120) + (FlxG.height * groupY), 0.16 / (CoolUtil.fps / 60));
-				case "Vertical":
-					y = FlxMath.lerp(y, (scaledY * 120) + (FlxG.height * 0.5), 0.16 / (CoolUtil.fps / 60));
-					// x = FlxMath.lerp(x, (targetY * 0) + 308, 0.16 / 2);
-				case "C-Shape":
-					// not actually a wheel, just trying to imitate mic'd up
-					// use exponent because circles????
-					// using equation of a sideways parabola.
-					// x = a(y-k)^2 + h
-					// k is probably inaccurate because, well, the coordinate system
-					// is flipped veritcally.
-					// We still use lerp as that just makes it move smoothly.
-					// I'm going to add instead and see how that works.
-
-					// :grief: i give up time to steal code
-					y = FlxMath.lerp(y, (scaledY * 65) + (FlxG.height * 0.39), 0.16 / (CoolUtil.fps / 60));
-
-					x = FlxMath.lerp(x, Math.exp(scaledY * 0.8) * 70 + (FlxG.width * 0.1), 0.16 / (CoolUtil.fps / 60));
-					if (scaledY < 0)
-						x = FlxMath.lerp(x, Math.exp(scaledY * -0.8) * 70 + (FlxG.width * 0.1), 0.16 / (CoolUtil.fps / 60));
-
-					if (x > FlxG.width + 30)
-						x = FlxG.width + 30;
-
-				case "D-Shape":
-					y = FlxMath.lerp(y, (scaledY * 90) + (FlxG.height * 0.45), 0.16 / (CoolUtil.fps / 60));
-
-					x = FlxMath.lerp(x, Math.exp(Math.abs(scaledY * 0.8)) * -70 + (FlxG.width * 0.35), 0.16 / (CoolUtil.fps / 60));
-
-					if (x < -900)
-						x = -900;
-			}
-		}
-
-		super.update(elapsed);
-	}
 }
 
 class AlphaCharacter extends FlxSprite
