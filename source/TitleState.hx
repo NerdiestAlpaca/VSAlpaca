@@ -183,8 +183,8 @@ class TitleState extends MusicBeatState
         gfDance.animation.addByPrefix('cheer', 'gfEnter', 24, false);
 		gfDance.antialiasing = true;
 		add(bgGrad);
-		add(gfDance);
 		add(logoBl);
+		add(gfDance);
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
