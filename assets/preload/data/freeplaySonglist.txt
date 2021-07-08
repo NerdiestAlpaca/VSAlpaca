@@ -1,25 +1,7 @@
 Tutorial:gf:1
-Bopeebo:dad:1
-Fresh:dad:1
-Dad Battle:dad:1
-Spookeez:spooky:2
-South:spooky:2
-Monster:monster:2
-Pico:pico:3
-Philly Nice:pico:3
-Blammed:pico:3
-Satin Panties:mom:4
-High:mom:4
-Milf:mom:4
-Cocoa:parents-christmas:5
-Eggnog:parents-christmas:5
-Winter Horrorland:monster-christmas:5
-Senpai:senpai:6
-Roses:senpai:6
-Thorns:spirit:6
-Whimsy:alpaca:7
-Cyclone:demon:7
-Darkness:darkness:7
-Absolution:final:7
-Stress:tankpaca:8
-Jump:mario:8
+Whimsy:alpaca:1
+Cyclone:demon:1
+Darkness:darkness:1
+Absolution:final:1
+Stress:tankpaca:2
+Jump:mario:2
