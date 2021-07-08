@@ -17,6 +17,9 @@ Winter Horrorland:monster-christmas:5
 Senpai:senpai:6
 Roses:senpai:6
 Thorns:spirit:6
+Whimsy:alpaca:7
+Cyclone:demon:7
+Darkness:darkness:7
 Absolution:final:7
 Stress:tankpaca:8
 Jump:mario:8
