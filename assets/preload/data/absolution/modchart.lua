@@ -113,7 +113,7 @@ function update (elapsed)
     end
     if finale then
         local currentBeat = (songPos / 500)*(bpm/30)
-        cameraAngle = 3 * math.sin((currentBeat))
+        cameraAngle = 2 * math.sin((currentBeat))
 end
 if beatdrop then 
     if curStep % 4 == 0 then
@@ -127,8 +127,8 @@ if beatdropsmall then
 end
 if beatdropextra then 
     if curStep % 4 == 0 then
-        setHudZoom(1.1)
-        setCamZoom(1.05)
+        setHudZoom(1.07)
+        setCamZoom(1.02)
     end
 end
 end
@@ -516,7 +516,7 @@ setActorAlpha(1, 'boyfriend')
 shakenote = false
 sway = true
 end
-if step == 2180 then
+if step == 2200 then
     setActorAlpha(1, 'girlfriend')
     tweenFadeIn(Light,0,1)
     tweenFadeIn(Overlay,1,1)
@@ -588,7 +588,6 @@ if step == 4288 then
     end
 if step == 4352 then
     slowsway = true
-slowsway2 = true
     finale = true
     beatdropextra = true
 tweenFadeIn(Light,1,16)
@@ -603,7 +602,6 @@ if step == 4608 then
     tweenFadeIn('boyfriend',0,2)
     tweenFadeIn('girlfriend',0,2)
     slowsway = false
-slowsway2 = false
 beatdropsmall = false
 resetnotes = true
 setHudZoom(1)
