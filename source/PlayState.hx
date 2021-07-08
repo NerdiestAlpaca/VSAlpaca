@@ -764,6 +764,32 @@ class PlayState extends MusicBeatState
             add(fg);
 
     }
+	case 'highlandsDemon':
+    {
+            defaultCamZoom = 0.85;
+            curStage = 'highlandsDemon';
+			var bg = new FlxSprite(-550, -100);
+			bg.frames = Paths.getSparrowAtlas('alpacaRound2/bg');
+			bg.animation.addByPrefix("idle", "BG Phase 1", 24);
+			bg.animation.play("idle");
+			bg.setGraphicSize(Std.int(bg.width * 1.7));
+			bg.scrollFactor.set(0.3, 0.25);
+			bg.antialiasing = true;
+			bg.updateHitbox();
+            add(bg);
+
+			var fgTex = Paths.getSparrowAtlas('alpacaRound2/fg');
+			fg = new FlxSprite(-670, 550);
+			fg.frames = fgTex;
+			fg.animation.addByPrefix("idle", "Ground", 24);
+			fg.animation.play("idle");
+			fg.setGraphicSize(Std.int(fg.width * 1.7));
+			fg.scrollFactor.set(0.3, 0.6);
+			fg.antialiasing = true;
+			fg.updateHitbox();
+            add(fg);
+
+    }
                 case 'hell': 
     {	
         					curStage = 'hell';
@@ -997,6 +1023,12 @@ class PlayState extends MusicBeatState
 					gf.y -=40;
 					boyfriend.y += 50;
 					boyfriend.x += 100;
+				case 'highlandsDemon':
+						gf.x -= 280;
+						dad.x -= 350;
+						gf.y -=40;
+						boyfriend.y += 50;
+						boyfriend.x += 100;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;

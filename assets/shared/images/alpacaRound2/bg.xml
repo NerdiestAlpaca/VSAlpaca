@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bg.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BG Phase 20000" x="0" y="0" width="1287" height="725" pivotX="644.45" pivotY="360" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20001" x="1290" y="0" width="1301" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20002" x="2594" y="0" width="1290" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20003" x="3887" y="0" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20004" x="5177" y="0" width="1283" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20005" x="6463" y="0" width="1305" height="725"/>
+	<SubTexture name="BG Phase 20006" x="0" y="728" width="1290" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20007" x="1293" y="728" width="1283" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20008" x="2579" y="728" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20009" x="3869" y="728" width="1305" height="725"/>
+	<SubTexture name="BG Phase 20010" x="5177" y="728" width="1286" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20011" x="6466" y="728" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20012" x="0" y="1456" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20013" x="1290" y="1456" width="1301" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20014" x="2594" y="1456" width="1290" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20015" x="3887" y="1456" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20016" x="5177" y="1456" width="1283" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20017" x="6463" y="1456" width="1305" height="725"/>
+	<SubTexture name="BG Phase 20018" x="0" y="2184" width="1290" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20019" x="1293" y="2184" width="1283" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20020" x="2579" y="2184" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20021" x="3869" y="2184" width="1305" height="725"/>
+	<SubTexture name="BG Phase 20022" x="5177" y="2184" width="1286" height="725" frameX="-4" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20023" x="6466" y="2184" width="1287" height="725" frameX="0" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20024" x="0" y="2912" width="1284" height="725" frameX="-3" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20025" x="0" y="2912" width="1284" height="725" frameX="-3" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20026" x="0" y="2912" width="1284" height="725" frameX="-3" frameY="0" frameWidth="1305" frameHeight="725"/>
+	<SubTexture name="BG Phase 20027" x="0" y="2912" width="1284" height="725" frameX="-3" frameY="0" frameWidth="1305" frameHeight="725"/>
+</TextureAtlas>

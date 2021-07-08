@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fg.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Ground0000" x="0" y="0" width="1309" height="245" pivotX="5.65" pivotY="145.3"/>
+	<SubTexture name="Ground0001" x="1312" y="0" width="1309" height="245"/>
+	<SubTexture name="Ground0002" x="2624" y="0" width="1309" height="245"/>
+	<SubTexture name="Ground0003" x="0" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0004" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0005" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0006" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0007" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0008" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0009" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0010" x="0" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0011" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0012" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0013" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0014" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0015" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0016" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0017" x="0" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0018" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0019" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0020" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0021" x="1312" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0022" x="2624" y="248" width="1309" height="245"/>
+	<SubTexture name="Ground0023" x="0" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0024" x="1312" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0025" x="2624" y="496" width="1309" height="245"/>
+	<SubTexture name="Ground0026" x="0" y="0" width="1309" height="245"/>
+	<SubTexture name="Ground0027" x="1312" y="248" width="1309" height="245"/>
+</TextureAtlas>
