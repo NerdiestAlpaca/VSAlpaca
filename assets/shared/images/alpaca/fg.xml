@@ -2,7 +2,7 @@
 <TextureAtlas imagePath="fg.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Ground0000" x="0" y="0" width="1309" height="245" pivotX="5.65" pivotY="157.45"/>
+	<SubTexture name="Ground0000" x="0" y="0" width="1309" height="245" pivotX="5.65" pivotY="145.3"/>
 	<SubTexture name="Ground0001" x="0" y="248" width="1309" height="245"/>
 	<SubTexture name="Ground0002" x="0" y="248" width="1309" height="245"/>
 	<SubTexture name="Ground0003" x="0" y="496" width="1309" height="245"/>
