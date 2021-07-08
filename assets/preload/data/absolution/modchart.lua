@@ -117,7 +117,7 @@ function update (elapsed)
 end
 if beatdrop then 
     if curStep % 4 == 0 then
-        setHudZoom(1.07)
+        setHudZoom(1.1)
     end
 end
 if beatdropsmall then 
@@ -128,6 +128,7 @@ end
 if beatdropextra then 
     if curStep % 4 == 0 then
         setHudZoom(1.1)
+        setCamZoom(1.05)
     end
 end
 end
@@ -515,7 +516,7 @@ setActorAlpha(1, 'boyfriend')
 shakenote = false
 sway = true
 end
-if step == 2192 then
+if step == 2180 then
     setActorAlpha(1, 'girlfriend')
     tweenFadeIn(Light,0,1)
     tweenFadeIn(Overlay,1,1)
@@ -590,7 +591,6 @@ if step == 4352 then
 slowsway2 = true
     finale = true
     beatdropextra = true
-showOnlyStrums = true
 tweenFadeIn(Light,1,16)
 end
 if step == 4480 then
@@ -606,7 +606,6 @@ if step == 4608 then
 slowsway2 = false
 beatdropsmall = false
 resetnotes = true
-showOnlyStrums = false
 setHudZoom(1)
 for i=4,7 do
     tweenFadeIn(i,0,4)
