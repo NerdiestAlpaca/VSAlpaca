@@ -2,11 +2,11 @@
 <TextureAtlas imagePath="BFPortraits.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="bfawkward0000" x="0" y="0" width="374" height="315" pivotX="3" pivotY="-9.4"/>
-	<SubTexture name="bfdetermined0000" x="384" y="0" width="377" height="320" pivotX="3" pivotY="-4.8"/>
-	<SubTexture name="bfnervous0000" x="771" y="0" width="374" height="313" pivotX="3" pivotY="-11.55"/>
-	<SubTexture name="bfnormal0000" x="1155" y="0" width="374" height="320" pivotX="3" pivotY="-4.8"/>
-	<SubTexture name="bfpeeved0000" x="1539" y="0" width="377" height="311" pivotX="3" pivotY="-13"/>
-	<SubTexture name="bfpumped0000" x="0" y="330" width="377" height="320" pivotX="3" pivotY="-4.8"/>
-	<SubTexture name="bfshock0000" x="387" y="330" width="374" height="320" pivotX="3" pivotY="-4.8"/>
+	<SubTexture name="bfawkward0000" x="0" y="0" width="312" height="264" pivotX="3.9" pivotY="-6.35"/>
+	<SubTexture name="bfdetermined0000" x="322" y="0" width="315" height="268" pivotX="8.2" pivotY="-1.75"/>
+	<SubTexture name="bfnervous0000" x="647" y="0" width="312" height="262" pivotX="5.75" pivotY="-9.65"/>
+	<SubTexture name="bfnormal0000" x="0" y="278" width="313" height="268" pivotX="8.2" pivotY="-1.75"/>
+	<SubTexture name="bfpeeved0000" x="323" y="278" width="314" height="261" pivotX="5.75" pivotY="-10.9"/>
+	<SubTexture name="bfpumped0000" x="647" y="278" width="315" height="268" pivotX="4.25" pivotY="-1.75"/>
+	<SubTexture name="bfshock0000" x="0" y="556" width="313" height="268" pivotX="8.2" pivotY="-1.75"/>
 </TextureAtlas>
