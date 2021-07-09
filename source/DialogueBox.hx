@@ -110,6 +110,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight3.animation.addByPrefix('enter', 'bfdetermined', 24, false);
 		portraitRight3.scrollFactor.set();
 		portraitRight3.visible = false;
+	}
 		{
 			case 'senpai':
 				hasDialog = true;
