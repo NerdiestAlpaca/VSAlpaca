@@ -31,101 +31,14 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitLeft:FlxSprite;
 	var portraitLeft2:FlxSprite;
 	var portraitLeft3:FlxSprite;
+	var portraitLeft4:FlxSprite;
 	var portraitRight:FlxSprite;
 	var portraitRight2:FlxSprite;
 	var portraitRight3:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
-
-	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
-	{
-		super();
-
-		switch (PlayState.SONG.song.toLowerCase())
-		{
-			case 'absolution':
-				FlxG.sound.playMusic(Paths.music('lastHope'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-		}
-
-		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
-		bgFade.scrollFactor.set();
-		bgFade.alpha = 0;
-		add(bgFade);
-
-		new FlxTimer().start(0.83, function(tmr:FlxTimer)
-		{
-			bgFade.alpha += (1 / 5) * 0.7;
-			if (bgFade.alpha > 0.7)
-				bgFade.alpha = 0.7;
-		}, 5);
-
-		box = new FlxSprite(-20, 45);
-		
-		var hasDialog = false;
-		switch (PlayState.SONG.song.toLowerCase())
-		{
-			case 'absolution':
-				hasDialog = true;
-				PlayState.daPixelZoom = 1;
-				box.loadGraphic(Paths.image('portraits/textbox'),true,1280,720);
-				box.animation.add('normalOpen', [0], 0);
-				box.animation.add('normal', [0], 0);
-				portraitLeft.setPosition(25.5,390.45);
-				portraitRight.setPosition(854.4, 390.95);
-				box.setPosition();
-		}
-
-		this.dialogueList = dialogueList;
-		
-		if (!hasDialog)
-			return;
-		
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-		portraitLeft.updateHitbox();
-		portraitLeft.scrollFactor.set();
-		add(portraitLeft);
-		portraitLeft.visible = false;}
-		package;
-
-		import flixel.FlxG;
-		import flixel.FlxSprite;
-		import flixel.addons.text.FlxTypeText;
-		import flixel.graphics.frames.FlxAtlasFrames;
-		import flixel.group.FlxSpriteGroup;
-		import flixel.input.FlxKeyManager;
-		import flixel.text.FlxText;
-		import flixel.util.FlxColor;
-		import flixel.util.FlxTimer;
-		
-		using StringTools;
-		
-		class DialogueBox extends FlxSpriteGroup
-		{
-			var box:FlxSprite;
-		
-			var curCharacter:String = '';
-		
-			var dialogue:Alphabet;
-			var dialogueList:Array<String> = [];
-		
-			// SECOND DIALOGUE FOR THE PIXEL SHIT INSTEAD???
-			var swagDialogue:FlxTypeText;
-		
-			var dropText:FlxText;
-		
-			public var finishThing:Void->Void;
-		
-			var portraitLeft:FlxSprite;
-			var portraitRight:FlxSprite;
-		
-			var handSelect:FlxSprite;
-			var bgFade:FlxSprite;
-		
+	
 			public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 			{
 				super();
