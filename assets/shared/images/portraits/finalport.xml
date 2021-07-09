@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="finalport.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="alpacaphase40000" x="0" y="0" width="377" height="324" pivotX="3" pivotY="-0.15"/>
+</TextureAtlas>
