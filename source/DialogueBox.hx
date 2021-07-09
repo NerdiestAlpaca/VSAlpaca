@@ -89,7 +89,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		add(portraitLeft);
-		portraitLeft.visible = false;
+		portraitLeft.visible = false;}
 		package;
 
 		import flixel.FlxG;
