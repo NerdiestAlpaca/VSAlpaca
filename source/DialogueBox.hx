@@ -71,25 +71,25 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		
 		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('portraits/alpacaport');
+		portraitLeft.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
 		portraitLeft.animation.addByPrefix('enter', 'alpacaphase1', 24, false);
 		portraitLeft.scrollFactor.set();
 		portraitLeft.visible = true;
 
 		portraitLeft2 = new FlxSprite(-20, 40);
-		portraitLeft2.frames = Paths.getSparrowAtlas('portraits/demonport');
+		portraitLeft2.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
 		portraitLeft2.animation.addByPrefix('enter', 'alpacaphase2', 24, false);
 		portraitLeft2.scrollFactor.set();
 		portraitLeft2.visible = true;
 
 		portraitLeft3 = new FlxSprite(-20, 40);
-		portraitLeft3.frames = Paths.getSparrowAtlas('portraits/darkport');
+		portraitLeft3.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
 		portraitLeft3.animation.addByPrefix('enter', 'alpacaphase3', 24, false);
 		portraitLeft3.scrollFactor.set();
 		portraitLeft3.visible = true;
 
 		portraitLeft4 = new FlxSprite(-20, 40);
-		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/finalport');
+		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
 		portraitLeft4.animation.addByPrefix('enter', 'alpacaphase4', 24, false);
 		portraitLeft4.scrollFactor.set();
 		portraitLeft4.visible = true;
