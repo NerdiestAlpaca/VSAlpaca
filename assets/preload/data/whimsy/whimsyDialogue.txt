@@ -1,6 +1,16 @@
-:paca:this is the test dialogue for whimsy
-:bf:bep
-:demon:look at me i'm scary now
+:paca:Hey, aren't you Boyfriend?
+:pacaconfused:What're you doing here in the Alpake Highlands?
+:bf:skebapeedoo
+:pacaconfused:Uh, what?
+:bfawkward:Oops, sorry, force of habit.
+:bf:I was just saying that me and my girlfriend got a little...
+:bfpeeved:Well, more than a little lost.
+:paca:Understandable.
+:pacagrin:But I'm gonna have to take you down anyway.
 :bfshock:?!?
-:dark:big n scary
-:bfshock:what the fuck
+:pacahappy:Ahahaha, I'm just messing with ya.
+:final:You should've seen the look on your face! Priceless...
+:bfpeeved:...Uh-huh.
+:paca:Oh hey, while you're here. Do you wanna sing?
+:bf:Sure, why the heck not? 
+:bf:Let's rock!
