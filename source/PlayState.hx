@@ -770,7 +770,7 @@ class PlayState extends MusicBeatState
             curStage = 'highlandsDemon';
 			var bg = new FlxSprite(-550, -100);
 			bg.frames = Paths.getSparrowAtlas('alpacaRound2/bg');
-			bg.animation.addByPrefix("idle", "BG Phase 1", 24);
+			bg.animation.addByPrefix("idle", "BG Phase 2", 24);
 			bg.animation.play("idle");
 			bg.setGraphicSize(Std.int(bg.width * 1.7));
 			bg.scrollFactor.set(0.3, 0.25);
