@@ -141,7 +141,12 @@ class DialogueBox extends FlxSpriteGroup
 				box.animation.add('normalOpen', [0], 0);
 				box.animation.add('normal', [0], 0);
 				portraitLeft.setPosition(25.5,390.45);
+				portraitLeft2.setPosition(25.5,390.45);
+				portraitLeft3.setPosition(25.5,390.45);
+				portraitLeft4.setPosition(25.5,390.45);
 				portraitRight.setPosition(854.4, 390.95);
+				portraitRight2.setPosition(854.4, 390.95);
+				portraitRight3.setPosition(854.4, 390.95);
 				box.setPosition();
 		}
 		this.dialogueList = dialogueList;
