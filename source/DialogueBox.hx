@@ -137,7 +137,7 @@ class DialogueBox extends FlxSpriteGroup
 			default:
 				hasDialog = true;
 				PlayState.daPixelZoom = 1;
-				box.loadGraphic(Paths.image('sunday/dia'),true,1280,720);
+				box.loadGraphic(Paths.image('portraits/textbox'),true,1280,720);
 				box.animation.add('normalOpen', [0], 0);
 				box.animation.add('normal', [0], 0);
 				portraitLeft.setPosition(25.5,390.45);
