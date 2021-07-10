@@ -127,8 +127,7 @@ if beatdropsmall then
 end
 if beatdropextra then 
     if curStep % 4 == 0 then
-        setHudZoom(1.07)
-        setCamZoom(1.02)
+        setCamZoom(1.04)
     end
 end
 end
@@ -590,12 +589,12 @@ if step == 4352 then
     slowsway = true
     finale = true
     beatdropextra = true
+    beatdropsmall = true
 tweenFadeIn(Light,1,16)
 end
 if step == 4480 then
     finale = false
     beatdropextra = false
-    beatdropsmall = true
     tweenFadeIn('dad',0,4)
 end
 if step == 4608 then
