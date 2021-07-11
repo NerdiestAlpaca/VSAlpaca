@@ -1279,6 +1279,7 @@ class PlayState extends MusicBeatState
 				case 'thorns':
 					schoolIntro(doof);
 				case 'whimsy':
+					LoadingState.loadAndSwitchState(new VideoState("assets/videos/WhimsyCutscene.webm",new PlayState()));
 					schoolIntro(doof);
 				case 'absolution':
 					schoolIntro(doof);
