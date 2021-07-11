@@ -24,20 +24,20 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Tutorial'],
+		//['Tutorial'],
 		['Whimsy', 'Cyclone', 'Darkness', 'Absolution']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['alpaca', 'bf', 'gf'],
+		//['', 'bf', 'gf'],
 		['alpaca', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
-		"Tutorial",
+		//"",
 		"Fluff n' Tumble"
 	];
 
@@ -274,14 +274,6 @@ class StoryMenuState extends MusicBeatState
 
 
 			PlayState.storyDifficulty = curDifficulty;
-
-			// adjusting the song name to be compatible
-			var songFormat = StringTools.replace(PlayState.storyPlaylist[0], " ", "-");
-			switch (songFormat) {
-				case 'Dad-Battle': songFormat = 'Dadbattle';
-				case 'Philly-Nice': songFormat = 'Philly';
-			}
-
 			var poop:String = Highscore.formatSong(songFormat, curDifficulty);
 
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
@@ -289,9 +281,14 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				LoadingState.loadAndSwitchState(new PlayState(), true);
+				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
+						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
+				});
 			});
 		}
+	}
+	function loadplayState(){
+		LoadingState.loadAndSwitchState(new PlayState(), true);
 	}
 
 	function changeDifficulty(change:Int = 0):Void
