@@ -1028,13 +1028,13 @@ class PlayState extends MusicBeatState
 					dad.x -= 250;
 					gf.y -=40;
 					boyfriend.y += 50;
-					boyfriend.x += 100;
+					boyfriend.x += 25;
 				case 'highlandsDemon':
-						gf.x -= 280;
+						gf.x -= 300;
 						dad.x -= 350;
 						gf.y -=40;
 						boyfriend.y += 50;
-						boyfriend.x += 100;
+						boyfriend.x += 25;
 				case 'hell':
 					boyfriend.x += 700;
 					boyfriend.y += 20;

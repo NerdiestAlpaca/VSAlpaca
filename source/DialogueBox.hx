@@ -93,7 +93,7 @@ class DialogueBox extends FlxSpriteGroup
 		
 		portraitLeft4 = new FlxSprite(-20, 40);
 		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft4.animation.addByPrefix('enter', 'alpacagrin', 24, false);
+		portraitLeft4.animation.addByPrefix('enter', 'alpacahappy', 24, false);
 		portraitLeft4.scrollFactor.set();
 		portraitLeft4.visible = true;
 
