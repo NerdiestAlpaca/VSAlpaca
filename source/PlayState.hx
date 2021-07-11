@@ -10,7 +10,7 @@ import flixel.graphics.FlxGraphic;
 import openfl.utils.AssetManifest;
 import openfl.utils.AssetLibrary;
 import flixel.system.FlxAssets;
-
+import webm.WebmPlayer;
 import lime.app.Application;
 import lime.media.AudioContext;
 import lime.media.AudioManager;
@@ -181,6 +181,8 @@ class PlayState extends MusicBeatState
 	var songScoreDef:Int = 0;
 	var scoreTxt:FlxText;
 	var replayTxt:FlxText;
+
+	public static var webmHandler:WebmHandler;
 
 	public static var campaignScore:Int = 0;
 
@@ -2692,6 +2694,14 @@ class PlayState extends MusicBeatState
 
 	function endSong():Void
 	{
+		if (useVideo)
+			{
+				GlobalVideo.get().stop();
+				FlxG.stage.window.onFocusOut.remove(focusOut);
+				FlxG.stage.window.onFocusIn.remove(focusIn);
+				PlayState.instance.remove(PlayState.instance.videoSprite);
+			}
+			
 		if (!loadRep)
 			rep.SaveReplay(saveNotes);
 		else
