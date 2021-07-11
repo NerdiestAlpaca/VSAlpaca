@@ -32,6 +32,8 @@ class VideoState extends MusicBeatState
 	public var defaultText:String = "";
 	public var doShit:Bool = false;
 	public var pauseText:String = "Press P To Pause/Unpause";
+	public var videoSprite:FlxSprite = new FlxSprite();
+	var ishit = 0;
 
 	public function new(source:String, toTrans:Void->Void)
 	{
@@ -61,26 +63,31 @@ class VideoState extends MusicBeatState
 		#end
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
-		var html5Text:String = "";
+		var skipText:FlxText = new FlxText(0, 0, 0, "Press ENTER to Skip", 16);
+		skipText.setBorderStyle(FlxTextBorderStyle.OUTLINE,0xFF000000,2,1);
+		skipText.y = 720 - skipText.height;
+		var html5Text:String = "You Are Not Using HTML5...\nThe Video Didnt Load!";
 		if (isHTML)
 		{
-			html5Text = "";
+			html5Text = "You Are Using HTML5!";
 		}
-		defaultText = "" + html5Text;
+		defaultText = "If Your On HTML5\nTap Anything...\nThe Bottom Text Indicates If You\nAre Using HTML5...\n\n" + html5Text;
 		txt = new FlxText(0, 0, FlxG.width,
 			defaultText,
 			32);
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
 		add(txt);
+		add(videoSprite);
+		add(skipText);
 
 		if (GlobalVideo.isWebm)
 		{
-			if (Assets.exists(leSource.replace(".webm", ".ogg"), MUSIC) || Assets.exists(leSource.replace(".webm", ".ogg"), SOUND))
-			{
+			//if (Assets.exists(leSource.replace(".webm", ".ogg"), MUSIC) || Assets.exists(leSource.replace(".webm", ".ogg"), SOUND))
+			//{
 				useSound = true;
 				vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
-			}
+			//}
 		}
 
 		GlobalVideo.get().source(leSource);
@@ -111,15 +118,21 @@ class VideoState extends MusicBeatState
 						vidSound.time = vidSound.length * soundMultiplier;
 					}
 				}, 0);*/
-				doShit = true;
+				doShit = false;
 			//}, 1);
 		//}
+		var data = Main.webmHandle.webm.bitmapData;
+		videoSprite.loadGraphic(data);
+		
+		FlxG.camera.flash(FlxColor.BLACK, 0.5);
 	}
 	
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 		
+		if (ishit < 8) pauseShit();
+		ishit++;
 		if (useSound)
 		{
 			var wasFuckingHit = GlobalVideo.get().webm.wasHitOnce;
@@ -170,19 +183,10 @@ class VideoState extends MusicBeatState
 			GlobalVideo.get().restart();
 		}
 		
-		/*if (FlxG.keys.justPressed.P)
+		if (FlxG.keys.justPressed.P)
 		{
-			txt.text = pauseText;
-			trace("PRESSED PAUSE");
-			GlobalVideo.get().togglePause();
-			if (GlobalVideo.get().paused)
-			{
-				GlobalVideo.get().alpha();
-			} else {
-				GlobalVideo.get().unalpha();
-				txt.text = defaultText;
-			}
-		}*/
+			pauseShit();
+		}
 		
 		if (controls.ACCEPT || GlobalVideo.get().ended || GlobalVideo.get().stopped)
 		{
@@ -210,5 +214,22 @@ class VideoState extends MusicBeatState
 		GlobalVideo.get().played = false;
 		GlobalVideo.get().stopped = false;
 		GlobalVideo.get().ended = false;
+	}
+	
+	public function pauseShit() 
+	{
+		
+			txt.text = pauseText;
+			trace("PRESSED PAUSE");
+			GlobalVideo.get().togglePause();
+			if (GlobalVideo.get().paused)
+			{
+				videoSprite.alpha = 0.5;
+				GlobalVideo.get().alpha();
+			} else {
+				videoSprite.alpha = 1;
+				GlobalVideo.get().unalpha();
+				txt.text = defaultText;
+			}
 	}
 }
