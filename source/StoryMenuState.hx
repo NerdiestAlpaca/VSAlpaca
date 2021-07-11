@@ -289,8 +289,14 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				LoadingState.loadAndSwitchState(new PlayState(), true);
+				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
+						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
+				});
 			});
+		}
+	}
+	function loadplayState(){
+				LoadingState.loadAndSwitchState(new PlayState(), true);
 		}
 	}
 
