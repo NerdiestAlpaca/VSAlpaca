@@ -214,12 +214,15 @@ class DialogueBox extends FlxSpriteGroup
 		add(swagDialogue);
 
 		add(portraitLeft);
-		add(portraitRight);
+		add(portraitLeft2);
+		add(portraitLeft3);
+		add(portraitLeft4);
 		add(portraitLeft5);
-		add(portraitRight2);
 		add(portraitLeft6);
-		add(portraitRight3);
 		add(portraitLeft7);
+		add(portraitRight);
+		add(portraitRight2);
+		add(portraitRight3);
 		add(portraitRight4);
 		dialogue = new Alphabet(0, 80, "", false, true);
 		// dialogue.x = 90;
