@@ -2693,15 +2693,7 @@ class PlayState extends MusicBeatState
 	}
 
 	function endSong():Void
-	{
-		if (useVideo)
-			{
-				GlobalVideo.get().stop();
-				FlxG.stage.window.onFocusOut.remove(focusOut);
-				FlxG.stage.window.onFocusIn.remove(focusIn);
-				PlayState.instance.remove(PlayState.instance.videoSprite);
-			}
-			
+	{		
 		if (!loadRep)
 			rep.SaveReplay(saveNotes);
 		else
