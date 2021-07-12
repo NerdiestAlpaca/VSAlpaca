@@ -1327,7 +1327,7 @@ class PlayState extends MusicBeatState
 				add(red);
 			}
 		}
-		
+
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
 		{
 			black.alpha -= 0.15;
@@ -2836,9 +2836,9 @@ class PlayState extends MusicBeatState
 					switch (curSong.toLowerCase())
 					{
 						case 'whimsy':
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/HankFuckingShootsTricky.webm", new PlayState()));
+							FlxG.switchState(new VideoState('assets/videos/HankFuckingShootsTricky.webm', loadplayState));
 						case 'cyclone':
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/HELLCLOWN_ENGADGED.webm",new PlayState()));
+							FlxG.switchState(new VideoState('assets/videos/HELLCLOWN_ENGADGED.webm', loadplayState));
 						case 'darkness':
 							if (FlxG.save.data.progress < 1)
 								{
@@ -2846,7 +2846,7 @@ class PlayState extends MusicBeatState
 									FlxG.save.flush();
 									Main.menuBad = true;
 								}
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm",new MainMenuState()));
+								FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadplayState));
 						case 'absolution':
 							Main.menuBad = false;
 						default:
@@ -2861,7 +2861,9 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
-
+	function loadplayState(){
+		LoadingState.loadAndSwitchState(new PlayState(), true);
+	}
 
 	var endingSong:Bool = false;
 
