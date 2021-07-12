@@ -287,7 +287,7 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
-			detailsText = "Freeplay";
+			detailsText = "Training";
 		}
 
 		// String for when the game is paused
@@ -2766,13 +2766,27 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
+					if (storyWeek == 0)
+					{
+						FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadStoryState));
+
+						if (!Main.menuBad)
+							{
+								FlxG.sound.playMusic(Paths.music('freakyMenu'));
+							}
+							else
+							{
+								FlxG.sound.playMusic(Paths.music('menuBad'));
+							}
+					}
+				else
 					if (!Main.menuBad)
 						{
 							FlxG.sound.playMusic(Paths.music('freakyMenu'));
 						}
 						else
 						{
-							FlxG.sound.playMusic(Paths.sound('menuBad'));
+							FlxG.sound.playMusic(Paths.music('menuBad'));
 						}
 
 					transIn = FlxTransitionableState.defaultTransIn;
@@ -2846,7 +2860,6 @@ class PlayState extends MusicBeatState
 									FlxG.save.flush();
 									Main.menuBad = true;
 								}
-								FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadplayState));
 						case 'absolution':
 							Main.menuBad = false;
 						default:
@@ -2863,6 +2876,10 @@ class PlayState extends MusicBeatState
 	}
 	function loadplayState(){
 		LoadingState.loadAndSwitchState(new PlayState(), true);
+	}
+
+	function loadStoryState(){
+		LoadingState.loadAndSwitchState(new StoryMenuState(), true);
 	}
 
 	var endingSong:Bool = false;

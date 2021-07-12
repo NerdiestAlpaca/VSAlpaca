@@ -12,6 +12,9 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.utils.Assets;
+#if windows
+import Discord.DiscordClient;
+#end
 #if sys
 import sys.io.File;
 #end
@@ -31,6 +34,11 @@ class LoadReplayState extends MusicBeatState
 	var poggerDetails:FlxText;
 	override function create()
 	{
+		#if windows
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("Looking for Replays", null);
+		#end
+
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
         #if sys
 		controlsStrings = sys.FileSystem.readDirectory(Sys.getCwd() + "/assets/replays/");
@@ -47,6 +55,7 @@ class LoadReplayState extends MusicBeatState
         addWeek(['Cocoa', 'Eggnog', 'Winter-Horrorland'], 5, ['parents-christmas', 'parents-christmas', 'monster-christmas']);
         
         addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai', 'spirit']);
+		 addWeek(['Whimsy', 'Cyclone', 'Darkness', 'Absolution'], 7, ['alpaca', 'demon', 'darkness', 'final']);
 
 
         for(i in 0...controlsStrings.length)
@@ -82,13 +91,13 @@ class LoadReplayState extends MusicBeatState
 
 		versionShit = new FlxText(5, FlxG.height - 34, 0, "Replay Loader (ESCAPE TO GO BACK)\nNOTICE!!!! Replays are in a beta stage, and they are probably not 100% correct. expect misses and other stuff that isn't there!\n", 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat(Paths.font("pixel.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
 		
 		poggerDetails = new FlxText(5, 34, 0, "Replay Details - \nnone", 12);
 		poggerDetails.scrollFactor.set();
-		poggerDetails.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		poggerDetails.setFormat(Paths.font("pixel.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(poggerDetails);
 
 		changeSelection(0);

@@ -138,6 +138,19 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight4.animation.addByPrefix('enter', 'bfawkward', 24, false);
 		portraitRight4.scrollFactor.set();
 		portraitRight4.visible = false;
+
+		portraitRight5 = new FlxSprite(0, 40);
+		portraitRight5.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
+		portraitRight5.animation.addByPrefix('enter', 'bfpumped', 24, false);
+		portraitRight5.scrollFactor.set();
+		portraitRight5.visible = false;
+		
+		portraitRight6 = new FlxSprite(0, 40);
+		portraitRight6.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
+		portraitRight6.animation.addByPrefix('enter', 'bfdetermined', 24, false);
+		portraitRight6.scrollFactor.set();
+		portraitRight6.visible = false;
+
 		switch (PlayState.SONG.song.toLowerCase())
 		{
 			case 'senpai':
@@ -179,6 +192,8 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.setPosition(929.4, 390.95);
 				portraitRight3.setPosition(929.4, 390.95);
 				portraitRight4.setPosition(929.4, 390.95);
+				portraitRight5.setPosition(929.4, 390.95);
+				portraitRight6.setPosition(929.4, 390.95);
 				box.setPosition();
 		}
 		this.dialogueList = dialogueList;
@@ -203,12 +218,12 @@ class DialogueBox extends FlxSpriteGroup
 		}
 
 		dropText = new FlxText(342, 502, Std.int(FlxG.width * 0.6), ".", 32);
-		//dropText.font = 'Pixel Arial 11 Bold';
+		dropText.setFormat(Paths.font('pixel.otf'), 32);
 		dropText.color = 0xFFD89494;
 		add(dropText);
 
 		swagDialogue = new FlxTypeText(340, 500, Std.int(FlxG.width * 0.6), ".", 32);
-		//swagDialogue.font = 'Pixel Arial 11 Bold';
+		swagDialogue.setFormat(Paths.font('pixel.otf'), 32);
 		swagDialogue.color = 0xFFFFFFFF;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
@@ -224,6 +239,8 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitRight2);
 		add(portraitRight3);
 		add(portraitRight4);
+		add(portraitRight5);
+		add(portraitRight6);
 		dialogue = new Alphabet(0, 80, "", false, true);
 		// dialogue.x = 90;
 		// add(dialogue);
@@ -319,6 +336,7 @@ class DialogueBox extends FlxSpriteGroup
 		switch (curCharacter)
 		{
 			case 'paca':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
 				portraitLeft4.visible = false;
@@ -329,12 +347,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitLeft.visible)
 				{
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
 				}
 				case 'pacaconfused':
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 					portraitLeft.visible = false;
 					portraitLeft3.visible = false;
 					portraitLeft4.visible = false;
@@ -345,6 +366,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitRight2.visible = false;
 					portraitRight3.visible = false;
 					portraitRight4.visible = false;
+					portraitRight5.visible = false;
+					portraitRight6.visible = false;
 					if (!portraitLeft2.visible)
 					{
 						portraitLeft2.visible = true;
@@ -352,6 +375,7 @@ class DialogueBox extends FlxSpriteGroup
 					}
 				
 					case 'pacagrin':
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 					portraitLeft.visible = false;
 					portraitLeft2.visible = false;
 					portraitLeft4.visible = false;
@@ -362,6 +386,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitRight2.visible = false;
 					portraitRight3.visible = false;
 					portraitRight4.visible = false;
+					portraitRight5.visible = false;
+					portraitRight6.visible = false;
 					if (!portraitLeft3.visible)
 					{
 						portraitLeft3.visible = true;
@@ -369,6 +395,7 @@ class DialogueBox extends FlxSpriteGroup
 					}
 				
 					case 'pacahappy':
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 					portraitLeft.visible = false;
 					portraitLeft2.visible = false;
 					portraitLeft3.visible = false;
@@ -379,12 +406,15 @@ class DialogueBox extends FlxSpriteGroup
 					portraitRight2.visible = false;
 					portraitRight3.visible = false;
 					portraitRight4.visible = false;
+					portraitRight5.visible = false;
+					portraitRight6.visible = false;
 					if (!portraitLeft4.visible)
 					{
 						portraitLeft4.visible = true;
 						portraitLeft4.animation.play('enter');
 					}
 			case 'demon':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -395,12 +425,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitLeft5.visible)
 				{
 					portraitLeft5.visible = true;
 					portraitLeft5.animation.play('enter');
 				}
 			case 'dark':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -411,12 +444,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitLeft6.visible)
 				{
 					portraitLeft6.visible = true;
 					portraitLeft6.animation.play('enter');
 				}
 			case 'final':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -427,12 +463,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitLeft7.visible)
 				{
 					portraitLeft7.visible = true;
 					portraitLeft7.animation.play('enter');
 				}
 			case 'bf':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -443,12 +482,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
 			case 'bfshock':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -459,12 +501,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 				portraitRight3.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitRight2.visible)
 				{
 					portraitRight2.visible = true;
 					portraitRight2.animation.play('enter');
 				}
 			case 'bfpeeved':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -475,12 +520,15 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 				portraitRight2.visible = false;
 				portraitRight4.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitRight3.visible)
 				{
 					portraitRight3.visible = true;
 					portraitRight3.animation.play('enter');
 				}
 			case 'bfawkward':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -491,11 +539,51 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 				portraitRight2.visible = false;
 				portraitRight3.visible = false;
+				portraitRight5.visible = false;
+				portraitRight6.visible = false;
 				if (!portraitRight4.visible)
 				{
 					portraitRight4.visible = true;
 					portraitRight4.animation.play('enter');
 				}	
+				case 'bfpumped':
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+					portraitLeft.visible = false;
+					portraitLeft2.visible = false;
+					portraitLeft3.visible = false;
+					portraitLeft4.visible = false;
+					portraitLeft5.visible = false;
+					portraitLeft6.visible = false;
+					portraitLeft7.visible = false;
+					portraitRight.visible = false;
+					portraitRight2.visible = false;
+					portraitRight3.visible = false;
+					portraitRight4.visible = false;
+					portraitRight6.visible = false;
+					if (!portraitRight5.visible)
+					{
+						portraitRight5.visible = true;
+						portraitRight5.animation.play('enter');
+					}	
+					case 'bfdetermined':
+						swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+						portraitLeft.visible = false;
+						portraitLeft2.visible = false;
+						portraitLeft3.visible = false;
+						portraitLeft4.visible = false;
+						portraitLeft5.visible = false;
+						portraitLeft6.visible = false;
+						portraitLeft7.visible = false;
+						portraitRight.visible = false;
+						portraitRight2.visible = false;
+						portraitRight3.visible = false;
+						portraitRight4.visible = false;
+						portraitRight5.visible = false;
+						if (!portraitRight6.visible)
+						{
+							portraitRight6.visible = true;
+							portraitRight6.animation.play('enter');
+						}	
 		}
 	}
 
