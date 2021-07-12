@@ -2834,7 +2834,6 @@ class PlayState extends MusicBeatState
 							Main.menuBad = false;
 					}
 				}
-			}
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
