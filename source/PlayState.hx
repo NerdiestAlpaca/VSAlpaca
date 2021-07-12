@@ -1327,6 +1327,7 @@ class PlayState extends MusicBeatState
 				add(red);
 			}
 		}
+		
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
 		{
 			black.alpha -= 0.15;
