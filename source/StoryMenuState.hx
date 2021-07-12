@@ -80,7 +80,7 @@ class StoryMenuState extends MusicBeatState
 					}
 					else
 					{
-						FlxG.sound.playMusic(Paths.sound('ending'));
+						FlxG.sound.playMusic(Paths.music('ending'));
 					}
 				}
 			}
