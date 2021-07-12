@@ -2809,7 +2809,7 @@ class PlayState extends MusicBeatState
 
 					PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 					FlxG.sound.music.stop();
-					switch(song.toLowerCase())
+					switch (curSong.toLowerCase())
 					{
 						case 'darkness':
 							if (FlxG.save.data.progress < 1)
