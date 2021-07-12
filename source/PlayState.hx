@@ -1327,7 +1327,6 @@ class PlayState extends MusicBeatState
 				add(red);
 			}
 		}
-
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
 		{
 			black.alpha -= 0.15;
@@ -1372,6 +1371,23 @@ class PlayState extends MusicBeatState
 							}
 						});
 					}
+					if (StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase() == 'absolution')
+						{
+							add(senpaiEvil);
+							senpaiEvil.alpha = 0;
+							new FlxTimer().start(0.1, function(swagTimer:FlxTimer)
+									{
+										remove(senpaiEvil);
+										FlxG.camera.fade(FlxColor.BLACK, 0.01, true, function()
+										{
+											add(dialogueBox);
+										}, true);
+									});
+									new FlxTimer().start(0.01, function(deadTime:FlxTimer)
+									{
+										FlxG.camera.fade(FlxColor.BLACK, 1.6, false);
+									});
+								}
 					else
 					{
 						add(dialogueBox);
@@ -2749,7 +2765,14 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
+					if (!Main.menuBad)
+						{
+							FlxG.sound.playMusic(Paths.music('freakyMenu'));
+						}
+						else
+						{
+							FlxG.sound.playMusic(Paths.sound('menuBad'));
+						}
 
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
@@ -2811,13 +2834,18 @@ class PlayState extends MusicBeatState
 					FlxG.sound.music.stop();
 					switch (curSong.toLowerCase())
 					{
+						case 'whimsy':
+							LoadingState.loadAndSwitchState(new VideoState("assets/videos/HankFuckingShootsTricky.webm", new PlayState()));
+						case 'cyclone':
+							LoadingState.loadAndSwitchState(new VideoState("assets/videos/HELLCLOWN_ENGADGED.webm",new PlayState()));
 						case 'darkness':
 							if (FlxG.save.data.progress < 1)
 								{
 									FlxG.save.data.progress = 1;
 									FlxG.save.flush();
+									Main.menuBad = true;
 								}
-								Main.menuBad = true;
+							LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm",new MainMenuState()));
 						case 'absolution':
 							Main.menuBad = false;
 						default:
