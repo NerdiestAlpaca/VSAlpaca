@@ -21,6 +21,7 @@ class Main extends Sprite
 	var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	public static var webmHandle:WebmHandler = new WebmHandler();
+	public static var menuBad:Bool = false;
 	
 	
 	var framerate:Int = 120; // How many frames per second the game should run at.

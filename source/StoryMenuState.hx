@@ -25,20 +25,23 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		//['Tutorial'],
-		['Whimsy', 'Cyclone', 'Darkness', 'Absolution']
+		['Whimsy', 'Cyclone', 'Darkness'],
+		['Absolution']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true, false];
 
 	var weekCharacters:Array<Dynamic> = [
 		//['', 'bf', 'gf'],
+		['alpaca', 'bf', 'gf'],
 		['alpaca', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
 		//"",
-		"Fluff n' Tumble"
+		"Fluff n' Tumble",
+		"World's End"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -68,10 +71,24 @@ class StoryMenuState extends MusicBeatState
 		transOut = FlxTransitionableState.defaultTransOut;
 
 		if (FlxG.sound.music != null)
-		{
-			if (!FlxG.sound.music.playing)
-				FlxG.sound.playMusic(Paths.music('freakyMenu'));
-		}
+			{
+				if (!FlxG.sound.music.playing)
+				{
+					if (!Main.menuBad)
+					{
+						FlxG.sound.playMusic(Paths.music('freakyMenu'));
+					}
+					else
+					{
+						FlxG.sound.playMusic(Paths.sound('ending'));
+					}
+				}
+			}
+
+		if (FlxG.save.data.progress > 0)
+			{
+				weekUnlocked[1] = true;
+			}
 
 		persistentUpdate = persistentDraw = true;
 
@@ -290,7 +307,10 @@ class StoryMenuState extends MusicBeatState
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
 				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
+					if (storyWeek == 0)
 						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
+					else
+						FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
 				});
 			});
 		}

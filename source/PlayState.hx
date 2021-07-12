@@ -2811,6 +2811,20 @@ class PlayState extends MusicBeatState
 					FlxG.sound.music.stop();
 
 					LoadingState.loadAndSwitchState(new PlayState());
+					else
+						{
+					switch(song.toLowerCase())
+					{
+						case ('darkness'):
+							if (FlxG.save.data.progress < 1)
+							{
+								FlxG.save.data.progress = 1;
+								FlxG.save.flush();
+								Main.menuBad = true;
+							}
+						case ('absolution'):
+							Main.menuBad = false;
+					}
 				}
 			}
 			else

@@ -122,6 +122,12 @@ class MainMenuState extends MusicBeatState
 		super.create();
 	}
 
+	if (FlxG.save.data.progress == null)
+		{
+			FlxG.save.data.progress = 0;
+			FlxG.save.flush();
+		}
+
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)
