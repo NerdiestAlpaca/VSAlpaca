@@ -199,6 +199,8 @@ class PlayState extends MusicBeatState
 	public static var timeCurrently:Float = 0;
 	public static var timeCurrentlyR:Float = 0;
 	
+	var s_ending:Bool = false;
+
 	// Will fire once to prevent debug spam messages and broken animations
 	private var triggeredAlready:Bool = false;
 	
@@ -1280,7 +1282,10 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'whimsy':
 					schoolIntro(doof);
+				case 'darkness':
+					s_ending = true;
 				case 'absolution':
+					s_ending = true;
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -2813,30 +2818,29 @@ class PlayState extends MusicBeatState
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
-					else
-						{
-					switch(song.toLowerCase())
+			else
+				{
+					s_ending = false;
+					switch (SONG.song.toLowerCase())
 					{
 						case ('darkness'):
 							if (FlxG.save.data.progress < 1)
 							{
 								FlxG.save.data.progress = 1;
 								FlxG.save.flush();
-								Main.menuBad = true;
 							}
+							Main.menuBad = true;
 						case ('absolution'):
 							Main.menuBad = false;
 					}
 				}
 			}
-		}
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
 				FlxG.switchState(new FreeplayState());
 			}
 		}
-	}
 
 
 	var endingSong:Bool = false;
