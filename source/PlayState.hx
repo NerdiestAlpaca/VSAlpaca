@@ -2766,20 +2766,6 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
-					if (storyWeek == 0)
-					{
-						FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadStoryState));
-
-						if (!Main.menuBad)
-							{
-								FlxG.sound.playMusic(Paths.music('freakyMenu'));
-							}
-							else
-							{
-								FlxG.sound.playMusic(Paths.music('menuBad'));
-							}
-					}
-				else
 					if (!Main.menuBad)
 						{
 							FlxG.sound.playMusic(Paths.music('freakyMenu'));
@@ -2854,14 +2840,7 @@ class PlayState extends MusicBeatState
 						case 'cyclone':
 							FlxG.switchState(new VideoState('assets/videos/HELLCLOWN_ENGADGED.webm', loadplayState));
 						case 'darkness':
-							if (FlxG.save.data.progress < 1)
-								{
-									FlxG.save.data.progress = 1;
-									FlxG.save.flush();
-									Main.menuBad = true;
-								}
-						case 'absolution':
-							Main.menuBad = false;
+							FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadplayState));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
@@ -2876,10 +2855,6 @@ class PlayState extends MusicBeatState
 	}
 	function loadplayState(){
 		LoadingState.loadAndSwitchState(new PlayState(), true);
-	}
-
-	function loadStoryState(){
-		LoadingState.loadAndSwitchState(new StoryMenuState(), true);
 	}
 
 	var endingSong:Bool = false;
