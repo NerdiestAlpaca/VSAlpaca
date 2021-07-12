@@ -307,7 +307,7 @@ class StoryMenuState extends MusicBeatState
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
 				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
-					if (storyWeek == 0)
+					if (curWeek == 0)
 						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
 					else
 						FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
