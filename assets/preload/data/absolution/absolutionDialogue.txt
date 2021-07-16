@@ -1,2 +1,3 @@
-:final:this is the test dialogue for absolution
-:bfdetermined:beeeeeep
+:final:this is the placeholder dialogue for absolution
+:pacaconfused:(i have no clue how i'm gonna get this to work right)
+:bfdetermined:fuck

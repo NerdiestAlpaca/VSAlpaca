@@ -348,6 +348,10 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 			case 'whimsy':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('whimsy/whimsyDialogue'));
+			case 'cyclone':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('cyclone/cycloneDialogue'));
+			case 'darkness':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('darkness/darknessDialogue'));
 			case 'absolution':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('absolution/absolutionDialogue'));
 		}
@@ -1280,6 +1284,10 @@ class PlayState extends MusicBeatState
 				case 'thorns':
 					schoolIntro(doof);
 				case 'whimsy':
+					schoolIntro(doof);
+				case 'cyclone':
+					schoolIntro(doof);
+				case 'darkness':
 					schoolIntro(doof);
 				case 'absolution':
 					schoolIntro(doof);
