@@ -2768,14 +2768,7 @@ class PlayState extends MusicBeatState
 					{
 						MainMenuState.reRoll = true;
 		
-						LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm",new MainMenuState()));
-		
-						if (storyDifficulty == 2)
-							FlxG.save.data.beatenHard = true;
-						if (storyDifficulty >= 1)
-							FlxG.save.data.beaten = true;
-
-					FlxG.switchState(new StoryMenuState());
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm", loadstoryState));
 
 					#if windows
 					if (luaModchart != null)
@@ -2852,6 +2845,10 @@ class PlayState extends MusicBeatState
 	}
 	function loadplayState(){
 		LoadingState.loadAndSwitchState(new PlayState(), true);
+	}
+
+	function loadstoryState(){
+		LoadingState.loadAndSwitchState(new StoryMenuState(), true);
 	}
 
 	var endingSong:Bool = false;
