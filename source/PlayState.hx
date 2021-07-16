@@ -2765,18 +2765,15 @@ class PlayState extends MusicBeatState
 				storyPlaylist.remove(storyPlaylist[0]);
 
 				if (storyPlaylist.length <= 0)
-				{
-					if (!Main.menuBad)
-						{
-							FlxG.sound.playMusic(Paths.music('freakyMenu'));
-						}
-						else
-						{
-							FlxG.sound.playMusic(Paths.music('menuBad'));
-						}
-
-					transIn = FlxTransitionableState.defaultTransIn;
-					transOut = FlxTransitionableState.defaultTransOut;
+					{
+						MainMenuState.reRoll = true;
+		
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm",new MainMenuState()));
+		
+						if (storyDifficulty == 2)
+							FlxG.save.data.beatenHard = true;
+						if (storyDifficulty >= 1)
+							FlxG.save.data.beaten = true;
 
 					FlxG.switchState(new StoryMenuState());
 
@@ -2836,11 +2833,11 @@ class PlayState extends MusicBeatState
 					switch (curSong.toLowerCase())
 					{
 						case 'whimsy':
-							FlxG.switchState(new VideoState('assets/videos/HankFuckingShootsTricky.webm', loadplayState));
+							FlxG.switchState(new VideoState('assets/videos/CycloneCutscene.webm', loadplayState));
 						case 'cyclone':
 							FlxG.switchState(new VideoState('assets/videos/HELLCLOWN_ENGADGED.webm', loadplayState));
 						case 'darkness':
-							FlxG.switchState(new VideoState('assets/videos/TricksterMan.webm', loadplayState));
+							FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
