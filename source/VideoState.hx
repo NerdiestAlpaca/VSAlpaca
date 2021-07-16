@@ -11,6 +11,7 @@ import flixel.util.FlxTimer;
 import lime.app.Application;
 import flixel.system.FlxSound;
 import openfl.utils.Assets;
+import openfl.utils.AssetType;
 
 import openfl.Lib;
 
@@ -19,8 +20,7 @@ using StringTools;
 class VideoState extends MusicBeatState
 {
 	public var leSource:String = "";
-	//public var transClass:FlxState;
-	public var transFunction:Void->Void;
+	public var transClass:FlxState;
 	public var txt:FlxText;
 	public var fuckingVolume:Float = 1;
 	public var notDone:Bool = true;
@@ -32,16 +32,13 @@ class VideoState extends MusicBeatState
 	public var defaultText:String = "";
 	public var doShit:Bool = false;
 	public var pauseText:String = "Press P To Pause/Unpause";
-	public var videoSprite:FlxSprite = new FlxSprite();
-	var ishit = 0;
 
-	public function new(source:String, toTrans:Void->Void)
+	public function new(source:String, toTrans:FlxState)
 	{
 		super();
 		
 		leSource = source;
-		//transClass = toTrans;
-		transFunction = toTrans;
+		transClass = toTrans;
 	}
 	
 	override function create()
@@ -63,31 +60,21 @@ class VideoState extends MusicBeatState
 		#end
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
-		var skipText:FlxText = new FlxText(0, 0, 0, "Press ENTER to Skip", 16);
-		skipText.setBorderStyle(FlxTextBorderStyle.OUTLINE,0xFF000000,2,1);
-		skipText.y = 720 - skipText.height;
-		var html5Text:String = "You Are Not Using HTML5...\nThe Video Didnt Load!";
-		if (isHTML)
-		{
-			html5Text = "You Are Using HTML5!";
-		}
-		defaultText = "If Your On HTML5\nTap Anything...\nThe Bottom Text Indicates If You\nAre Using HTML5...\n\n" + html5Text;
+
 		txt = new FlxText(0, 0, FlxG.width,
 			defaultText,
 			32);
-		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
+		txt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
 		add(txt);
-		add(videoSprite);
-		add(skipText);
 
 		if (GlobalVideo.isWebm)
 		{
-			//if (Assets.exists(leSource.replace(".webm", ".ogg"), MUSIC) || Assets.exists(leSource.replace(".webm", ".ogg"), SOUND))
-			//{
+			if (Assets.exists(leSource.replace(".webm", ".ogg"), MUSIC) || Assets.exists(leSource.replace(".webm", ".ogg"), SOUND))
+			{
 				useSound = true;
 				vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
-			//}
+			}
 		}
 
 		GlobalVideo.get().source(leSource);
@@ -118,21 +105,15 @@ class VideoState extends MusicBeatState
 						vidSound.time = vidSound.length * soundMultiplier;
 					}
 				}, 0);*/
-				doShit = false;
+				doShit = true;
 			//}, 1);
 		//}
-		var data = Main.webmHandle.webm.bitmapData;
-		videoSprite.loadGraphic(data);
-		
-		FlxG.camera.flash(FlxColor.BLACK, 0.5);
 	}
 	
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 		
-		if (ishit < 8) pauseShit();
-		ishit++;
 		if (useSound)
 		{
 			var wasFuckingHit = GlobalVideo.get().webm.wasHitOnce;
@@ -185,7 +166,16 @@ class VideoState extends MusicBeatState
 		
 		if (FlxG.keys.justPressed.P)
 		{
-			pauseShit();
+			txt.text = pauseText;
+			trace("PRESSED PAUSE");
+			GlobalVideo.get().togglePause();
+			if (GlobalVideo.get().paused)
+			{
+				GlobalVideo.get().alpha();
+			} else {
+				GlobalVideo.get().unalpha();
+				txt.text = defaultText;
+			}
 		}
 		
 		if (controls.ACCEPT || GlobalVideo.get().ended || GlobalVideo.get().stopped)
@@ -201,8 +191,7 @@ class VideoState extends MusicBeatState
 			FlxG.sound.music.volume = fuckingVolume;
 			txt.text = pauseText;
 			FlxG.autoPause = true;
-			//FlxG.switchState(transClass);
-			transFunction();
+			FlxG.switchState(transClass);
 		}
 		
 		if (GlobalVideo.get().played || GlobalVideo.get().restarted)
@@ -214,22 +203,5 @@ class VideoState extends MusicBeatState
 		GlobalVideo.get().played = false;
 		GlobalVideo.get().stopped = false;
 		GlobalVideo.get().ended = false;
-	}
-	
-	public function pauseShit() 
-	{
-		
-			txt.text = pauseText;
-			trace("PRESSED PAUSE");
-			GlobalVideo.get().togglePause();
-			if (GlobalVideo.get().paused)
-			{
-				videoSprite.alpha = 0.5;
-				GlobalVideo.get().alpha();
-			} else {
-				videoSprite.alpha = 1;
-				GlobalVideo.get().unalpha();
-				txt.text = defaultText;
-			}
 	}
 }
