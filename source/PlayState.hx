@@ -2766,8 +2766,6 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 					{
-						MainMenuState.reRoll = true;
-		
 						LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm", loadstoryState));
 
 					#if windows
