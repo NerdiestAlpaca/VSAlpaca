@@ -77,79 +77,79 @@ class DialogueBox extends FlxSpriteGroup
 		
 		portraitLeft = new FlxSprite(-20, 40);
 		portraitLeft.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft.animation.addByPrefix('enter', 'alpacaphase1', 24, false);
+		portraitLeft.animation.addByPrefix('enter', 'alpaca', 24, false);
 		portraitLeft.scrollFactor.set();
 		portraitLeft.visible = true;
 
 		portraitLeft2 = new FlxSprite(-20, 40);
 		portraitLeft2.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft2.animation.addByPrefix('enter', 'alpacaconfused', 24, false);
+		portraitLeft2.animation.addByPrefix('enter', 'confused', 24, false);
 		portraitLeft2.scrollFactor.set();
 		portraitLeft2.visible = true;
 		
 		portraitLeft3 = new FlxSprite(-20, 40);
 		portraitLeft3.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft3.animation.addByPrefix('enter', 'alpacagrin', 24, false);
+		portraitLeft3.animation.addByPrefix('enter', 'grin', 24, false);
 		portraitLeft3.scrollFactor.set();
 		portraitLeft3.visible = true;
 		
 		portraitLeft4 = new FlxSprite(-20, 40);
 		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft4.animation.addByPrefix('enter', 'alpacahappy', 24, false);
+		portraitLeft4.animation.addByPrefix('enter', 'happy', 24, false);
 		portraitLeft4.scrollFactor.set();
 		portraitLeft4.visible = true;
 
 		portraitLeft5 = new FlxSprite(-20, 40);
 		portraitLeft5.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft5.animation.addByPrefix('enter', 'alpacaphase2', 24, false);
+		portraitLeft5.animation.addByPrefix('enter', 'demon', 24, false);
 		portraitLeft5.scrollFactor.set();
 		portraitLeft5.visible = true;
 
 		portraitLeft6 = new FlxSprite(-20, 40);
 		portraitLeft6.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft6.animation.addByPrefix('enter', 'alpacaphase3', 24, false);
+		portraitLeft6.animation.addByPrefix('enter', 'dark', 24, false);
 		portraitLeft6.scrollFactor.set();
 		portraitLeft6.visible = true;
 
 		portraitLeft7 = new FlxSprite(-20, 40);
 		portraitLeft7.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft7.animation.addByPrefix('enter', 'alpacaphase4', 24, false);
+		portraitLeft7.animation.addByPrefix('enter', 'final', 24, false);
 		portraitLeft7.scrollFactor.set();
 		portraitLeft7.visible = true;
 
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight.animation.addByPrefix('enter', 'bfnormal', 24, false);
+		portraitRight.animation.addByPrefix('enter', 'boyfriend', 24, false);
 		portraitRight.scrollFactor.set();
 		portraitRight.visible = false;
 
 		portraitRight2 = new FlxSprite(0, 40);
 		portraitRight2.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight2.animation.addByPrefix('enter', 'bfshock', 24, false);
+		portraitRight2.animation.addByPrefix('enter', 'shock', 24, false);
 		portraitRight2.scrollFactor.set();
 		portraitRight2.visible = false;
 
 		portraitRight3 = new FlxSprite(0, 40);
 		portraitRight3.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight3.animation.addByPrefix('enter', 'bfpeeved', 24, false);
+		portraitRight3.animation.addByPrefix('enter', 'peeved', 24, false);
 		portraitRight3.scrollFactor.set();
 		portraitRight3.visible = false;
 
 		portraitRight4 = new FlxSprite(0, 40);
 		portraitRight4.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight4.animation.addByPrefix('enter', 'bfawkward', 24, false);
+		portraitRight4.animation.addByPrefix('enter', 'awkward', 24, false);
 		portraitRight4.scrollFactor.set();
 		portraitRight4.visible = false;
 
 		portraitRight5 = new FlxSprite(0, 40);
 		portraitRight5.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight5.animation.addByPrefix('enter', 'bfpumped', 24, false);
+		portraitRight5.animation.addByPrefix('enter', 'pumped', 24, false);
 		portraitRight5.scrollFactor.set();
 		portraitRight5.visible = false;
 		
 		portraitRight6 = new FlxSprite(0, 40);
 		portraitRight6.frames = Paths.getSparrowAtlas('portraits/BFPortraits');
-		portraitRight6.animation.addByPrefix('enter', 'bfdetermined', 24, false);
+		portraitRight6.animation.addByPrefix('enter', 'determined', 24, false);
 		portraitRight6.scrollFactor.set();
 		portraitRight6.visible = false;
 
