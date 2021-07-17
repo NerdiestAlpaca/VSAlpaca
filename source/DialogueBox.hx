@@ -190,12 +190,12 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft5.setPosition(25.5,390.45);
 				portraitLeft6.setPosition(25.5,390.45);
 				portraitLeft7.setPosition(25.5,390.45);
-				portraitRight.setPosition(929.4, 390.95);
-				portraitRight2.setPosition(929.4, 390.95);
-				portraitRight3.setPosition(929.4, 390.95);
-				portraitRight4.setPosition(929.4, 390.95);
-				portraitRight5.setPosition(929.4, 390.95);
-				portraitRight6.setPosition(929.4, 390.95);
+				portraitRight.setPosition(969.4, 390.95);
+				portraitRight2.setPosition(969.4, 390.95);
+				portraitRight3.setPosition(969.4, 390.95);
+				portraitRight4.setPosition(969.4, 390.95);
+				portraitRight5.setPosition(969.4, 390.95);
+				portraitRight6.setPosition(969.4, 390.95);
 				box.setPosition();
 		}
 		this.dialogueList = dialogueList;
@@ -219,12 +219,12 @@ class DialogueBox extends FlxSpriteGroup
 			// box.flipX = true;
 		}
 
-		dropText = new FlxText(342, 502, Std.int(FlxG.width * 0.6), ".", 32);
+		dropText = new FlxText(342, 502, Std.int(FlxG.width * 0.6), ".", 28);
 		dropText.font = 'Pixel Arial 11 Bold';
 		dropText.color = 0xFFD89494;
 		add(dropText);
 
-		swagDialogue = new FlxTypeText(340, 500, Std.int(FlxG.width * 0.6), ".", 32);
+		swagDialogue = new FlxTypeText(390, 500, Std.int(FlxG.width * 0.6), ".", 28);
 		swagDialogue.font = 'Pixel Arial 11 Bold';
 		swagDialogue.color = 0xFFFFFFFF;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
@@ -435,7 +435,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft5.animation.play('enter');
 				}
 			case 'dark':
-				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
+				swagDialogue.sounds = [FlxG.sound.load(Paths.soundRandom('darktext', 1, 5), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
