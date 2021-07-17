@@ -2775,7 +2775,7 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 					{
-						LoadingState.loadAndSwitchState(new VideoState("assets/videos/TricksterMan.webm", loadstoryState));
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/EpilogueScene/vid.webm", loadstoryState));
 
 					#if windows
 					if (luaModchart != null)
@@ -2833,11 +2833,11 @@ class PlayState extends MusicBeatState
 					switch (curSong.toLowerCase())
 					{
 						case 'whimsy':
-							FlxG.switchState(new VideoState('assets/videos/CycloneCutscene.webm', loadplayState));
+							FlxG.switchState(new VideoState('assets/videos/CycloneCutscene/vid.webm', loadplayState));
 						case 'cyclone':
-							FlxG.switchState(new VideoState('assets/videos/HELLCLOWN_ENGADGED.webm', loadplayState));
+							FlxG.switchState(new VideoState('assets/videos/DarknessCutscene/vid.webm', loadplayState));
 						case 'darkness':
-							FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
+							FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene/vid.webm', loadplayState));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
