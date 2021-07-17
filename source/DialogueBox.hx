@@ -435,7 +435,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft5.animation.play('enter');
 				}
 			case 'dark':
-				swagDialogue.sounds = [FlxG.sound.load(Paths.soundRandom('darktext', 1, 5), 0.6)];
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('darkText'), 1)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
