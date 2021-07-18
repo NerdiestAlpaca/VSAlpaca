@@ -352,8 +352,6 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('cyclone/cycloneDialogue'));
 			case 'darkness':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('darkness/darknessDialogue'));
-			case 'absolution':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('absolution/absolutionDialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -1288,8 +1286,6 @@ class PlayState extends MusicBeatState
 				case 'cyclone':
 					schoolIntro(doof);
 				case 'darkness':
-					schoolIntro(doof);
-				case 'absolution':
 					schoolIntro(doof);
 				default:
 					startCountdown();

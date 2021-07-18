@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DemonHappy.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="demonhappy0000" x="0" y="0" width="301" height="259" pivotX="6.65" pivotY="3.55"/>
+</TextureAtlas>

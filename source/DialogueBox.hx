@@ -76,44 +76,44 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		
 		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
+		portraitLeft.frames = Paths.getSparrowAtlas('portraits/Alpaca');
 		portraitLeft.animation.addByPrefix('enter', 'alpaca', 24, false);
 		portraitLeft.scrollFactor.set();
 		portraitLeft.visible = true;
 
 		portraitLeft2 = new FlxSprite(-20, 40);
-		portraitLeft2.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft2.animation.addByPrefix('enter', 'confused', 24, false);
+		portraitLeft2.frames = Paths.getSparrowAtlas('portraits/PacaConfused');
+		portraitLeft2.animation.addByPrefix('enter', 'alpacaconfused', 24, false);
 		portraitLeft2.scrollFactor.set();
 		portraitLeft2.visible = true;
 		
 		portraitLeft3 = new FlxSprite(-20, 40);
-		portraitLeft3.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft3.animation.addByPrefix('enter', 'grin', 24, false);
+		portraitLeft3.frames = Paths.getSparrowAtlas('portraits/PacaGrin');
+		portraitLeft3.animation.addByPrefix('enter', 'alpacagrin', 24, false);
 		portraitLeft3.scrollFactor.set();
 		portraitLeft3.visible = true;
 		
 		portraitLeft4 = new FlxSprite(-20, 40);
-		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft4.animation.addByPrefix('enter', 'happy', 24, false);
+		portraitLeft4.frames = Paths.getSparrowAtlas('portraits/PacaHappy');
+		portraitLeft4.animation.addByPrefix('enter', 'alpacahappy', 24, false);
 		portraitLeft4.scrollFactor.set();
 		portraitLeft4.visible = true;
 
 		portraitLeft5 = new FlxSprite(-20, 40);
-		portraitLeft5.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
+		portraitLeft5.frames = Paths.getSparrowAtlas('portraits/Demon');
 		portraitLeft5.animation.addByPrefix('enter', 'demon', 24, false);
 		portraitLeft5.scrollFactor.set();
 		portraitLeft5.visible = true;
 
 		portraitLeft6 = new FlxSprite(-20, 40);
-		portraitLeft6.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft6.animation.addByPrefix('enter', 'dark', 24, false);
+		portraitLeft6.frames = Paths.getSparrowAtlas('portraits/DemonHappy');
+		portraitLeft6.animation.addByPrefix('enter', 'demonhappy', 24, false);
 		portraitLeft6.scrollFactor.set();
 		portraitLeft6.visible = true;
 
 		portraitLeft7 = new FlxSprite(-20, 40);
-		portraitLeft7.frames = Paths.getSparrowAtlas('portraits/PacaPortraits');
-		portraitLeft7.animation.addByPrefix('enter', 'final', 24, false);
+		portraitLeft7.frames = Paths.getSparrowAtlas('portraits/Dark');
+		portraitLeft7.animation.addByPrefix('enter', 'dark', 24, false);
 		portraitLeft7.scrollFactor.set();
 		portraitLeft7.visible = true;
 
@@ -434,8 +434,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft5.visible = true;
 					portraitLeft5.animation.play('enter');
 				}
-			case 'dark':
-				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('darkText'), 1)];
+			case 'demonhappy':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
@@ -453,8 +453,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft6.visible = true;
 					portraitLeft6.animation.play('enter');
 				}
-			case 'final':
-				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pacaText'), 0.6)];
+			case 'dark':
+				swagDialogue.sounds = [FlxG.sound.load(Paths.sound('darkText'), 1)];
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
