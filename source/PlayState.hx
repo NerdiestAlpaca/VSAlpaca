@@ -284,7 +284,7 @@ class PlayState extends MusicBeatState
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
 		if (isStoryMode)
 		{
-			detailsText = "Story Mode: Week " + storyWeek;
+			detailsText = "Story Mode"
 		}
 		else
 		{
@@ -2109,7 +2109,7 @@ class PlayState extends MusicBeatState
 		if (FlxG.keys.justPressed.SEVEN)
 		{
 			#if windows
-			DiscordClient.changePresence("Chart Editor", null, null, true);
+			DiscordClient.changePresence("In The Debug Menu", null, null, true);
 			#end
 			FlxG.switchState(new ChartingState());
 			#if windows
@@ -2452,7 +2452,7 @@ class PlayState extends MusicBeatState
 
 			#if windows
 			// Game Over doesn't get his own variable because it's only used here
-			DiscordClient.changePresence("GAME OVER -- " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy),"\nAcc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC);
+			DiscordClient.changePresence("DEFEATED -- " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy),"\nAcc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC);
 			#end
 
 			// FlxG.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
@@ -2474,7 +2474,7 @@ class PlayState extends MusicBeatState
 		
 					#if windows
 					// Game Over doesn't get his own variable because it's only used here
-					DiscordClient.changePresence("GAME OVER -- " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy),"\nAcc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC);
+					DiscordClient.changePresence("DEFEATED -- " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy),"\nAcc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC);
 					#end
 		
 					// FlxG.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
