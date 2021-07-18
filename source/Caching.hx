@@ -133,7 +133,7 @@ class Caching extends MusicBeatState
         for (i in videos)
             {
                 var replaced = i.replace(".ogg","");
-                FlxG.sound.cache(Paths.vid(replaced));
+                FlxG.sound.cache(Paths.video(replaced));
                 trace("cached " + replaced);
                 done++;
             }
