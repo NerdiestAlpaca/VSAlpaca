@@ -33,6 +33,10 @@ class PauseSubState extends MusicBeatSubstate
 	{
 		super();
 
+		if (PlayState.storyPlaylist.length > 1 && PlayState.isStoryMode){
+			menuItems.insert(2, 'Remove This Function');
+		}
+
 		pauseMusic = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
 		pauseMusic.volume = 0;
 		pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
@@ -93,8 +97,8 @@ class PauseSubState extends MusicBeatSubstate
 
 	override function update(elapsed:Float)
 	{
-		if (pauseMusic.volume < 0.5)
-			pauseMusic.volume += 0.01 * elapsed;
+		if (pauseMusic.volume < 0.8)
+			pauseMusic.volume += 0.02 * elapsed;
 
 		super.update(elapsed);
 
@@ -188,6 +192,8 @@ class PauseSubState extends MusicBeatSubstate
 					close();
 				case "Restart Song":
 					FlxG.resetState();
+				case "Remove This Function":
+					PlayState.instance.endSong();
 				case "Exit to menu":
 					if(PlayState.loadRep)
 					{
