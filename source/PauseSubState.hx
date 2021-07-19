@@ -84,7 +84,7 @@ class PauseSubState extends MusicBeatSubstate
 			songText.isMenuItem = true;
 			songText.targetY = i;
 			grpMenuShit.add(songText);
-			songText.screenCenter()
+			songText.screenCenter();
 		}
 
 		changeSelection();
@@ -144,7 +144,7 @@ class PauseSubState extends MusicBeatSubstate
 						songText.isMenuItem = true;
 						songText.targetY = i;
 						grpMenuShit.add(songText);
-						songText.screenCenter()
+						songText.screenCenter();
 					}
 
 					changeSelection();
@@ -170,7 +170,7 @@ class PauseSubState extends MusicBeatSubstate
 						songText.isMenuItem = true;
 						songText.targetY = i;
 						grpMenuShit.add(songText);
-						songText.screenCenter()
+						songText.screenCenter();
 					}
 
 					changeSelection();
