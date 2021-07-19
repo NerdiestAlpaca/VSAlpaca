@@ -813,13 +813,13 @@ class PlayState extends MusicBeatState
         					bg.updateHitbox();
         					add(bg);
 
-        					var fire:FlxSprite = new FlxSprite(-200, -300);
+        					var fire:FlxSprite = new FlxSprite(0, -700);
         					fire.frames = Paths.getSparrowAtlas('thirdphase/fire');
         					fire.animation.addByPrefix('idle', "firewave", 24, true);
 							fire.animation.play("idle");
         					fire.antialiasing = true;
         					fire.scrollFactor.set(0.1, 0.1);
-       					 	fire.setGraphicSize(Std.int(fire.width * 3));
+       					 	fire.setGraphicSize(Std.int(fire.width * 1.5));
         					fire.updateHitbox();
            					add(fire);
 
