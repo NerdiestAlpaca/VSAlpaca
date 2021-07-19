@@ -84,15 +84,16 @@ class PauseSubState extends MusicBeatSubstate
 
 		for (i in 0...menuItems.length)
 		{
-			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
+			var songText:Alphabet = new Alphabet(0, (70 * i) - 30, menuItems[i], true, false);
 			songText.isMenuItem = true;
 			songText.targetY = i;
 			grpMenuShit.add(songText);
+			songText.screenCenter()
 		}
 
 		changeSelection();
 
-		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 0.01]];
 	}
 
 	override function update(elapsed:Float)
@@ -143,10 +144,11 @@ class PauseSubState extends MusicBeatSubstate
 
 					for (i in 0...menuItems.length)
 					{
-						var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
+						var songText:Alphabet = new Alphabet(0, (70 * i) - 30, menuItems[i], true, false);
 						songText.isMenuItem = true;
 						songText.targetY = i;
 						grpMenuShit.add(songText);
+						songText.screenCenter()
 					}
 
 					changeSelection();
@@ -168,10 +170,11 @@ class PauseSubState extends MusicBeatSubstate
 
 					for (i in 0...menuItems.length)
 					{
-						var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
+						var songText:Alphabet = new Alphabet(0, (70 * i) - 30, menuItems[i], true, false);
 						songText.isMenuItem = true;
 						songText.targetY = i;
 						grpMenuShit.add(songText);
+						songText.screenCenter()
 					}
 
 					changeSelection();
