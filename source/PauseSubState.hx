@@ -89,7 +89,7 @@ class PauseSubState extends MusicBeatSubstate
 
 		changeSelection();
 
-		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 0.01]];
+		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 0]];
 	}
 
 	override function update(elapsed:Float)
@@ -149,7 +149,7 @@ class PauseSubState extends MusicBeatSubstate
 
 					changeSelection();
 
-					cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+					cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 0]];
 					offsetChanged = true;
 				}
 			}else if (rightP)
@@ -175,7 +175,7 @@ class PauseSubState extends MusicBeatSubstate
 
 					changeSelection();
 
-					cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+					cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 0]];
 					offsetChanged = true;
 				}
 			}
