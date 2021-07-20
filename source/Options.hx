@@ -296,10 +296,10 @@ class Judgement extends Option
 
 	override function getValue():String {
 		return "Safe Frames: " + Conductor.safeFrames +
-		" - SIK: " + HelperFunctions.truncateFloat(45 * Conductor.timeScale, 0) +
-		"ms GD: " + HelperFunctions.truncateFloat(90 * Conductor.timeScale, 0) +
-		"ms BD: " + HelperFunctions.truncateFloat(135 * Conductor.timeScale, 0) + 
-		"ms SHT: " + HelperFunctions.truncateFloat(155 * Conductor.timeScale, 0) +
+		" - S: " + HelperFunctions.truncateFloat(45 * Conductor.timeScale, 0) +
+		"ms G: " + HelperFunctions.truncateFloat(90 * Conductor.timeScale, 0) +
+		"ms B: " + HelperFunctions.truncateFloat(135 * Conductor.timeScale, 0) + 
+		"ms F: " + HelperFunctions.truncateFloat(155 * Conductor.timeScale, 0) +
 		"ms TOTAL: " + HelperFunctions.truncateFloat(Conductor.safeZoneOffset,0) + "ms";
 	}
 
@@ -520,7 +520,7 @@ class AccuracyDOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Accuracy Mode: " + (FlxG.save.data.accuracyMod == 0 ? "Accurate" : "Complex");
+		return "Accuracy Mode: " + (FlxG.save.data.accuracyMod == 0 ? "Normal" : "ms-Based");
 	}
 }
 
@@ -541,7 +541,7 @@ class CustomizeGameplay extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Customize Gameplay";
+		return "Gameplay Modules";
 	}
 }
 
