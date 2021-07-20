@@ -111,7 +111,7 @@
 	<SubTexture name="BG0106" x="0" y="2055" width="724" height="409"/>
 	<SubTexture name="BG0107" x="726" y="2055" width="724" height="409"/>
 	<SubTexture name="BG0108" x="1452" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0109" x="1452" y="0" width="724" height="409"/>
+	<SubTexture name="BG0109" x="2178" y="2055" width="724" height="409"/>
 	<SubTexture name="BG0110" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0111" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0112" x="0" y="0" width="724" height="409"/>
@@ -130,36 +130,36 @@
 	<SubTexture name="BG0125" x="1452" y="0" width="724" height="409"/>
 	<SubTexture name="BG0126" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0127" x="2178" y="0" width="724" height="409"/>
-	<SubTexture name="BG0128" x="2178" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0129" x="2904" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0130" x="3630" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0131" x="4356" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0132" x="5082" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0133" x="5808" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0134" x="6534" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0135" x="7260" y="2055" width="724" height="409"/>
-	<SubTexture name="BG0136" x="0" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0137" x="726" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0138" x="1452" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0139" x="2178" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0140" x="2904" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0128" x="2904" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0129" x="3630" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0130" x="4356" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0131" x="5082" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0132" x="5808" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0133" x="6534" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0134" x="7260" y="2055" width="724" height="409"/>
+	<SubTexture name="BG0135" x="0" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0136" x="726" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0137" x="1452" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0138" x="2178" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0139" x="2904" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0140" x="3630" y="2466" width="724" height="409"/>
 	<SubTexture name="BG0141" x="1452" y="0" width="724" height="409"/>
 	<SubTexture name="BG0142" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0143" x="2178" y="0" width="724" height="409"/>
-	<SubTexture name="BG0144" x="3630" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0145" x="4356" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0146" x="5082" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0147" x="5808" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0148" x="6534" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0149" x="7260" y="2466" width="724" height="409"/>
-	<SubTexture name="BG0150" x="0" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0151" x="726" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0152" x="1452" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0153" x="2178" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0154" x="2904" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0155" x="3630" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0156" x="4356" y="2877" width="724" height="409"/>
-	<SubTexture name="BG0157" x="1452" y="0" width="724" height="409"/>
+	<SubTexture name="BG0144" x="4356" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0145" x="5082" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0146" x="5808" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0147" x="6534" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0148" x="7260" y="2466" width="724" height="409"/>
+	<SubTexture name="BG0149" x="0" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0150" x="726" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0151" x="1452" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0152" x="2178" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0153" x="2904" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0154" x="3630" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0155" x="4356" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0156" x="5082" y="2877" width="724" height="409"/>
+	<SubTexture name="BG0157" x="5808" y="2877" width="724" height="409"/>
 	<SubTexture name="BG0158" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0159" x="2178" y="0" width="724" height="409"/>
 	<SubTexture name="BG0160" x="0" y="0" width="724" height="409"/>
