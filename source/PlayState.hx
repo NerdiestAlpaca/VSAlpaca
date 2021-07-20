@@ -767,7 +767,7 @@ class PlayState extends MusicBeatState
 			fg.animation.addByPrefix("idle", "Ground", 24);
 			fg.animation.play("idle");
 			fg.setGraphicSize(Std.int(fg.width * 1.7));
-			fg.scrollFactor.set(0.3, 0.6);
+			fg.scrollFactor.set(0.3, 0.85);
 			fg.antialiasing = true;
 			fg.updateHitbox();
             add(fg);
@@ -775,13 +775,13 @@ class PlayState extends MusicBeatState
     }
 	case 'highlandsDemon':
     {
-            defaultCamZoom = 0.85;
+            defaultCamZoom = 0.8;
             curStage = 'highlandsDemon';
 			var bg = new FlxSprite(-550, -100);
 			bg.frames = Paths.getSparrowAtlas('alpacaRound2/bg');
 			bg.animation.addByPrefix("idle", "BG Phase 2", 24);
 			bg.animation.play("idle");
-			bg.setGraphicSize(Std.int(bg.width * 1.7));
+			bg.setGraphicSize(Std.int(bg.width * 1.75));
 			bg.scrollFactor.set(0.3, 0.25);
 			bg.antialiasing = true;
 			bg.updateHitbox();
@@ -792,8 +792,8 @@ class PlayState extends MusicBeatState
 			fg.frames = fgTex;
 			fg.animation.addByPrefix("idle", "Ground", 24);
 			fg.animation.play("idle");
-			fg.setGraphicSize(Std.int(fg.width * 1.7));
-			fg.scrollFactor.set(0.3, 0.6);
+			fg.setGraphicSize(Std.int(fg.width * 1.75));
+			fg.scrollFactor.set(0.3, 0.8);
 			fg.antialiasing = true;
 			fg.updateHitbox();
             add(fg);
