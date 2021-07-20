@@ -844,7 +844,19 @@ class PlayState extends MusicBeatState
 								bg.animation.play("idle");
 								bg.setGraphicSize(Std.int(bg.width * 4));
 								bg.updateHitbox();
-								add(bg);  
+								add(bg);
+								
+								var lightning:FlxSprite = new FlxSprite(-800, -700);
+								lightning.frames = Paths.getSparrowAtlas('finale/lightning');
+								lightning.antialiasing = true;
+								lightning.scrollFactor.set(0.45, 0.15);
+								lightning.animation.addByPrefix('idle', "LightningThing", 24, true);
+								lightning.animation.play("idle");
+								lightning.setGraphicSize(Std.int(lightning.width * 4));
+								lightning.updateHitbox();
+								if(FlxG.save.data.distractions){
+									add(lightning);  
+								}
 				}
 	case 'tanklands':
     {
@@ -1171,7 +1183,7 @@ class PlayState extends MusicBeatState
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFDD0055, 0xFF2211FF);
+		healthBar.createFilledBar(0xFFCC0033, 0xFF31B0D1);
 		// healthBar
 		add(healthBar);
 
@@ -1195,7 +1207,7 @@ class PlayState extends MusicBeatState
 		add(scoreTxt);
 
 		replayTxt = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "REPLAY", 20);
-		replayTxt.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		replayTxt.setFormat(Paths.font("vcr.ttf"), 36, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		replayTxt.scrollFactor.set();
 		if (loadRep)
 		{
@@ -1203,7 +1215,7 @@ class PlayState extends MusicBeatState
 		}
 		// Literally copy-paste of the above, fu
 		botPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "BOTPLAY", 20);
-		botPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		botPlayState.setFormat(Paths.font("vcr.ttf"), 36, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		botPlayState.scrollFactor.set();
 		
 		if(FlxG.save.data.botplay && !loadRep) add(botPlayState);
@@ -3778,6 +3790,12 @@ class PlayState extends MusicBeatState
 			boyfriend.playAnim('hey', true);
 		}
 
+		if (curBeat == 257 && curSong == 'Cyclone')
+			{
+				boyfriend.playAnim('hey', true);
+				gf.playAnim('cheer', true);
+			}
+
 		if (curBeat % 16 == 15 && SONG.song == 'Tutorial' && dad.curCharacter == 'gf' && curBeat > 16 && curBeat < 48)
 			{
 				boyfriend.playAnim('hey', true);
@@ -3791,6 +3809,10 @@ class PlayState extends MusicBeatState
 					bgGirls.dance();
 				}
 
+			case 'realityhole':
+				if(FlxG.save.data.distractions){
+					lightning.animation.play('idle', true);
+				}
 			case 'mall':
 				if(FlxG.save.data.distractions){
 					upperBoppers.animation.play('bop', true);
