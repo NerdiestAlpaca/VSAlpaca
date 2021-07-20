@@ -191,7 +191,6 @@ class TitleState extends MusicBeatState
 		titleText.animation.addByPrefix('idle', "Press Enter to Begin", 24);
 		titleText.animation.addByPrefix('press', "ENTER PRESSED", 24);
 		titleText.antialiasing = true;
-		titleText.animation.play('idle');
 		titleText.updateHitbox();
 		// titleText.screenCenter(X);
 		add(titleText);
@@ -386,7 +385,7 @@ class TitleState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
-
+		titleText.animation.play('idle');
 		logoBl.animation.play('bump');
 		danceLeft = !danceLeft;
 

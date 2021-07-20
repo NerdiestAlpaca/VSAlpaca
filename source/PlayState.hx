@@ -350,8 +350,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('whimsy/whimsyDialogue'));
 			case 'cyclone':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('cyclone/cycloneDialogue'));
-			case 'darkness':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('darkness/darknessDialogue'));
+			case 'shadows':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('shadows/shadowsDialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -1297,7 +1297,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'cyclone':
 					schoolIntro(doof);
-				case 'darkness':
+				case 'shadows':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -2843,8 +2843,8 @@ class PlayState extends MusicBeatState
 						case 'whimsy':
 							FlxG.switchState(new VideoState('assets/videos/CycloneCutscene.webm', loadplayState));
 						case 'cyclone':
-							FlxG.switchState(new VideoState('assets/videos/DarknessCutscene.webm', loadplayState));
-						case 'darkness':
+							FlxG.switchState(new VideoState('assets/videos/ShadowsCutscene.webm', loadplayState));
+						case 'shadows':
 							FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());

@@ -30,15 +30,15 @@ class OptionsMenu extends MusicBeatState
 			new ResetButtonOption("Toggle pressing R to trigger an instant defeat."),
 		]),
 		new OptionCategory("Gameplay", [
-			new DownscrollOption("Toggle Up/Downscroll"),
-			new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
+			new DownscrollOption("Toggle Up/Downscroll."),
+			new Judgement("Customize your Hit Timings (LEFT or RIGHT)."),
 			#if desktop
-			new FPSCapOption("Cap your FPS"),
+			new FPSCapOption("Cap your FPS."),
 			#end
-			new ScrollSpeedOption("Change your scroll speed (1 = Chart dependent)"),
-			new AccuracyDOption("Change how accuracy is calculated. (Accurate = Simple, Complex = Milisecond Based)"),
+			new ScrollSpeedOption("Change your scroll speed. (1 = Chart dependent)"),
+			new AccuracyDOption("Change how accuracy is calculated. (Normal = Simple, Exact = Milisecond Based)"),
 			// new OffsetMenu("Get a note offset based off of your inputs!"),
-			new CustomizeGameplay("Drag'n'Drop Gameplay Modules around to your preference")
+			new CustomizeGameplay("Drag'n'Drop Gameplay Modules around to your preference.")
 		]),
 		new OptionCategory("Display", [
 			new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
@@ -46,8 +46,8 @@ class OptionsMenu extends MusicBeatState
 			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
 			new WatermarkOption("Toggle all watermarks from the engine."),
 			#if desktop
-			new FPSOption("Toggle the FPS Counter"),
-			new RainbowFPSOption("Make the FPS Counter Rainbow"),
+			new FPSOption("Toggle the FPS Counter."),
+			new RainbowFPSOption("Make the FPS Counter Rainbow."),
 			new AccuracyOption("Display accuracy information."),
 			new NPSDisplayOption("Shows your current Notes Per Second."),
 			new SongPositionOption("Show the songs current position."),
@@ -57,9 +57,9 @@ class OptionsMenu extends MusicBeatState
 		
 		new OptionCategory("Misc", [
 			#if desktop
-			new ReplayOption("View replays"),
+			new ReplayOption("View your saved replays."),
 			#end
-			new BotPlay("Showcase your charts and mods with autoplay.")
+			new BotPlay("Showcase your charts and mods with botplay.")
 		])
 		
 	];
@@ -75,9 +75,8 @@ class OptionsMenu extends MusicBeatState
 	override function create()
 	{
 		instance = this;
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuDesat"));
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuBGMagenta"));
 
-		menuBG.color = 0xFFea71fd;
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
 		menuBG.screenCenter();

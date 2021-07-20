@@ -98,6 +98,8 @@ class Caching extends MusicBeatState
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/videos")))
         {
+            if (!i.endsWith(".ogg"))
+                continue;
             videos.push(i);
         }
 
