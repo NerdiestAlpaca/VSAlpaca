@@ -170,6 +170,7 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
+	var lightning:FlxSprite;
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
@@ -846,11 +847,11 @@ class PlayState extends MusicBeatState
 								bg.updateHitbox();
 								add(bg);
 								
-								var lightning:FlxSprite = new FlxSprite(-800, -700);
+								lightning = new FlxSprite(-800, -700);
 								lightning.frames = Paths.getSparrowAtlas('finale/lightning');
+								lightning.animation.addByPrefix('idle', "LightningThing", 24, true);
 								lightning.antialiasing = true;
 								lightning.scrollFactor.set(0.45, 0.15);
-								lightning.animation.addByPrefix('idle', "LightningThing", 24, true);
 								lightning.animation.play("idle");
 								lightning.setGraphicSize(Std.int(lightning.width * 4));
 								lightning.updateHitbox();
