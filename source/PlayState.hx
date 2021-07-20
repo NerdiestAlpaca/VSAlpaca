@@ -3811,7 +3811,10 @@ class PlayState extends MusicBeatState
 
 			case 'realityhole':
 				if(FlxG.save.data.distractions){
+					if (curBeat % 8 == 0)
+						{
 					lightning.animation.play('idle', true);
+						}
 				}
 			case 'mall':
 				if(FlxG.save.data.distractions){
