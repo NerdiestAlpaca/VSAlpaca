@@ -520,7 +520,7 @@ class AccuracyDOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Accuracy Mode: " + (FlxG.save.data.accuracyMod == 0 ? "Normal" : "ms-Based");
+		return "Accuracy Mode: " + (FlxG.save.data.accuracyMod == 0 ? "Normal" : "Exact");
 	}
 }
 
