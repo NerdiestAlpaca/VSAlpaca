@@ -1,11 +1,4 @@
 stage
-halloween
-philly
-limo
-mall
-mallEvil
-school
-schoolEvil
 highlands
 highlandsDemon
 hell
