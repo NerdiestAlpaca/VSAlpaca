@@ -42,7 +42,7 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitRight5:FlxSprite;
 	var portraitRight6:FlxSprite;
 
-	var handSelect:FlxSprite;
+	var arrowSelect:FlxSprite;
 	var bgFade:FlxSprite;
 
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
@@ -210,8 +210,8 @@ class DialogueBox extends FlxSpriteGroup
 		//box.screenCenter(X);
 		//portraitLeft.screenCenter(X);
 
-		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox',"week6"));
-		add(handSelect);
+		arrowSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('portraits/arrow_textbox'));
+		add(arrowSelect);
 
 
 		if (!talkingRight)
