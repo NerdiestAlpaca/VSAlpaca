@@ -71,7 +71,7 @@ class Caching extends MusicBeatState
             var alpha = HelperFunctions.truncateFloat(done / toBeDone * 100,2) / 100;
             kadeLogo.alpha = alpha;
             text.alpha = alpha;
-            text.text = "Just setting up... (" + done + "/" + toBeDone + ")";
+            text.text = "Loading... (" + done + "/" + toBeDone + ")";
         }
 
         super.update(elapsed);
@@ -83,6 +83,7 @@ class Caching extends MusicBeatState
 
         var images = [];
         var music = [];
+        var videos = [];
 
         trace("caching images...");
 
@@ -93,6 +94,15 @@ class Caching extends MusicBeatState
             images.push(i);
         }
 
+        trace("caching videos...");
+
+        for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/videos")))
+        {
+            if (!i.endsWith(".ogg"))
+                continue;
+            videos.push(i);
+        }
+
         trace("caching music...");
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/songs")))
@@ -100,7 +110,7 @@ class Caching extends MusicBeatState
             music.push(i);
         }
 
-        toBeDone = Lambda.count(images) + Lambda.count(music);
+        toBeDone = Lambda.count(images) + Lambda.count(music) + Lambda.count(videos);
 
         trace("LOADING: " + toBeDone + " OBJECTS.");
 
@@ -119,6 +129,14 @@ class Caching extends MusicBeatState
             trace("cached " + i);
             done++;
         }
+
+        for (i in videos)
+            {
+                var replaced = i.replace(".ogg","");
+                FlxG.sound.cache(Paths.video(replaced));
+                trace("cached " + replaced);
+                done++;
+            }
 
         trace("Finished caching...");
 
