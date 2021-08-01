@@ -2,5 +2,4 @@ Whimsy:alpaca:1
 Cyclone:demon:1
 Shadows:darkness:1
 Absolution:final:1
-Stress:tankpaca:2
 Jump:mario:2
