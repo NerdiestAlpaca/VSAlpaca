@@ -2903,7 +2903,7 @@ class PlayState extends MusicBeatState
 			{
 				case 'shit':
 					score = 0;
-					health -= 0.05;
+					health -= 0.01;
 					ss = false;
 					shits++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2911,7 +2911,7 @@ class PlayState extends MusicBeatState
 				case 'bad':
 					daRating = 'bad';
 					score = 100;
-					health -= 0.01;
+					health -= 0;
 					ss = false;
 					bads++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2922,12 +2922,12 @@ class PlayState extends MusicBeatState
 					ss = false;
 					goods++;
 					if (health < 2)
-						health += 0.04;
+						health += 0.03;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.08;
+						health += 0.06;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;
