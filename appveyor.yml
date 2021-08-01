@@ -44,5 +44,5 @@ build_script:
 
 artifacts:
   - path: export/release/windows/bin
-    name: VSAlpaca
+    name: FluffNTumble
     type: zip
