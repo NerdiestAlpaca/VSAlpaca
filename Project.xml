@@ -69,12 +69,6 @@
 	<assets path="assets/tutorial" library="tutorial" exclude="*.mp3" unless="web"/>
 	<assets path="assets/week1"    library="week1"    exclude="*.ogg" if="web"/>
 	<assets path="assets/week1"    library="week1"    exclude="*.mp3" unless="web"/>
-
-<assets path="assets/videos" exclude="*.mp3" if="web"/>
-<assets path="assets/videos" exclude="*.ogg" unless="web"/>
-
-<assets path="plugins/" rename='' if="windows"/>
-<assets path="dlls/" rename='' if="windows"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />

@@ -2784,8 +2784,7 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 					{
-						var video:VideoHandlerMP4 = new VideoHandlerMP4();
-						video.playMP4(Paths.video('EpilogueScene'), new StoryMenuState(), false, false, false);
+						LoadingState.loadAndSwitchState(new VideoState("assets/videos/EpilogueScene.webm", loadstoryState));
 
 					#if windows
 					if (luaModchart != null)
@@ -2843,14 +2842,11 @@ class PlayState extends MusicBeatState
 					switch (curSong.toLowerCase())
 					{
 						case 'whimsy':
-							var video:VideoHandlerMP4 = new VideoHandlerMP4();
-							video.playMP4(Paths.video('CycloneCutscene'), new PlayState(), false, false, false);
+							FlxG.switchState(new VideoState('assets/videos/CycloneCutscene.webm', loadplayState));
 						case 'cyclone':
-							var video:VideoHandlerMP4 = new VideoHandlerMP4();
-							video.playMP4(Paths.video('ShadowsCutscene'), new PlayState(), false, false, false);
+							FlxG.switchState(new VideoState('assets/videos/ShadowsCutscene.webm', loadplayState));
 						case 'shadows':
-							var video:VideoHandlerMP4 = new VideoHandlerMP4();
-							video.playMP4(Paths.video('AbsolutionCutscene'), new PlayState(), false, false, false);
+							FlxG.switchState(new VideoState('assets/videos/AbsolutionCutscene.webm', loadplayState));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
@@ -2862,6 +2858,13 @@ class PlayState extends MusicBeatState
 				FlxG.switchState(new FreeplayState());
 			}
 		}
+	}
+	function loadplayState(){
+		LoadingState.loadAndSwitchState(new PlayState(), true);
+	}
+
+	function loadstoryState(){
+		LoadingState.loadAndSwitchState(new StoryMenuState(), true);
 	}
 
 	var endingSong:Bool = false;

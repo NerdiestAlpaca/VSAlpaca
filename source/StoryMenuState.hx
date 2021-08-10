@@ -306,11 +306,13 @@ class StoryMenuState extends MusicBeatState
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
 				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
-					var video:VideoHandlerMP4 = new VideoHandlerMP4();
-					video.playMP4(Paths.video('WhimsyCutscene'), new PlayState(), false, false, false);
+						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
 				});
 			});
 		}
+	}
+	function loadplayState(){
+		LoadingState.loadAndSwitchState(new PlayState(), true);
 	}
 
 	function changeDifficulty(change:Int = 0):Void
