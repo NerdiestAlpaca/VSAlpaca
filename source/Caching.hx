@@ -130,7 +130,7 @@ class Caching extends MusicBeatState
 
         for (i in videos)
             {
-                FlxG.sound.cache(Paths.videos(i));
+                FlxG.sound.cache(Paths.video(i));
                 trace("cached " + i);
                 done++;
             }
