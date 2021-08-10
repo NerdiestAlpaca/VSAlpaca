@@ -98,8 +98,6 @@ class Caching extends MusicBeatState
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/videos")))
         {
-            if (!i.endsWith(".ogg"))
-                continue;
             videos.push(i);
         }
 
@@ -132,9 +130,8 @@ class Caching extends MusicBeatState
 
         for (i in videos)
             {
-                var replaced = i.replace(".ogg","");
-                FlxG.sound.cache(Paths.video(replaced));
-                trace("cached " + replaced);
+                FlxG.sound.cache(Paths.videos(i));
+                trace("cached " + i);
                 done++;
             }
 
