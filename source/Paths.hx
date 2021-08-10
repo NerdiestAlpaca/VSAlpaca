@@ -79,11 +79,6 @@ class Paths
 	{
 		return getPath('data/$key.json', TEXT, library);
 	}
-
-	inline static public function video(key:String, ?library:String)
-	{
-		return getPath('videos/$key.webm', TEXT, library);
-	}
 	
 	static public function sound(key:String, ?library:String)
 	{
@@ -95,10 +90,11 @@ class Paths
 		return sound(key + FlxG.random.int(min, max), library);
 	}
 
-	inline static public function music(key:String, ?library:String)
-	{
-		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
-	}
+	inline static public function video(key:String, ?library:String)
+		{
+			trace('assets/videos/$key.mp4');
+			return getPath('videos/$key.mp4', BINARY, library);
+		}
 
 	inline static public function voices(song:String)
 	{
