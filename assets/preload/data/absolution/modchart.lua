@@ -491,11 +491,13 @@ end
 if step == 1696 then
     resetnotes = false
     cameraswing = true
+    pulse = true
     showOnlyStrums = true
 end
 if step == 1951 then
     resetnotes = true
     cameraswing = false
+    pulse = false
     showOnlyStrums = false
 end
 if step == 1952 or step == 2016 then
@@ -624,7 +626,7 @@ for i=4,7 do
     end
 end
 end
-if (pulse and curStep % 8 == 0) then
+if (pulse and curStep % 16 == 0) then
     for i = 0, 7 do
         tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 0 ,getActorAngle(i) + 360, 0.2)
     end
