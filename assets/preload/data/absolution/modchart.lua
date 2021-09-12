@@ -148,17 +148,21 @@ if camswayslow then
 end
 if crazy then
     local currentBeat = (songPos / 500)*(bpm/60)
-    for i=0,7 do
-        setActorY(_G['defaultStrum'..i..'Y'] + 16 * math.cos(currentBeat + i), i)
-        setActorX(_G['defaultStrum'..i..'X'] + 28 * math.sin((currentBeat + i*0.4)), i)
+    for i=0,3 do
+        setActorY(_G['defaultStrum'..i..'Y'] + 24 * math.cos(currentBeat + i), i)
+        setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin(currentBeat * 0.4) + 10, i)
+    end
+    for i=4,7 do
+        setActorY(_G['defaultStrum'..i..'Y'] - 24 * math.cos(currentBeat + i), i)
+        setActorX(_G['defaultStrum'..i..'X'] - 56 * math.sin(currentBeat * 0.4) - 10, i)
     end
 end
 if crisscross then
     for i=0,3 do
-        setActorX(_G['defaultStrum'..i..'X'] + 30 * math.sin(currentBeat * 0.503) + 350, i)
+        setActorX(_G['defaultStrum'..i..'X'] + 30 * math.sin(currentBeat * 0.503) + 5, i)
     end
     for i=4,7 do
-        setActorX(_G['defaultStrum'..i..'X'] - 30 * math.sin(currentBeat * 0.503) - 275, i)
+        setActorX(_G['defaultStrum'..i..'X'] - 30 * math.sin(currentBeat * 0.503) - 5, i)
     end
 end
 if shakehud then
@@ -604,6 +608,7 @@ if step == 2591 then
 end
 if step == 2592 then
     beatdrop = false
+    resetnotes = false
     setHudZoom(1)
 end
 if step == 2848 then
@@ -630,9 +635,11 @@ end
 if step == 3360 then
     resetnotes = false
     slowersway = true
+    pulse2 = true
 end
 if step == 3551 then
     slowersway = false
+    pulse2 = false
     resetnotes = true
 end
 if step == 3552 then
@@ -689,6 +696,11 @@ end
 if (pulse and curStep % 16 == 0) then
     for i = 0, 7 do
         tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 0 ,getActorAngle(i) + 360, 0.2)
+    end
+end
+if (pulse2 and curStep % 8 == 0) then
+    for i = 0, 7 do
+        tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 0 ,getActorAngle(i) + 360, 0.1)
     end
 end
 end
