@@ -93,6 +93,7 @@ function update (elapsed)
         end
     end
     if spinnything then
+        camHudAngle = 2 * math.sin(currentBeat / 2)
         for i=0,7 do
         setActorAngle(_G['defaultStrum'..i..'X'] + 45 * math.sin((currentBeat * 10 + i*100) * math.pi), i)
         end
