@@ -153,7 +153,14 @@ if crazy then
         setActorX(_G['defaultStrum'..i..'X'] + 28 * math.sin((currentBeat + i*0.4)), i)
     end
 end
-
+if crisscross then
+    for i=0,3 do
+        setActorX(_G['defaultStrum'..i..'X'] + 30 * math.sin(currentBeat * 0.503) + 350, i)
+    end
+    for i=4,7 do
+        setActorX(_G['defaultStrum'..i..'X'] - 30 * math.sin(currentBeat * 0.503) - 275, i)
+    end
+end
 if shakehud then
     for i=0,7 do
         setHudPosition(2 * math.sin((currentBeat * 5) * math.pi), 2 * math.cos((currentBeat * 5) * math.pi))
@@ -633,7 +640,15 @@ if step == 3552 then
     slowsway2 = true
     beatdropsmall = true
 end
+if step == 3808 then
+    crisscross = true
+end
+if step = 4191 then
+    crisscross = false
+    resetnotes = true
+end
 if step == 4192 then
+    resetnotes = false
     beatdropsmall = false
     shakecam = true
 end
