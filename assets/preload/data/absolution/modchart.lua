@@ -145,6 +145,20 @@ end
 if camswayslowbutfast then
     camHudAngle = 5 * math.sin(currentBeat / 2)
 end
+if crazy then
+    local currentBeat = (songPos / 500)*(bpm/60)
+    for i=0,7 do
+        setActorY(_G['defaultStrum'..i..'Y'] + 16 * math.cos(currentBeat + i), i)
+        setActorX(_G['defaultStrum'..i..'X'] + 28 * math.sin((currentBeat + i*0.4)), i)
+    end
+end
+
+if shakehud then
+    for i=0,7 do
+        setHudPosition(20 * math.sin((currentBeat * 10) * math.pi), 20 * math.cos((currentBeat * 10) * math.pi))
+        setCamPosition(-20 * math.sin((currentBeat * 10) * math.pi), -20 * math.cos((currentBeat * 10) * math.pi))
+    end
+end
 end
 
 function beatHit (beat)
@@ -589,14 +603,18 @@ end
 if step == 2848 then
 slowsway = true
 slowsway2 = true
+shakehud = true
 end
 if step == 2976 then
     slowsway = false
 slowsway2 = false
-sway = true
+shakehud = false
+crazy = true
+cameraswing = true
 end
 if step == 3359 then
-    sway = false
+    crazy = false
+    cameraswing = false
     resetnotes = true
 end
 if step == 3360 then
