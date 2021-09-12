@@ -28,6 +28,9 @@ class GameOverSubstate extends MusicBeatSubstate
             case 'bf-finale':
                 stageSuffix = '-finale';
 				daBf = 'bf-final-dead';
+			case 'soul':
+                stageSuffix = '-finale';
+				daBf = 'bf-final-dead';
 		}
 
 		super();

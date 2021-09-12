@@ -303,17 +303,41 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
+			var video:MP4Handler = new MP4Handler();
+
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
-						FlxG.switchState(new VideoState('assets/videos/WhimsyCutscene.webm', loadplayState));
-				});
+				if (curWeek == 0) {
+					MP4State.videoName = 'WhimsyCutscene';
+					MP4State.transToPlayState = true;
+					LoadingState.loadAndSwitchState(new MP4State(), true);
+				}
+				else {
+					LoadingState.loadAndSwitchState(new PlayState(), true);
+				}
+				// video.onVLCComplete();
+				// LoadingState.loadAndSwitchState(new PlayState(), true);
 			});
+
+			// if (curWeek == 1 && !isCutscene)
+			// {
+			// 	video.playMP4(Paths.video('BogusOpening'), new PlayState()); 
+			// 	isCutscene = true;
+			// }
+			// else
+			// {
+			// 	new FlxTimer().start(1, function(tmr:FlxTimer)
+			// 	{
+			// 		video.onVLCComplete();
+			// 		LoadingState.loadAndSwitchState(new PlayState(), true);
+			// 	});
+			// }
 		}
 	}
-	function loadplayState(){
-		LoadingState.loadAndSwitchState(new PlayState(), true);
-	}
+		
+		function loadplayState(){
+			LoadingState.loadAndSwitchState(new PlayState(), true);
+		}
 
 	function changeDifficulty(change:Int = 0):Void
 	{

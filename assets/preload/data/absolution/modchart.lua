@@ -60,6 +60,12 @@ function update (elapsed)
 			setActorY(_G['defaultStrum'..i..'Y'] + 10 * math.cos((currentBeat * 10 + i*100) * math.pi), i)
 		end
     end
+    if shakenotekindaslow then
+        for i=0,7 do
+            setActorX(_G['defaultStrum'..i..'X'] + 8 * math.sin((currentBeat * 10 + i*50) * math.pi), i)
+            setActorY(_G['defaultStrum'..i..'Y'] + 8 * math.cos((currentBeat * 10 + i*50) * math.pi), i)
+        end
+    end
     if shakecam then
         local currentBeat = (songPos / 1)*(bpm/1)
             cameraAngle = 2 * math.sin((currentBeat))
@@ -100,6 +106,7 @@ function update (elapsed)
             setActorX(_G['defaultStrum'..i..'X'] + 0, i)
             setActorY(_G['defaultStrum'..i..'Y'] + 10,i)
             setActorAngle(0, i)
+            setActorScale(1, i)
             camHudAngle = 0
             setHudPosition(0, 0)
             cameraAngle = 0
@@ -112,8 +119,12 @@ function update (elapsed)
         camHudAngle = 6 * math.cos((currentBeat))
     end
     if finale then
-        local currentBeat = (songPos / 500)*(bpm/30)
-        cameraAngle = 2 * math.sin((currentBeat))
+		for i=0,3 do
+			setActorX(_G['defaultStrum'..i..'X'] - 300 * math.sin(currentBeat * 1.2) + 350, i)
+		end
+		for i=4,7 do
+			setActorX(_G['defaultStrum'..i..'X'] + 300 * math.sin(currentBeat * 1.2) - 275, i)
+		end
 end
 if beatdrop then 
     if curStep % 4 == 0 then
@@ -129,6 +140,17 @@ if beatdropextra then
     if curStep % 4 == 0 then
         setCamZoom(1.04)
     end
+end
+if pulse then
+    if (actorScale > 0.7) then
+        actorScale = actorScale - elapsed
+    end
+    for i=0,7 do
+        setActorScale(actorScale, i)
+    end
+end
+if camswayfast then
+    camHudAngle = 6 * math.sin(currentBeat * 2)
 end
 end
 
@@ -313,16 +335,13 @@ if step == 544 then
 end
 if step == 545 then
     resetnotes = false
+    pulse = true
 end
 if step == 640 then
     sway = true
-end
-if step == 1151 then
-    sway = false
-    resetnotes = true
+    pulse = false
 end
 if step == 1152 then
-    resetnotes = false
     spinnything = true
 end
 if step == 1424 then
@@ -417,6 +436,7 @@ if step == 1503 then
 end
 if step == 1504 then
     slowsway = true
+    shakenotekindaslow = true
 end
 if step == 1596 then
     setActorScale(0.3,'girlfriend')
@@ -588,6 +608,7 @@ if step == 4288 then
 if step == 4352 then
     slowsway = true
     finale = true
+    camswayfast = true
     beatdropextra = true
     beatdropsmall = true
 tweenFadeIn(Light,1,16)
@@ -608,6 +629,12 @@ for i=4,7 do
     tweenFadeIn(i,0,4)
     end
 end
+end
+if (pulse and curStep % 2 == 0) then
+    actorScale = 1
+    for i=0,7 do
+        setActorScale(1, i)
+    end
 end
 end
 function keyPressed (key)

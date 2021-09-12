@@ -83,7 +83,6 @@ class Caching extends MusicBeatState
 
         var images = [];
         var music = [];
-        var videos = [];
 
         trace("caching images...");
 
@@ -94,13 +93,6 @@ class Caching extends MusicBeatState
             images.push(i);
         }
 
-        trace("caching videos...");
-
-        for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/videos")))
-        {
-            videos.push(i);
-        }
-
         trace("caching music...");
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/songs")))
@@ -108,7 +100,7 @@ class Caching extends MusicBeatState
             music.push(i);
         }
 
-        toBeDone = Lambda.count(images) + Lambda.count(music) + Lambda.count(videos);
+        toBeDone = Lambda.count(images) + Lambda.count(music);
 
         trace("LOADING: " + toBeDone + " OBJECTS.");
 
@@ -127,13 +119,6 @@ class Caching extends MusicBeatState
             trace("cached " + i);
             done++;
         }
-
-        for (i in videos)
-            {
-                FlxG.sound.cache(Paths.video(i));
-                trace("cached " + i);
-                done++;
-            }
 
         trace("Finished caching...");
 
