@@ -142,21 +142,21 @@ end
 if camswayfast then
     camHudAngle = 6 * math.sin(currentBeat * 2)
 end
-if camswayslowbutfast then
+if camswayslow then
     camHudAngle = 5 * math.sin(currentBeat / 2)
 end
 if crazy then
     local currentBeat = (songPos / 500)*(bpm/60)
     for i=0,7 do
         setActorY(_G['defaultStrum'..i..'Y'] + 16 * math.cos(currentBeat + i), i)
-        setActorX(_G['defaultStrum'..i..'X'] + 28 * math.sin((currentBeat + i*0.4)), i)
+        setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat + i*2) * math.pi), i)
     end
 end
 
 if shakehud then
     for i=0,7 do
-        setHudPosition(20 * math.sin((currentBeat * 10) * math.pi), 20 * math.cos((currentBeat * 10) * math.pi))
-        setCamPosition(-20 * math.sin((currentBeat * 10) * math.pi), -20 * math.cos((currentBeat * 10) * math.pi))
+        setHudPosition(2 * math.sin((currentBeat * 5) * math.pi), 2 * math.cos((currentBeat * 5) * math.pi))
+        setCamPosition(-2 * math.sin((currentBeat * 5) * math.pi), -2 * math.cos((currentBeat * 5) * math.pi))
     end
 end
 end
@@ -588,11 +588,11 @@ setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
 beatdrop = true
-camswayslowbutfast = true
+cameraswing = true
 end
 if step == 2591 then
     resetnotes = true
-    camswayslowbutfast = false
+    cameraswing = false
 end
 if step == 2592 then
     beatdrop = false
@@ -608,11 +608,11 @@ if step == 2976 then
 slowsway2 = false
 shakehud = false
 crazy = true
-cameraswing = true
+camswayslow = true
 end
 if step == 3359 then
     crazy = false
-    cameraswing = false
+    camswayslow = false
     resetnotes = true
 end
 if step == 3360 then
