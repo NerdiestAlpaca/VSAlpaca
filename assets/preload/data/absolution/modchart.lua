@@ -643,7 +643,7 @@ end
 if step == 3808 then
     crisscross = true
 end
-if step = 4191 then
+if step == 4191 then
     crisscross = false
     resetnotes = true
 end
