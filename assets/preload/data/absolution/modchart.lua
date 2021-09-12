@@ -75,17 +75,19 @@ function update (elapsed)
         end
     end
     if slowsway then
+        local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,7 do
         setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin((currentBeat + i*0.4)), i)
         end
     end
     if slowersway then
-        local currentBeat = (songPos / 1500)*(bpm/60)
+        local currentBeat = (songPos / 1200)*(bpm/60)
         for i=0,7 do
         setActorX(_G['defaultStrum'..i..'X'] + 48 * math.sin((currentBeat + i*0.4)), i)
         end
     end
     if slowsway2 then
+        local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,7 do
         setActorY(_G['defaultStrum'..i..'Y'] + 15 * math.sin((currentBeat + i*1) * math.pi), i)
         end
