@@ -71,10 +71,10 @@ function update (elapsed)
             cameraAngle = 2 * math.sin((currentBeat))
     end
     if sway then
-        for i=0,7 do
-        setActorY(_G['defaultStrum'..i..'Y'] + 15 * math.sin((currentBeat + i*1) * math.pi), i)
-        setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin((currentBeat + i*0.4)), i)
-        end
+		for i=0,7 do
+			setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat) * math.pi), i)
+			setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*5) * math.pi), i)
+		end
     end
     if slowsway then
         local currentBeat = (songPos / 1500)*(bpm/60)
@@ -139,14 +139,6 @@ end
 if beatdropextra then 
     if curStep % 4 == 0 then
         setCamZoom(1.04)
-    end
-end
-if pulse then
-    if (actorScale > 0.7) then
-        actorScale = actorScale - elapsed
-    end
-    for i=0,7 do
-        setActorScale(actorScale, i)
     end
 end
 if camswayfast then
@@ -337,9 +329,13 @@ if step == 545 then
     resetnotes = false
     pulse = true
 end
-if step == 640 then
-    sway = true
+if step == 639 then
+    resetnotes = true
     pulse = false
+end
+if step == 640 then
+    resetnotes = false
+    sway = true
 end
 if step == 1152 then
     spinnything = true
@@ -631,10 +627,9 @@ for i=4,7 do
     end
 end
 end
-if (pulse and curStep % 2 == 0) then
-    actorScale = 1
-    for i=0,7 do
-        setActorScale(1, i)
+if (pulse and curStep % 8 == 0) then
+    for i = 0, 7 do
+        tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 0 ,getActorAngle(i) + 360, 0.2)
     end
 end
 end
