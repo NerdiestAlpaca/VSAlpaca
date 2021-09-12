@@ -60,12 +60,6 @@ function update (elapsed)
 			setActorY(_G['defaultStrum'..i..'Y'] + 10 * math.cos((currentBeat * 10 + i*100) * math.pi), i)
 		end
     end
-    if shakenotekindaslow then
-        for i=0,7 do
-            setActorX(_G['defaultStrum'..i..'X'] + 8 * math.sin((currentBeat * 10 + i*50) * math.pi), i)
-            setActorY(_G['defaultStrum'..i..'Y'] + 8 * math.cos((currentBeat * 10 + i*50) * math.pi), i)
-        end
-    end
     if shakecam then
         local currentBeat = (songPos / 1)*(bpm/1)
             cameraAngle = 2 * math.sin((currentBeat))
@@ -337,6 +331,10 @@ if step == 640 then
     resetnotes = false
     sway = true
 end
+if step == 896 then
+    sway = false
+    slowsway = true
+    slowsway2 = true
 if step == 1152 then
     spinnything = true
 end
@@ -426,13 +424,14 @@ end
 if step == 1496 then
     spinnything = false
     resetnotes = true
+    slowsway = false
+    slowsway2 = false
 end
 if step == 1503 then
     resetnotes = false
 end
 if step == 1504 then
     slowsway = true
-    shakenotekindaslow = true
 end
 if step == 1596 then
     setActorScale(0.3,'girlfriend')
@@ -448,8 +447,8 @@ if step == 1596 then
     setActorFlipX(true, 'dad')
     setActorAlpha(1,'redeyes')
     setActorAlpha(0, 'dad')
-setActorAlpha(0, 'boyfriend')
-setActorAlpha(0, 'girlfriend')
+    setActorAlpha(0, 'boyfriend')
+    setActorAlpha(0, 'girlfriend')
     shakenote = true
     slowsway = false
 end
@@ -491,7 +490,6 @@ shakenote = false
 resetnotes = true
 end
 if step == 1696 then
-    shakenotekindaslow = false
     resetnotes = false
     cameraswing = true
     showOnlyStrums = true
