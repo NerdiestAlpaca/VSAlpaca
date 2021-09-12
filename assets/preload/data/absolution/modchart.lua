@@ -624,7 +624,6 @@ slowsway2 = true
 shakehud = true
 end
 if step == 2975 then
-    shakehud = false
     resetnotes = true
 end
 if step == 2976 then
@@ -636,6 +635,7 @@ camswayslow = true
 end
 if step == 3359 then
     crazy = false
+    shakehud = false
     camswayslow = false
     resetnotes = true
 end
