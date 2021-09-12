@@ -150,7 +150,7 @@ if crazy then
     local currentBeat = (songPos / 500)*(bpm/60)
     for i=0,7 do
         setActorY(_G['defaultStrum'..i..'Y'] + 16 * math.cos(currentBeat + i), i)
-        setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat + i*2) * math.pi), i)
+        setActorX(_G['defaultStrum'..i..'X'] + 28 * math.sin((currentBeat + i*0.4)), i)
     end
 end
 
