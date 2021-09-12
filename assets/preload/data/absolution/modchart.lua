@@ -132,6 +132,14 @@ function update (elapsed)
 			setActorX(_G['defaultStrum'..i..'X'] + 300 * math.sin(currentBeat * 1.2) - 275, i)
 		end
 end
+if finaleslow then
+    for i=0,3 do
+        setActorX(_G['defaultStrum'..i..'X'] - 200 * math.sin(currentBeat * 0.6) + 350, i)
+    end
+    for i=4,7 do
+        setActorX(_G['defaultStrum'..i..'X'] + 200 * math.sin(currentBeat * 0.6) - 275, i)
+    end
+end
 if beatdrop then 
     if curStep % 4 == 0 then
         setHudZoom(1.1)
@@ -462,16 +470,14 @@ end
 if step == 1440 then
     tweenFadeIn(RedBG,0,0.01)
 end
-if step == 1496 then
+if step == 1503 then
     spinnything = false
     resetnotes = true
     slowsway = false
     slowsway2 = false
 end
-if step == 1503 then
-    resetnotes = false
-end
 if step == 1504 then
+    resetnotes = false
     slowsway = true
 end
 if step == 1596 then
@@ -687,6 +693,7 @@ tweenFadeIn(Light,1,16)
 end
 if step == 4480 then
     finale = false
+    finaleslow = true
     camswayfast = false
     camswayslow = true
     beatdropextra = false
@@ -694,11 +701,12 @@ if step == 4480 then
 end
 if step == 4608 then
     camswayslow = false
+    finaleslow = false
     tweenFadeIn('boyfriend',0,2)
     tweenFadeIn('girlfriend',0,2)
     slowsway = false
-beatdropsmall = false
-resetnotes = true
+    beatdropsmall = false
+    resetnotes = true
 setHudZoom(1)
 for i=4,7 do
     tweenFadeIn(i,0,4)
