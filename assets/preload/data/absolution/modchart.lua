@@ -65,17 +65,17 @@ function update (elapsed)
             cameraAngle = 2 * math.sin((currentBeat))
     end
     if sway then
+     local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,3 do
-            setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i) * math.pi), i)
-            setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin(currentBeat * 0.8) + 10, i)
+            setActorY(_G['defaultStrum'..i..'Y'] + 48 * math.cos((currentBeat + i) * math.pi), i)
+            setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin(currentBeat * 0.8) + 10, i)
         end
         for i=4,7 do
-            setActorY(_G['defaultStrum'..i..'Y'] - 32 * math.cos((currentBeat + i) * math.pi), i)
-            setActorX(_G['defaultStrum'..i..'X'] - 56 * math.sin(currentBeat * 0.8) - 10, i)
+            setActorY(_G['defaultStrum'..i..'Y'] - 48 * math.cos((currentBeat + i) * math.pi), i)
+            setActorX(_G['defaultStrum'..i..'X'] - 64 * math.sin(currentBeat * 0.8) - 10, i)
         end
     end
     if slowsway then
-        local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,7 do
         setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin((currentBeat + i*0.4)), i)
         end
@@ -87,7 +87,6 @@ function update (elapsed)
         end
     end
     if slowsway2 then
-        local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,7 do
         setActorY(_G['defaultStrum'..i..'Y'] + 15 * math.sin((currentBeat + i*1) * math.pi), i)
         end
