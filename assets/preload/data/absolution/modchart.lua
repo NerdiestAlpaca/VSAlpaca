@@ -67,11 +67,11 @@ function update (elapsed)
     if sway then
      local currentBeat = (songPos / 800)*(bpm/60)
         for i=0,3 do
-            setActorY(_G['defaultStrum'..i..'Y'] + 48 * math.cos((currentBeat + i) * math.pi), i)
+            setActorY(_G['defaultStrum'..i..'Y'] + 24 * math.cos((currentBeat + i) * math.pi), i)
             setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin(currentBeat * 0.8) + 10, i)
         end
         for i=4,7 do
-            setActorY(_G['defaultStrum'..i..'Y'] - 48 * math.cos((currentBeat + i) * math.pi), i)
+            setActorY(_G['defaultStrum'..i..'Y'] - 24 * math.cos((currentBeat + i) * math.pi), i)
             setActorX(_G['defaultStrum'..i..'X'] - 64 * math.sin(currentBeat * 0.8) - 10, i)
         end
     end
