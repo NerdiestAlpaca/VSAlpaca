@@ -495,6 +495,7 @@ shakenote = false
 resetnotes = true
 end
 if step == 1696 then
+    shakenotekindaslow = false
     resetnotes = false
     cameraswing = true
     showOnlyStrums = true
