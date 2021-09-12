@@ -627,6 +627,7 @@ if step == 2975 then
     resetnotes = true
 end
 if step == 2976 then
+    tweenFadeIn(Overlay,1,0.1)
     resetnotes = false
 slowsway = false
 slowsway2 = false
@@ -634,6 +635,7 @@ crazy = true
 camswayslow = true
 end
 if step == 3359 then
+    tweenFadeIn(Overlay,0,0.1)
     crazy = false
     shakehud = false
     camswayslow = false
