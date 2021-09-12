@@ -144,7 +144,7 @@ if camswayfast then
     camHudAngle = 6 * math.sin(currentBeat * 2)
 end
 if camswayslow then
-    camHudAngle = 5 * math.sin(currentBeat / 2)
+    camHudAngle = 5 * math.sin(currentBeat / 1)
 end
 if crazy then
     local currentBeat = (songPos / 500)*(bpm/60)
