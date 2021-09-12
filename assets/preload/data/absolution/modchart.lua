@@ -515,13 +515,11 @@ if step == 1696 then
     resetnotes = false
     cameraswing = true
     pulse = true
-    showOnlyStrums = true
 end
 if step == 1951 then
     resetnotes = true
     cameraswing = false
     pulse = false
-    showOnlyStrums = false
 end
 if step == 1952 or step == 2016 then
     shakenote = true
