@@ -45,6 +45,7 @@ function start (song)
 end
 
 function setDefault(id)
+	getActorX(boyfriend)
 end
 
 
@@ -164,11 +165,12 @@ if crazy then
     end
 end
 if crisscross then
+    local currentBeat = (songPos / 500)*(bpm/60)
     for i=0,3 do
-        setActorX(_G['defaultStrum'..i..'X'] + 30 * math.sin(currentBeat * 0.503) + 5, i)
+        setActorX(_G['defaultStrum'..i..'X'] + 30 * math.sin(currentBeat * 0.6) + 10, i)
     end
     for i=4,7 do
-        setActorX(_G['defaultStrum'..i..'X'] - 30 * math.sin(currentBeat * 0.503) - 5, i)
+        setActorX(_G['defaultStrum'..i..'X'] - 30 * math.sin(currentBeat * 0.6) - 10, i)
     end
 end
 if shakehud then
@@ -182,7 +184,6 @@ end
 function beatHit (beat)
 
 end
-
 
 
 function bumpArrows()
@@ -684,12 +685,18 @@ if step == 4352 then
     beatdropsmall = true
 tweenFadeIn(Light,1,16)
 end
-if step == 4480 then
+if step == 4479 then
     finale = false
     camswayfast = false
     camswayslow = true
     beatdropextra = false
     tweenFadeIn('dad',0,4)
+end
+if step == 4480 then
+    for i = 4, 7 do -- go to the center
+        tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 275,getActorAngle(i) + 360, 0.01, 'setDefault')
+    end
+end
 end
 if step == 4608 then
     camswayslow = false
