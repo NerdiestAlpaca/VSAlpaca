@@ -65,10 +65,14 @@ function update (elapsed)
             cameraAngle = 2 * math.sin((currentBeat))
     end
     if sway then
-		for i=0,7 do
+		for i=0,3 do
 			setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat) * math.pi), i)
 			setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*5) * math.pi), i)
 		end
+        for i=4,7 do
+            setActorX(_G['defaultStrum'..i..'X'] - 64 * math.sin((currentBeat) * math.pi), i)
+            setActorY(_G['defaultStrum'..i..'Y'] - 32 * math.cos((currentBeat - i*5) * math.pi), i)
+        end
     end
     if slowsway then
         for i=0,7 do
