@@ -335,6 +335,7 @@ if step == 896 then
     sway = false
     slowsway = true
     slowsway2 = true
+end
 if step == 1152 then
     spinnything = true
 end
