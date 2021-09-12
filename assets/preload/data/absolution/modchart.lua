@@ -685,17 +685,12 @@ if step == 4352 then
     beatdropsmall = true
 tweenFadeIn(Light,1,16)
 end
-if step == 4479 then
+if step == 4480 then
     finale = false
     camswayfast = false
     camswayslow = true
     beatdropextra = false
     tweenFadeIn('dad',0,4)
-end
-if step == 4480 then
-    for i = 4, 7 do -- go to the center
-        tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 275,getActorAngle(i) + 360, 0.01, 'setDefault')
-    end
 end
 if step == 4608 then
     camswayslow = false
