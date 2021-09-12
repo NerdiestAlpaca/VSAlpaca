@@ -678,10 +678,13 @@ tweenFadeIn(Light,1,16)
 end
 if step == 4480 then
     finale = false
+    camswayfast = false
+    camswayslow = true
     beatdropextra = false
     tweenFadeIn('dad',0,4)
 end
 if step == 4608 then
+    camswayslow = false
     tweenFadeIn('boyfriend',0,2)
     tweenFadeIn('girlfriend',0,2)
     slowsway = false
