@@ -107,6 +107,7 @@ function update (elapsed)
             setActorScale(1, i)
             camHudAngle = 0
             setHudPosition(0, 0)
+            setCamPosition(0, 0)
             cameraAngle = 0
         end
     end
@@ -603,10 +604,14 @@ slowsway = true
 slowsway2 = true
 shakehud = true
 end
+if step == 2975 then
+    shakehud = false
+    resetnotes = true
+end
 if step == 2976 then
-    slowsway = false
+    resetnotes = false
+slowsway = false
 slowsway2 = false
-shakehud = false
 crazy = true
 camswayslow = true
 end
@@ -619,12 +624,13 @@ if step == 3360 then
     resetnotes = false
     slowersway = true
 end
-if step == 3552 then
+if step == 3551 then
     slowersway = false
     resetnotes = true
 end
 if step == 3552 then
     resetnotes = false
+    slowsway2 = true
     beatdropsmall = true
 end
 if step == 4192 then
