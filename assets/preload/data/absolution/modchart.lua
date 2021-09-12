@@ -697,7 +697,6 @@ if step == 4480 then
         tweenPosXAngle(i, _G['defaultStrum'..i..'X'] - 275,getActorAngle(i) + 360, 0.01, 'setDefault')
     end
 end
-end
 if step == 4608 then
     camswayslow = false
     tweenFadeIn('boyfriend',0,2)
