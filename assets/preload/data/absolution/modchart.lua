@@ -65,13 +65,14 @@ function update (elapsed)
             cameraAngle = 2 * math.sin((currentBeat))
     end
     if sway then
-		for i=0,3 do
-			setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat) * math.pi), i)
-			setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*5) * math.pi), i)
-		end
+        local currentBeat = (songPos / 500)*(bpm/60)
+        for i=0,3 do
+            setActorY(_G['defaultStrum'..i..'Y'] + 24 * math.cos(currentBeat + i), i)
+            setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin(currentBeat * 0.4) + 10, i)
+        end
         for i=4,7 do
-            setActorX(_G['defaultStrum'..i..'X'] - 64 * math.sin((currentBeat) * math.pi), i)
-            setActorY(_G['defaultStrum'..i..'Y'] - 32 * math.cos((currentBeat - i*5) * math.pi), i)
+            setActorY(_G['defaultStrum'..i..'Y'] - 24 * math.cos(currentBeat + i), i)
+            setActorX(_G['defaultStrum'..i..'X'] - 56 * math.sin(currentBeat * 0.4) - 10, i)
         end
     end
     if slowsway then
@@ -154,14 +155,13 @@ if camswayslow then
     camHudAngle = 5 * math.sin(currentBeat / 1)
 end
 if crazy then
-    local currentBeat = (songPos / 500)*(bpm/60)
     for i=0,3 do
-        setActorY(_G['defaultStrum'..i..'Y'] + 24 * math.cos(currentBeat + i), i)
-        setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin(currentBeat * 0.4) + 10, i)
+        setActorX(_G['defaultStrum'..i..'X'] + 64 * math.sin((currentBeat) * math.pi), i)
+        setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*5) * math.pi), i)
     end
     for i=4,7 do
-        setActorY(_G['defaultStrum'..i..'Y'] - 24 * math.cos(currentBeat + i), i)
-        setActorX(_G['defaultStrum'..i..'X'] - 56 * math.sin(currentBeat * 0.4) - 10, i)
+        setActorX(_G['defaultStrum'..i..'X'] - 64 * math.sin((currentBeat) * math.pi), i)
+        setActorY(_G['defaultStrum'..i..'Y'] - 32 * math.cos((currentBeat - i*5) * math.pi), i)
     end
 end
 if crisscross then
