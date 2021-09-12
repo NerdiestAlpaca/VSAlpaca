@@ -75,6 +75,12 @@ function update (elapsed)
         setActorX(_G['defaultStrum'..i..'X'] + 56 * math.sin((currentBeat + i*0.4)), i)
         end
     end
+    if slowersway then
+        local currentBeat = (songPos / 1500)*(bpm/60)
+        for i=0,7 do
+        setActorX(_G['defaultStrum'..i..'X'] + 48 * math.sin((currentBeat + i*0.4)), i)
+        end
+    end
     if slowsway2 then
         for i=0,7 do
         setActorY(_G['defaultStrum'..i..'Y'] + 15 * math.sin((currentBeat + i*1) * math.pi), i)
@@ -135,6 +141,9 @@ if beatdropextra then
 end
 if camswayfast then
     camHudAngle = 6 * math.sin(currentBeat * 2)
+end
+if camswayslowbutfast then
+    camHudAngle = 5 * math.sin(currentBeat / 2)
 end
 end
 
@@ -567,6 +576,11 @@ setActorAlpha(1, 'dad')
 setActorAlpha(1, 'boyfriend')
 shakenote = false
 beatdrop = true
+camswayslowbutfast = true
+end
+if step == 2591 then
+    resetnotes = true
+    camswayslowbutfast = false
 end
 if step == 2592 then
     beatdrop = false
@@ -581,11 +595,20 @@ if step == 2976 then
 slowsway2 = false
 sway = true
 end
-if step == 3360 then
+if step == 3359 then
     sway = false
     resetnotes = true
 end
+if step == 3360 then
+    resetnotes = false
+    slowersway = true
+end
 if step == 3552 then
+    slowersway = false
+    resetnotes = true
+end
+if step == 3552 then
+    resetnotes = false
     beatdropsmall = true
 end
 if step == 4192 then
